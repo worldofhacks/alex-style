@@ -1,0 +1,11 @@
+# preset_key	title	key_props
+halo	Halo	type=plane animate=on color1=#ff5005 color2=#dbba95 color3=#d0bce1 uSpeed=0.4 uDensity=1.3 uStrength=4 uAmplitude=1 brightness=1.2 grain=on lightType=3d envPreset=city reflection=0.1
+pensive	Pensive	type=sphere animate=on color1=#809bd6 color2=#910aff color3=#af38ff uSpeed=0.3 uDensity=0.8 uStrength=0.4 uAmplitude=7 brightness=1.5 grain=on lightType=3d envPreset=city reflection=0.5
+mint	Mint	type=waterPlane animate=on color1=#94ffd1 color2=#6bf5ff color3=#ffffff uSpeed=0.2 uDensity=1.2 uStrength=3.4 uAmplitude=0 brightness=1.2 grain=off lightType=3d envPreset=city reflection=0.1
+interstella	Interstella	type=sphere animate=on color1=#73bfc4 color2=#ff810a color3=#8da0ce uSpeed=0.3 uDensity=0.8 uStrength=0.3 uAmplitude=3.2 brightness=0.8 grain=on lightType=env envPreset=city reflection=0.4
+nightyNight	Nighty night	type=waterPlane animate=on color1=#606080 color2=#8d7dca color3=#212121 uSpeed=0.3 uDensity=1.5 uStrength=1.5 uAmplitude=0 brightness=1 grain=on lightType=3d envPreset=city reflection=0.1
+violaOrientalis	Viola	type=sphere animate=on color1=#ffffff color2=#ffbb00 color3=#0700ff uSpeed=0.1 uDensity=1.1 uStrength=1 uAmplitude=1.4 brightness=1.1 grain=off lightType=3d envPreset=city reflection=0.1
+universe	Universe	type=waterPlane animate=on color1=#5606ff color2=#fe8989 color3=#000000 uSpeed=0.1 uDensity=1.1 uStrength=2.4 uAmplitude=0 brightness=1.1 grain=off lightType=3d envPreset=city reflection=0.1
+sunset	Sunset	type=sphere animate=on color1=#ff7a33 color2=#33a0ff color3=#ffc53d uSpeed=0.1 uDensity=1.1 uStrength=0.4 uAmplitude=1.4 brightness=1.5 grain=off lightType=3d envPreset=dawn reflection=0.1
+mandarin	Mandarin	type=waterPlane animate=on color1=#ff6a1a color2=#c73c00 color3=#FD4912 uSpeed=0.2 uDensity=1.8 uStrength=3 uAmplitude=0 brightness=1.2 grain=off lightType=3d envPreset=city reflection=0.1
+cottonCandy	Cotton Candy	type=waterPlane animate=on color1=#ebedff color2=#f3f2f8 color3=#dbf8ff uSpeed=0.3 uDensity=1 uStrength=3 uAmplitude=0 brightness=1.2 grain=off lightType=3d envPreset=city reflection=0.1

@@ -1,0 +1,665 @@
+# animation	family	category	default_duration	default_easing	default_fill_mode
+blink-1	blink	attention			both
+blink-2	blink	attention			both
+bounce-top	bounce	attention			both
+bounce-bottom	bounce	attention			both
+bounce-left	bounce	attention			both
+bounce-right	bounce	attention			both
+flicker-1	flicker	attention		linear	both
+flicker-2	flicker	attention		linear	both
+flicker-3	flicker	attention		linear	both
+flicker-4	flicker	attention		linear	both
+flicker-5	flicker	attention		linear	both
+jello-horizontal	jello	attention			both
+jello-vertical	jello	attention			both
+jello-diagonal-1	jello	attention			both
+jello-diagonal-2	jello	attention			both
+heartbeat	pulsate	attention		ease-in-out	both
+pulsate-bck	pulsate	attention		ease-in-out	both
+pulsate-fwd	pulsate	attention		ease-in-out	both
+ping	pulsate	attention		ease-in-out	both
+shake-horizontal	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-vertical	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-lr	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-top	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-tr	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-right	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-br	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-bottom	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-bl	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-left	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+shake-tl	shake	attention	.8s	cubic-bezier(.455,.03,.515,.955)	both
+vibrate-1	vibrate	attention		linear	both
+vibrate-2	vibrate	attention		linear	both
+vibrate-3	vibrate	attention		linear	both
+wobble-hor-bottom	wobble	attention	.8s		both
+wobble-hor-top	wobble	attention	.8s		both
+wobble-ver-left	wobble	attention	.8s		both
+wobble-ver-right	wobble	attention	.8s		both
+bg-pan-left	bg-pan	background	8s		both
+bg-pan-right	bg-pan	background	8s		both
+bg-pan-top	bg-pan	background	8s		both
+bg-pan-bottom	bg-pan	background	8s		both
+bg-pan-tr	bg-pan	background	8s		both
+bg-pan-br	bg-pan	background	8s		both
+bg-pan-bl	bg-pan	background	8s		both
+bg-pan-tl	bg-pan	background	8s		both
+color-change-2x	color-change	background		linear	both
+color-change-3x	color-change	background		linear	both
+color-change-4x	color-change	background		linear	both
+color-change-5x	color-change	background		linear	both
+kenburns-top	kenburns	background	5s	ease-out	both
+kenburns-top-right	kenburns	background	5s	ease-out	both
+kenburns-right	kenburns	background	5s	ease-out	both
+kenburns-bottom-right	kenburns	background	5s	ease-out	both
+kenburns-bottom	kenburns	background	5s	ease-out	both
+kenburns-bottom-left	kenburns	background	5s	ease-out	both
+kenburns-left	kenburns	background	5s	ease-out	both
+kenburns-top-left	kenburns	background	5s	ease-out	both
+flip-2-hor-top-1	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-top-2	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-top-bck	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-top-fwd	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-right-1	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-right-2	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-right-bck	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-right-fwd	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-bottom-1	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-bottom-2	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-bottom-bck	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-hor-bottom-fwd	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-left-1	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-left-2	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-left-bck	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-2-ver-left-fwd	flip-2	basic	.5s	cubic-bezier(.455,.03,.515,.955)	both
+flip-scale-2-hor-top	flip-scale-2	basic	.5s	linear	both
+flip-scale-2-ver-right	flip-scale-2	basic	.5s	linear	both
+flip-scale-2-hor-bottom	flip-scale-2	basic	.5s	linear	both
+flip-scale-2-ver-left	flip-scale-2	basic	.5s	linear	both
+flip-scale-up-hor	flip-scale	basic	.5s	linear	both
+flip-scale-down-hor	flip-scale	basic	.5s	linear	both
+flip-scale-up-ver	flip-scale	basic	.5s	linear	both
+flip-scale-down-ver	flip-scale	basic	.5s	linear	both
+flip-scale-up-diag-1	flip-scale	basic	.5s	linear	both
+flip-scale-down-diag-1	flip-scale	basic	.5s	linear	both
+flip-scale-up-diag-2	flip-scale	basic	.5s	linear	both
+flip-scale-down-diag-2	flip-scale	basic	.5s	linear	both
+flip-horizontal-bottom	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-horizontal-top	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-horizontal-bck	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-horizontal-fwd	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-vertical-right	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-vertical-left	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-vertical-bck	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-vertical-fwd	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-1-tr	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-1-bl	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-1-bck	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-1-fwd	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-2-br	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-2-tl	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-2-bck	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+flip-diagonal-2-fwd	flip	basic	.4s	cubic-bezier(.455,.03,.515,.955)	both
+rotate-90-horizontal-fwd	rotate-90	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-90-horizontal-bck	rotate-90	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-90-vertical-fwd	rotate-90	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-90-vertical-bck	rotate-90	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-scale-up	rotate-scale	basic	.65s	linear	both
+rotate-scale-down	rotate-scale	basic	.65s	linear	both
+rotate-scale-up-hor	rotate-scale	basic	.65s	linear	both
+rotate-scale-down-hor	rotate-scale	basic	.65s	linear	both
+rotate-scale-up-ver	rotate-scale	basic	.65s	linear	both
+rotate-scale-down-ver	rotate-scale	basic	.65s	linear	both
+rotate-scale-up-diag-1	rotate-scale	basic	.65s	linear	both
+rotate-scale-down-diag-1	rotate-scale	basic	.65s	linear	both
+rotate-scale-up-diag-2	rotate-scale	basic	.65s	linear	both
+rotate-scale-down-diag-2	rotate-scale	basic	.65s	linear	both
+rotate-center	rotate	basic			both
+rotate-top	rotate	basic			both
+rotate-tr	rotate	basic			both
+rotate-right	rotate	basic			both
+rotate-br	rotate	basic			both
+rotate-bottom	rotate	basic			both
+rotate-bl	rotate	basic			both
+rotate-left	rotate	basic			both
+rotate-tl	rotate	basic			both
+rotate-hor-center	rotate	basic			both
+rotate-hor-top	rotate	basic			both
+rotate-hor-bottom	rotate	basic			both
+rotate-vert-center	rotate	basic			both
+rotate-vert-left	rotate	basic			both
+rotate-vert-right	rotate	basic			both
+rotate-diagonal-1	rotate	basic			both
+rotate-diagonal-2	rotate	basic			both
+rotate-diagonal-tr	rotate	basic			both
+rotate-diagonal-br	rotate	basic			both
+rotate-diagonal-bl	rotate	basic			both
+rotate-diagonal-tl	rotate	basic			both
+scale-down-center	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-top	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-tr	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-right	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-br	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-bottom	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-bl	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-left	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-tl	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-hor-center	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-hor-left	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-hor-right	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-ver-center	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-ver-top	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-down-ver-bottom	scaleDown	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+scale-up-center	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-top	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-tr	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-right	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-br	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-bottom	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-bl	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-left	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-tl	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-hor-center	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-hor-left	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-hor-right	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-ver-center	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-ver-top	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+scale-up-ver-bottom	scaleUp	basic	.4s	cubic-bezier(0.39, 0.575, 0.565, 1)	both
+shadow-drop-2-center	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-top	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-right	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-bottom	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-left	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-lr	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-tb	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-tr	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-br	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-bl	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-2-tl	shadow-drop-2	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-center	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-top	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-right	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-bottom	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-left	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-lr	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-tb	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-tr	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-br	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-bl	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-drop-tl	shadow-drop	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-center	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-top	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-right	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-bottom	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-left	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-lr	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-tb	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-tr	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-br	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-bl	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-inset-tl	shadow-inset	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+shadow-pop-tr	shadow-pop	basic	.3s	cubic-bezier(.47,0.000,.745,.715)	both
+shadow-pop-br	shadow-pop	basic	.3s	cubic-bezier(.47,0.000,.745,.715)	both
+shadow-pop-bl	shadow-pop	basic	.3s	cubic-bezier(.47,0.000,.745,.715)	both
+shadow-pop-tl	shadow-pop	basic	.3s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-center	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-top	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-tr	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-right	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-br	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-bottom	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-bl	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-left	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-bck-tl	slide-bck	basic	.45s	cubic-bezier(.47,0.000,.745,.715)	both
+slide-fwd-center	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-top	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-tr	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-right	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-br	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-bottom	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-bl	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-left	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-fwd-tl	slide-fwd	basic	.45s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-hor-top	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-hor-t-bck	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-hor-t-fwd	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-ver-right	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-ver-r-bck	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-ver-r-fwd	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-hor-bottom	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-hor-b-bck	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-hor-b-fwd	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-ver-left	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-ver-l-bck	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-rotate-ver-l-fwd	slide-rotate	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-top	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-tr	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-right	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-br	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-bottom	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-bl	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-left	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-tl	slide	basic	.5s	cubic-bezier(.25,.46,.45,.94)	both
+swing-top-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-top-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-top-right-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-top-right-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-right-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-right-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-bottom-right-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-bottom-right-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-bottom-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-bottom-left-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-bottom-left-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-left-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-left-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-top-left-fwd	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+swing-top-left-bck	swing	basic	.4s	cubic-bezier(.25,.46,.45,.94)	both
+bounce-in-top	bounce-in	entrances	1.1s		both
+bounce-in-right	bounce-in	entrances	1.1s		both
+bounce-in-bottom	bounce-in	entrances	1.1s		both
+bounce-in-left	bounce-in	entrances	1.1s		both
+bounce-in-fwd	bounce-in	entrances	1.1s		both
+bounce-in-bck	bounce-in	entrances	1.1s		both
+fade-in	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-fwd	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-bck	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-top	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-tr	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-right	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-br	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-bottom	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-bl	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-left	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+fade-in-tl	fade-in	entrances	.6s	cubic-bezier(.39,.575,.565,1.000)	both
+flicker-in-1	flicker-in	entrances	2s	linear	both
+flicker-in-2	flicker-in	entrances	2s	linear	both
+flip-in-hor-bottom	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-hor-top	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-ver-right	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-ver-left	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-diag-1-tr	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-diag-1-bl	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-diag-2-tl	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+flip-in-diag-2-br	flip-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+puff-in-center	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-top	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-tr	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-right	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-br	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-bottom	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-bl	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-left	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-tl	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-hor	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+puff-in-ver	puff-in	entrances	.7s	cubic-bezier(.47,0.000,.745,.715)	both
+roll-in-blurred-left	roll-in-blurred	entrances	.65s	cubic-bezier(.23,1.000,.32,1.000)	both
+roll-in-blurred-top	roll-in-blurred	entrances	.65s	cubic-bezier(.23,1.000,.32,1.000)	both
+roll-in-blurred-right	roll-in-blurred	entrances	.65s	cubic-bezier(.23,1.000,.32,1.000)	both
+roll-in-blurred-bottom	roll-in-blurred	entrances	.65s	cubic-bezier(.23,1.000,.32,1.000)	both
+roll-in-left	roll-in	entrances	.6s	ease-out	both
+roll-in-top	roll-in	entrances	.6s	ease-out	both
+roll-in-right	roll-in	entrances	.6s	ease-out	both
+roll-in-bottom	roll-in	entrances	.6s	ease-out	both
+rotate-in-2-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-fwd-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-fwd-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-bck-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-bck-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-tr-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-tr-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-br-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-br-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-bl-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-bl-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-tl-cw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-2-tl-ccw	rotate-in-2	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-center	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-top	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-tr	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-right	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-br	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-bottom	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-bl	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-left	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-tl	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-hor	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-ver	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-diag-1	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-in-diag-2	rotate-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-center	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-top	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-tr	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-right	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-br	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-bottom	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-bl	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-left	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-tl	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-hor-center	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-hor-left	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-hor-right	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-ver-center	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-ver-top	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+scale-in-ver-bottom	scale-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-center	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-top	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-tr	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-right	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-br	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-bottom	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-bl	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-left	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bck-tl	slide-in-bck	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-blurred-top	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-tr	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-right	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-br	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-bottom	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-bl	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-left	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-blurred-tl	slide-in-blurred	entrances	.6s	cubic-bezier(.23,1.000,.32,1.000)	both
+slide-in-elliptic-top-fwd	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-top-bck	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-right-fwd	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-right-bck	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-bottom-fwd	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-bottom-bck	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-left-fwd	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-elliptic-left-bck	slide-in-elliptic	entrances	.7s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-center	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-top	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-tr	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-right	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-br	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-bottom	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-bl	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-left	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-fwd-tl	slide-in-fwd	entrances	.4s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-top	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-tr	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-right	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-br	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bottom	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-bl	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-left	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slide-in-tl	slide-in	entrances	.5s	cubic-bezier(.25,.46,.45,.94)	both
+slit-in-vertical	slit-in	entrances	.45s	ease-out	both
+slit-in-horizontal	slit-in	entrances	.45s	ease-out	both
+slit-in-diagonal-1	slit-in	entrances	.45s	ease-out	both
+slit-in-diagonal-2	slit-in	entrances	.45s	ease-out	both
+swing-in-top-fwd	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-top-bck	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-right-fwd	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-right-bck	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-bottom-fwd	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-bottom-bck	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-left-fwd	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swing-in-left-bck	swing-in	entrances	.5s	cubic-bezier(.175,.885,.32,1.275)	both
+swirl-in-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-top-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-top-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-tr-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-tr-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-right-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-right-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-br-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-br-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-bottom-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-bottom-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-bl-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-bl-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-left-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-left-bck	swirl-in	entrances	.6s	ease-out	both
+swirl-in-tl-fwd	swirl-in	entrances	.6s	ease-out	both
+swirl-in-tl-bck	swirl-in	entrances	.6s	ease-out	both
+tilt-in-fwd-tr	tilt-in-fwd	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-fwd-br	tilt-in-fwd	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-fwd-bl	tilt-in-fwd	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-fwd-tl	tilt-in-fwd	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-top-1	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-top-2	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-tr	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-right-1	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-right-2	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-br	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-bottom-1	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-bottom-2	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-bl	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-left-1	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-left-2	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+tilt-in-tl	tilt-in	entrances	.6s	cubic-bezier(.25,.46,.45,.94)	both
+bounce-out-top	bounce-out	exits	1.5s		both
+bounce-out-right	bounce-out	exits	1.5s		both
+bounce-out-bottom	bounce-out	exits	1.5s		both
+bounce-out-left	bounce-out	exits	1.5s		both
+bounce-out-bck	bounce-out	exits	1.5s		both
+bounce-out-fwd	bounce-out	exits	1.5s		both
+fade-out	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-bck	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-fwd	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-top	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-right	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-br	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-bottom	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-bl	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-left	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+fade-out-tl	fade-out	exits	1s	cubic-bezier(.25,.46,.45,.94)	both
+flicker-out-1	flicker-out	exits	2s	linear	both
+flicker-out-2	flicker-out	exits	2s	linear	both
+flip-out-hor-top	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-hor-bottom	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-ver-left	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-ver-right	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-diag-1-tr	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-diag-1-bl	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-diag-2-tl	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+flip-out-diag-2-br	flip-out	exits	.45s	cubic-bezier(.55,.085,.68,.53)	both
+puff-out-center	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-top	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-tr	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-right	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-br	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-bottom	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-bl	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-left	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-tl	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-hor	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+puff-out-ver	puff-out	exits	1s	cubic-bezier(.165,.84,.44,1.000)	both
+roll-out-blurred-left	roll-out-blurred	exits	.65s	cubic-bezier(.755,.05,.855,.06)	both
+roll-out-blurred-top	roll-out-blurred	exits	.65s	cubic-bezier(.755,.05,.855,.06)	both
+roll-out-blurred-right	roll-out-blurred	exits	.65s	cubic-bezier(.755,.05,.855,.06)	both
+roll-out-blurred-bottom	roll-out-blurred	exits	.65s	cubic-bezier(.755,.05,.855,.06)	both
+roll-out-left	roll-out	exits	.6s	ease-in)	both
+roll-out-top	roll-out	exits	.6s	ease-in)	both
+roll-out-right	roll-out	exits	.6s	ease-in)	both
+roll-out-bottom	roll-out	exits	.6s	ease-in)	both
+rotate-out-2-cw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-ccw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-bck	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-fwd	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-tr-cw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-tr-ccw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-br-cw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-br-ccw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-bl-cw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-bl-ccw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-tl-cw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-2-tl-ccw	rotate-out-2	exits	.6s	cubic-bezier(.25,.46,.45,.94)	both
+rotate-out-center	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-top	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-tr	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-right	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-br	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-bottom	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-bl	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-left	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-tl	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-hor	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-ver	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-diag-1	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+rotate-out-diag-2	rotate-out	exits	.6s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-center	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-top	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-tr	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-right	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-br	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-bottom	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-bl	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-left	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-tl	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-horizontal	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-hor-left	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-hor-right	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-vertical	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-ver-top	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+scale-out-ver-bottom	scale-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-center	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-top	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-tr	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-right	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-br	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-bottom	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-bl	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-left	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bck-tl	slide-out-bck	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-blurred-top	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-tr	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-right	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-br	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-bottom	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-bl	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-left	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-blurred-tl	slide-out-blurred	exits	.45s	cubic-bezier(.755,.05,.855,.06)	both
+slide-out-elliptic-top-bck	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-top-fwd	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-right-bck	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-right-fwd	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-bottom-bck	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-bottom-fwd	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-left-bck	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-elliptic-left-fwd	slide-out-elliptic	exits	.7s	ease-in	both
+slide-out-fwd-center	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-top	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-tr	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-right	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-br	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-bottom	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-bl	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-left	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-fwd-tl	slide-out-fwd	exits	.7s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-top	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-tr	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-right	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-br	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bottom	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-bl	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-left	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slide-out-tl	slide-out	exits	.5s	cubic-bezier(.55,.085,.68,.53)	both
+slit-out-vertical	slit-out	exits	.5s	ease-in	both
+slit-out-horizontal	slit-out	exits	.5s	ease-in	both
+slit-out-diagonal-1	slit-out	exits	.5s	ease-in	both
+slit-out-diagonal-2	slit-out	exits	.5s	ease-in	both
+swing-out-top-bck	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-top-fwd	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-right-bck	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-right-fwd	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-bottom-bck	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-bottom-fwd	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-left-bck	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swing-out-left-fwd	swing-out	exits	.45s	cubic-bezier(.6,-.28,.735,.045)	both
+swirl-out-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-top-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-top-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-tr-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-tr-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-right-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-right-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-br-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-br-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-bottom-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-bottom-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-bl-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-bl-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-left-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-left-fwd	swirl-out	exits	.6s	ease-in)	both
+swirl-out-tl-bck	swirl-out	exits	.6s	ease-in)	both
+swirl-out-tl-fwd	swirl-out	exits	.6s	ease-in)	both
+text-blur-out	blur-out	text	1.2s	cubic-bezier(.55,.085,.68,.53)	both
+blur-out-contract	blur-out	text	1.2s	cubic-bezier(.55,.085,.68,.53)	both
+blur-out-contract-bck	blur-out	text	1.2s	cubic-bezier(.55,.085,.68,.53)	both
+blur-out-expand	blur-out	text	1.2s	cubic-bezier(.55,.085,.68,.53)	both
+blur-out-expand-fwd	blur-out	text	1.2s	cubic-bezier(.55,.085,.68,.53)	both
+text-flicker-in-glow	flicker	text	4s	linear	both
+text-flicker-out-glow	flicker	text	4s	linear	both
+text-focus-in	focus-in	text	.8s	cubic-bezier(.55,.085,.68,.53)	both
+focus-in-expand	focus-in	text	.8s	cubic-bezier(.55,.085,.68,.53)	both
+focus-in-expand-fwd	focus-in	text	.8s	cubic-bezier(.55,.085,.68,.53)	both
+focus-in-contract	focus-in	text	.8s	cubic-bezier(.55,.085,.68,.53)	both
+focus-in-contract-bck	focus-in	text	.8s	cubic-bezier(.55,.085,.68,.53)	both
+text-pop-up-top	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-tr	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-right	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-br	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-bottom	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-bl	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-left	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-pop-up-tl	pop-up	text	.5s	cubic-bezier(.25,.46,.45,.94)	both
+text-shadow-drop-center	shadow-drop	text	.6s		both
+text-shadow-drop-top	shadow-drop	text	.6s		both
+text-shadow-drop-tr	shadow-drop	text	.6s		both
+text-shadow-drop-right	shadow-drop	text	.6s		both
+text-shadow-drop-br	shadow-drop	text	.6s		both
+text-shadow-drop-bottom	shadow-drop	text	.6s		both
+text-shadow-drop-bl	shadow-drop	text	.6s		both
+text-shadow-drop-left	shadow-drop	text	.6s		both
+text-shadow-drop-tl	shadow-drop	text	.6s		both
+text-shadow-pop-top	shadow-pop	text	.6s		both
+text-shadow-pop-tr	shadow-pop	text	.6s		both
+text-shadow-pop-right	shadow-pop	text	.6s		both
+text-shadow-pop-br	shadow-pop	text	.6s		both
+text-shadow-pop-bottom	shadow-pop	text	.6s		both
+text-shadow-pop-bl	shadow-pop	text	.6s		both
+text-shadow-pop-left	shadow-pop	text	.6s		both
+text-shadow-pop-tl	shadow-pop	text	.6s		both
+tracking-in-expand	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-expand-fwd	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-expand-fwd-top	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-expand-fwd-bottom	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-contract	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-contract-bck	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-contract-bck-top	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-in-contract-bck-bottom	tracking-in	text	.7s	cubic-bezier(.215,.61,.355,1.000)	both
+tracking-out-contract	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-contract-bck	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-contract-bck-top	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-contract-bck-bottom	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-expand	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-expand-fwd	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-expand-fwd-top	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+tracking-out-expand-fwd-bottom	tracking-out	text	.7s	cubic-bezier(.55,.085,.68,.53)	both
+simple-fade-in					
+simple-fade-out					
+rotate-90-bl-ccw					
+rotate-90-bl-cw					
+rotate-90-bottom-ccw					
+rotate-90-bottom-cw					
+rotate-90-br-ccw					
+rotate-90-br-cw					
+rotate-90-ccw					
+rotate-90-cw					
+rotate-90-left-ccw					
+rotate-90-left-cw					
+rotate-90-right-ccw					
+rotate-90-right-cw					
+rotate-90-tl-ccw					
+rotate-90-tl-cw					
+rotate-90-top-ccw					
+rotate-90-top-cw					
+rotate-90-tr-ccw					
+rotate-90-tr-cw					
+swing-bottom-bck					
+fade-out-tr					

@@ -1,0 +1,15 @@
+# effect	dist_file	default_options
+birds	vendor/vanta/dist/vanta.birds.min.js	backgroundColor: 0x07192F, color1: 0xff0000, color2: 0x00d1ff, colorMode: 'varianceGradient', birdSize: 1, wingSpan: 30, speedLimit: 5, separation: 20, alignment: 20, cohesion: 20, quantity: 5
+cells	vendor/vanta/dist/vanta.cells.min.js	color1: 0x8c8c, color2: 0xf2e735, backgroundColor: 0xd7ff8f, amplitudeFactor: 1.0, ringFactor: 1.0, rotationFactor: 1.0, size: 1.5, speed: 1.0, scaleMobile: 3
+clouds	vendor/vanta/dist/vanta.clouds.min.js	backgroundColor: 0xffffff, skyColor: 0x68b8d7, cloudColor: 0xadc1de, cloudShadowColor: 0x183550, sunColor: 0xff9919, sunGlareColor: 0xff6633, sunlightColor: 0xff9933, scale: 3, scaleMobile: 12, speed: 1, mouseEase: true
+clouds2	vendor/vanta/dist/vanta.clouds2.min.js	backgroundColor: 0x000000, skyColor: 0x5ca6ca, cloudColor: 0x334d80, lightColor: 0xffffff, speed: 1.0, texturePath: "./gallery/noise.png", scaleMobile: 4
+dots	vendor/vanta/dist/vanta.dots.min.js	color: 0xff8820, color2: 0xff8820, backgroundColor: 0x222222, size: 3, spacing: 35, showLines: true
+fog	vendor/vanta/dist/vanta.fog.min.js	highlightColor: 0xffc300, midtoneColor: 0xff1f00, lowlightColor: 0x2d00ff, baseColor: 0xffebeb, blurFactor: 0.6, speed: 1.0, zoom: 1.0, scale: 2, scaleMobile: 4
+globe	vendor/vanta/dist/vanta.globe.min.js	color: 0xff3f81, color2: 0xffffff, size: 1, backgroundColor: 0x23153c, points: 10, maxDistance: 20, spacing: 15, showDots: true
+halo	vendor/vanta/dist/vanta.halo.min.js	baseColor: 0x001a59, color2: 0xf2e735, backgroundColor: 0x131a43, amplitudeFactor: 1.0, ringFactor: 1.0, rotationFactor: 1.0, xOffset: 0, yOffset: 0, size: 1.0, speed: 1.0, mouseEase: true, scaleMobile: 1, scale: 1
+net	vendor/vanta/dist/vanta.net.min.js	color: 0xff3f81, backgroundColor: 0x23153c, points: 10, maxDistance: 20, spacing: 15, showDots: true
+rings	vendor/vanta/dist/vanta.rings.min.js	backgroundColor: 0x202428, color: 0x88ff00
+ripple	vendor/vanta/dist/vanta.ripple.min.js	color1: 0x60b25, color2: 0xffffff, backgroundColor: 0xf6f6f6, amplitudeFactor: 1.0, ringFactor: 4.0, rotationFactor: 0.1, speed: 1.0, scaleMobile: 4
+topology	vendor/vanta/dist/vanta.topology.min.js	color: 0x89964e, backgroundColor: 0x002222
+trunk	vendor/vanta/dist/vanta.trunk.min.js	color: 0x98465f, backgroundColor: 0x222426, spacing: 0, chaos: 1
+waves	vendor/vanta/dist/vanta.waves.min.js	color: 0x005588, shininess: 30, waveHeight: 15, waveSpeed: 1, zoom: 1

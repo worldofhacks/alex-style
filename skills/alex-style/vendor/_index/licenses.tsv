@@ -1,0 +1,14 @@
+# source	license	resale_or_redistribution	attribution_required	license_ref
+magicui	MIT	yes	no	vendor/magicui/LICENSE.md
+kokonutui	MIT	yes	no	vendor/kokonutui/LICENSE
+motion-primitives	MIT	yes	no	vendor/motion-primitives/LICENSE.md
+reactbits	MIT + Commons Clause	NO - selling/sublicensing/redistributing the components themselves is banned, INCLUDING ported/rewritten versions; shipping inside an app/site/product is fine	no	vendor/reactbits/LICENSE.md
+gsap	Webflow GSAP Standard License (free, commercial + AI use OK)	no component resale question; do NOT bundle gsap runtime files into paid template packs - declare as npm dep; no no-code animation tools competing with Webflow	no	https://gsap.com/standard-license
+motion	MIT (core); Motion+ is paid/private	yes (core only)	no	upstream LICENSE.md (motiondivision/motion)
+lenis	MIT	yes	no	upstream LICENSE (darkroomengineering/lenis)
+phosphor	MIT	yes	no	vendor/phosphor/LICENSE
+animista	FreeBSD (2-clause BSD), (c) 2017 Ana Travas	yes	YES - ship the FULL license text (notice + conditions + disclaimer) with distributed CSS; a one-line comment alone does not satisfy it	vendor/animista/LICENSE.txt
+vanta	MIT	yes	no	vendor/vanta/LICENSE.md
+shadergradient	MIT per package.json + README ONLY - no LICENSE file exists upstream; flag legal if formal text is required	yes (with the above caveat)	no	package.json declaration only
+recent	none - third-party copyrighted work; robots signals: ai-train=no, use=reference	NEVER - metadata for design direction only; never copy imagery	n/a	no terms page exists
+layers	none - uploaders retain all IP	NEVER - metadata/palette reference only; never copy imagery	n/a	https://layers.to/legal/terms-and-conditions

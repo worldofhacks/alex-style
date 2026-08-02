@@ -1,0 +1,296 @@
+# source	name	title	description	npm_deps	registry_deps	vendored_file
+magicui	magic-card	Magic Card	A spotlight effect that follows your mouse cursor and highlights borders on hover.	motion,next-themes		vendor/magicui/r/magic-card.json
+magicui	android	Android	A mockup of an Android device.			vendor/magicui/r/android.json
+magicui	warp-background	Warp Background	A card with a time warping background effect.	motion		vendor/magicui/r/warp-background.json
+magicui	line-shadow-text	Line Shadow Text	A text component with a moving line shadow.	motion		vendor/magicui/r/line-shadow-text.json
+magicui	aurora-text	Aurora Text	A beautiful aurora text effect			vendor/magicui/r/aurora-text.json
+magicui	morphing-text	Morphing Text	A dynamic text morphing component for Magic UI.			vendor/magicui/r/morphing-text.json
+magicui	scroll-progress	Scroll Progress	Animated Scroll Progress for your pages	motion		vendor/magicui/r/scroll-progress.json
+magicui	lens	Lens	A interactive component that enables zooming into images, videos and other elements.	motion		vendor/magicui/r/lens.json
+magicui	pointer	Pointer	A component that displays a pointer when hovering over an element	motion		vendor/magicui/r/pointer.json
+magicui	smooth-cursor	smooth-cursor	A customizable, physics-based smooth cursor animation component with spring animations and rotation effects	framer-motion		vendor/magicui/r/smooth-cursor.json
+magicui	progressive-blur	Progressive Blur	The Progressive Blur component adds a smooth blur gradient effect to scrollable content, indicating more content below or above.			vendor/magicui/r/progressive-blur.json
+magicui	neon-gradient-card	Neon Gradient Card	A beautiful neon card effect			vendor/magicui/r/neon-gradient-card.json
+magicui	noise-texture	Noise Texture	An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.			vendor/magicui/r/noise-texture.json
+magicui	meteors	Meteors	A meteor shower effect.			vendor/magicui/r/meteors.json
+magicui	grid-pattern	Grid Pattern	A background grid pattern made with SVGs, fully customizable using Tailwind CSS.			vendor/magicui/r/grid-pattern.json
+magicui	hexagon-pattern	Hexagon Pattern	A background hexagon pattern made with SVGs, fully customizable using Tailwind CSS.			vendor/magicui/r/hexagon-pattern.json
+magicui	striped-pattern	Striped Pattern	A background striped pattern made with SVGs, fully customizable using Tailwind CSS.			vendor/magicui/r/striped-pattern.json
+magicui	interactive-grid-pattern	Interactive Grid Pattern	A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.			vendor/magicui/r/interactive-grid-pattern.json
+magicui	dot-pattern	Dot Pattern	A background dot pattern made with SVGs, fully customizable using Tailwind CSS.			vendor/magicui/r/dot-pattern.json
+magicui	flickering-grid	Flickering Grid	A flickering grid background made with SVGs, fully customizable using Tailwind CSS.			vendor/magicui/r/flickering-grid.json
+magicui	hero-video-dialog	Hero Video Dialog	A hero video dialog component.	motion		vendor/magicui/r/hero-video-dialog.json
+magicui	code-comparison	Code Comparison	A component which compares two code snippets.	shiki,next-themes		vendor/magicui/r/code-comparison.json
+magicui	marquee	Marquee	An infinite scrolling component that can be used to display text, images, or videos.			vendor/magicui/r/marquee.json
+magicui	globe	Globe	An autorotating, interactive, and highly performant globe made using WebGL.	cobe@^0.6.4,motion		vendor/magicui/r/globe.json
+magicui	glyph-matrix	Glyph Matrix	An animated grid of subtly shifting glyphs with fade effect and theme support.			vendor/magicui/r/glyph-matrix.json
+magicui	glare-hover	Glare Hover	A diagonal glare on hover using a ::before gradient and CSS variables (angle, size, duration, color).			vendor/magicui/r/glare-hover.json
+magicui	shimmer-button	Shimmer Button	A button with a shimmering light which travels around the perimeter.			vendor/magicui/r/shimmer-button.json
+magicui	tweet-card	Tweet Card	A card that displays a tweet with the author's name, handle, and profile picture.	react-tweet		vendor/magicui/r/tweet-card.json
+magicui	client-tweet-card	Client Tweet Card	A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.	react-tweet		vendor/magicui/r/client-tweet-card.json
+magicui	bento-grid	Bento Grid	Bento grid is a layout used to showcase the features of a product in a simple and elegant way.	@radix-ui/react-icons	button	vendor/magicui/r/bento-grid.json
+magicui	particles	Particles	Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity.			vendor/magicui/r/particles.json
+magicui	number-ticker	Number Ticker	Animate numbers to count up or down to a target number	motion		vendor/magicui/r/number-ticker.json
+magicui	ripple	Ripple	An animated ripple effect typically used behind elements to emphasize them.			vendor/magicui/r/ripple.json
+magicui	retro-grid	Retro Grid	An animated scrolling retro grid effect			vendor/magicui/r/retro-grid.json
+magicui	animated-list	Animated List	A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.	motion		vendor/magicui/r/animated-list.json
+magicui	animated-shiny-text	Animated Shiny Text	A light glare effect which pans across text making it appear as if it is shimmering.			vendor/magicui/r/animated-shiny-text.json
+magicui	animated-grid-pattern	Animated Grid Pattern	A animated background grid pattern made with SVGs, fully customizable using Tailwind CSS.	motion		vendor/magicui/r/animated-grid-pattern.json
+magicui	border-beam	Border Beam	An animated beam of light which travels along the border of its container.	motion		vendor/magicui/r/border-beam.json
+magicui	animated-beam	Animated Beam	An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.	motion		vendor/magicui/r/animated-beam.json
+magicui	text-reveal	Text Reveal	Fade in text as you scroll down the page.	motion		vendor/magicui/r/text-reveal.json
+magicui	dia-text-reveal	Dia Text Reveal	A horizontal color band sweeps across text, revealing a gradient shine before settling on the base color.	motion		vendor/magicui/r/dia-text-reveal.json
+magicui	hyper-text	Hyper Text	A text animation that scrambles letters before revealing the final text.	motion		vendor/magicui/r/hyper-text.json
+magicui	animated-gradient-text	Animated Gradient Text	An animated gradient background which transitions between colors for text.			vendor/magicui/r/animated-gradient-text.json
+magicui	orbiting-circles	Orbiting Circles	A collection of circles which move in orbit along a circular path			vendor/magicui/r/orbiting-circles.json
+magicui	dock	Dock	An implementation of the MacOS dock using react + tailwindcss + motion	motion		vendor/magicui/r/dock.json
+magicui	word-rotate	Word Rotate	A vertical rotation of words	motion		vendor/magicui/r/word-rotate.json
+magicui	avatar-circles	Avatar Circles	Overlapping circles of avatars.			vendor/magicui/r/avatar-circles.json
+magicui	typing-animation	Typing Animation	Characters appearing in typed animation	motion		vendor/magicui/r/typing-animation.json
+magicui	sparkles-text	Sparkles Text	A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars.	motion		vendor/magicui/r/sparkles-text.json
+magicui	spinning-text	Spinning Text	The Spinning Text component animates text in a circular motion with customizable speed, direction, color, and transitions for dynamic and engaging effects.	motion		vendor/magicui/r/spinning-text.json
+magicui	comic-text	Comic Text	Comic text animation	motion		vendor/magicui/r/comic-text.json
+magicui	icon-cloud	Icon Cloud	An interactive 3D tag cloud component	lucide-react	button	vendor/magicui/r/icon-cloud.json
+magicui	text-animate	Text Animate	A text animation component that animates text using a variety of different animations.	motion		vendor/magicui/r/text-animate.json
+magicui	scroll-based-velocity	Scroll Based Velocity	Scrolling text whose speed changes based on scroll speed	motion		vendor/magicui/r/scroll-based-velocity.json
+magicui	shiny-button	Shiny Button	A shiny button component with dynamic styles in the dark mode or light mode.	motion		vendor/magicui/r/shiny-button.json
+magicui	shine-border	Shine Border	Shine border is an animated background border effect.			vendor/magicui/r/shine-border.json
+magicui	animated-circular-progress-bar	Animated Circular Progress Bar	Animated Circular Progress Bar is a component that displays a circular gauge with a percentage value.			vendor/magicui/r/animated-circular-progress-bar.json
+magicui	confetti	Confetti	Confetti animations are best used to delight your users when something special happens	canvas-confetti,@types/canvas-confetti	button	vendor/magicui/r/confetti.json
+magicui	cool-mode	Cool Mode	Cool mode effect for buttons, links, and other DOMs			vendor/magicui/r/cool-mode.json
+magicui	pulsating-button	Pulsating Button	An animated pulsating button useful for capturing attention of users.			vendor/magicui/r/pulsating-button.json
+magicui	ripple-button	Ripple Button	An animated button with ripple useful for user engagement.			vendor/magicui/r/ripple-button.json
+magicui	file-tree	File Tree	A component used to showcase the folder and file structure of a directory.			vendor/magicui/r/file-tree.json
+magicui	blur-fade	Blur Fade	Blur fade in and out animation. Used to smoothly fade in and out content.	motion		vendor/magicui/r/blur-fade.json
+magicui	safari	Safari	A safari browser mockup to showcase your website.			vendor/magicui/r/safari.json
+magicui	iphone	iPhone	A mockup of the iPhone			vendor/magicui/r/iphone.json
+magicui	rainbow-button	Rainbow Button	An animated button with a rainbow effect.			vendor/magicui/r/rainbow-button.json
+magicui	interactive-hover-button	interactive-hover-button				vendor/magicui/r/interactive-hover-button.json
+magicui	terminal	Terminal	A terminal component			vendor/magicui/r/terminal.json
+magicui	video-text	Video Text	A component that displays text with a video playing in the background.			vendor/magicui/r/video-text.json
+magicui	pixel-image	Pixel Image	A component that displays an image with a pixelated effect, creating a retro aesthetic.			vendor/magicui/r/pixel-image.json
+magicui	highlighter	Highlighter	A text highlighter that mimics the effect of a human-drawn marker stroke.	motion,rough-notation		vendor/magicui/r/highlighter.json
+magicui	animated-theme-toggler	Theme Toggler	Theme toggle with View Transitions and animated clip-path masks (circle, polygons, star), optional viewport-centered origin.	lucide-react		vendor/magicui/r/animated-theme-toggler.json
+magicui	light-rays	Light Rays	A component with animated light rays which shine down from above.	motion		vendor/magicui/r/light-rays.json
+magicui	dotted-map	Dotted Map	A component with a dotted map.	svg-dotted-map		vendor/magicui/r/dotted-map.json
+magicui	backlight	Backlight	A backlight glow effect for videos, images, and SVGs.			vendor/magicui/r/backlight.json
+magicui	kinetic-text	Kinetic Text	A text component that animates font weight of characters on hover.			vendor/magicui/r/kinetic-text.json
+magicui	text-3d-flip	Text 3D Flip	A text effect that flips each letter in 3D with a staggered animation on hover.	motion		vendor/magicui/r/text-3d-flip.json
+kokonutui	ai-prompt	AI Input Selector	My own style of chat AI input.	lucide-react,motion	textarea,button,dropdown-menu	vendor/kokonutui/r/ai-prompt.json
+kokonutui	command-button	Command Button	Command button for shortcut.	lucide-react	button	vendor/kokonutui/r/command-button.json
+kokonutui	card-flip	Card Flip	Animated flip card with gradient button and animation.	lucide-react		vendor/kokonutui/r/card-flip.json
+kokonutui	smooth-drawer	Smooth Drawer	Smooth slide-in drawer. (this was harder than i thought to make that one)	motion	drawer,button	vendor/kokonutui/r/smooth-drawer.json
+kokonutui	shape-hero	Shapes Hero	Shapes that fall from the top.	motion		vendor/kokonutui/r/shape-hero.json
+kokonutui	ai-text-loading	AI Text Loading	Thinking mode.	motion		vendor/kokonutui/r/ai-text-loading.json
+kokonutui	shimmer-text	Shimmer Text	Quite fancy.	motion		vendor/kokonutui/r/shimmer-text.json
+kokonutui	carousel-cards	Carousel Cards	Interactive carousel with card navigation.	lucide-react	card,badge,button	vendor/kokonutui/r/carousel-cards.json
+kokonutui	file-upload	File Upload	File upload with special uploading animation. Make sure to try the drag and drop.	lucide-react,motion		vendor/kokonutui/r/file-upload.json
+kokonutui	action-search-bar	Action Search Bar	Action Bar with shortcuts, and smooth dropdown animation.	lucide-react,motion	input	vendor/kokonutui/r/action-search-bar.json
+kokonutui	ai-input-search	AI Input Search	AI input with search mode.	motion	textarea	vendor/kokonutui/r/ai-input-search.json
+kokonutui	currency-transfer	Currency Transfer	Multiples step animation transaction inspired.	lucide-react,motion	card,tooltip	vendor/kokonutui/r/currency-transfer.json
+kokonutui	background-paths	Background Paths	Drawed line paths in the middle.	motion		vendor/kokonutui/r/background-paths.json
+kokonutui	beams-background	Beams Background	Animated Beams in the background that are customizable.	motion		vendor/kokonutui/r/beams-background.json
+kokonutui	apple-activity-card	Apple Activity Card	Inspired by Apple activity app.	motion		vendor/kokonutui/r/apple-activity-card.json
+kokonutui	ai-voice	AI Voice	Voice mode.	motion,lucide-react		vendor/kokonutui/r/ai-voice.json
+kokonutui	smooth-tab	Smooth Tab	Animated tab switcher.	motion,lucide-react		vendor/kokonutui/r/smooth-tab.json
+kokonutui	team-selector	Team Selector	Group selector with a different style.	motion		vendor/kokonutui/r/team-selector.json
+kokonutui	switch-button	Switch Button	Animated shadow theme switcher button.	lucide-react	button	vendor/kokonutui/r/switch-button.json
+kokonutui	bento-grid	Bento Grid	Grid of 4 cards with different content and animations.	lucide-react,motion		vendor/kokonutui/r/bento-grid.json
+kokonutui	social-button	Social Button	Animated Social show-up	lucide-react,motion	button	vendor/kokonutui/r/social-button.json
+kokonutui	hold-button	Hold Button	Hold Button with different hold duration and colors.	lucide-react,motion	button	vendor/kokonutui/r/hold-button.json
+kokonutui	attract-button	Magnet Button	Attract particles button!	lucide-react,motion	button	vendor/kokonutui/r/attract-button.json
+kokonutui	gradient-button	Gradient Button	That was so hard to make.		button	vendor/kokonutui/r/gradient-button.json
+kokonutui	v0-button	V0 Button	Open in V0.		button	vendor/kokonutui/r/v0-button.json
+kokonutui	toolbar	Toolbar	Multiples actions toolbar inspired by Figma.	lucide-react,motion		vendor/kokonutui/r/toolbar.json
+kokonutui	ai-loading	AI State Loading	Code loading pending.	motion		vendor/kokonutui/r/ai-loading.json
+kokonutui	card-stack	Stack	Stack of cards that expend onclick.	motion		vendor/kokonutui/r/card-stack.json
+kokonutui	avatar-picker	Avatar Picker	Avatar picker with rotation animation.	lucide-react,motion	card,button,input	vendor/kokonutui/r/avatar-picker.json
+kokonutui	type-writer	Typing Text	Animated TypeWritter with multiples options.	motion		vendor/kokonutui/r/type-writer.json
+kokonutui	swoosh-text	Swoosh Text	Nike inspired Text	motion		vendor/kokonutui/r/swoosh-text.json
+kokonutui	sliced-text	Sliced Text	I haven't found any usage for that component, but i like it.	motion		vendor/kokonutui/r/sliced-text.json
+kokonutui	glitch-text	Glitch Text	Why not?	motion		vendor/kokonutui/r/glitch-text.json
+kokonutui	matrix-text	Matrix Text	010110010110111101110101011100100010000001110111011001010110110001100011011011110110110101100101	motion		vendor/kokonutui/r/matrix-text.json
+kokonutui	dynamic-text	Dynamic Text	Dynamic switcher text.	motion		vendor/kokonutui/r/dynamic-text.json
+kokonutui	particle-button	Particle Button	Particle Button Animation on click.	lucide-react,motion	button	vendor/kokonutui/r/particle-button.json
+kokonutui	tweet-card	X Card	Gradient on hover X card. (The post is real!)	lucide-react		vendor/kokonutui/r/tweet-card.json
+kokonutui	scroll-text	Scroll Text	Animated on scroll texts.	motion		vendor/kokonutui/r/scroll-text.json
+kokonutui	liquid-glass-card	Liquid Glass	Liquid Glass inspired by @Apple	lucide-react		vendor/kokonutui/r/liquid-glass-card.json
+kokonutui	profile-dropdown	Profile Dropdown	Menu dropdown with action buttons.	lucide-react	dropdown-menu	vendor/kokonutui/r/profile-dropdown.json
+kokonutui	flow-field	flow-field		motion		vendor/kokonutui/r/flow-field.json
+kokonutui	loader	loader		motion		vendor/kokonutui/r/loader.json
+kokonutui	morphic-navbar	morphic-navbar		clsx		vendor/kokonutui/r/morphic-navbar.json
+kokonutui	mouse-effect-card	mouse-effect-card		motion	card,button	vendor/kokonutui/r/mouse-effect-card.json
+kokonutui	slide-text-button	slide-text-button		motion	button	vendor/kokonutui/r/slide-text-button.json
+kokonutui	spotlight-cards	spotlight-cards		motion,lucide-react		vendor/kokonutui/r/spotlight-cards.json
+reactbits	AnimatedContent-TS-TW	AnimatedContent	Wrapper that animates any children on scroll or mount with configurable direction, distance, duration, easing and disappear options.	gsap@^3.13.0		vendor/reactbits/r/AnimatedContent-TS-TW.json
+reactbits	BlobCursor-TS-TW	BlobCursor	Organic blob cursor that smoothly follows the pointer with inertia and elastic morphing.	gsap@^3.13.0		vendor/reactbits/r/BlobCursor-TS-TW.json
+reactbits	ClickSpark-TS-TW	ClickSpark	Creates particle spark bursts at click position.			vendor/reactbits/r/ClickSpark-TS-TW.json
+reactbits	Crosshair-TS-TW	Crosshair	Custom crosshair cursor with tracking, and link hover effects.	gsap@^3.13.0		vendor/reactbits/r/Crosshair-TS-TW.json
+reactbits	Cubes-TS-TW	Cubes	3D rotating cube cluster. Supports auto-rotation or hover interaction.	gsap@^3.13.0		vendor/reactbits/r/Cubes-TS-TW.json
+reactbits	ElectricBorder-TS-TW	ElectricBorder	Jittery electric energy border with animated arcs, glow and adjustable intensity.			vendor/reactbits/r/ElectricBorder-TS-TW.json
+reactbits	FadeContent-TS-TW	FadeContent	Simple directional fade / slide entrance / exit wrapper with threshold-based activation.	gsap@^3.13.0		vendor/reactbits/r/FadeContent-TS-TW.json
+reactbits	GlareHover-TS-TW	GlareHover	Adds a realistic moving glare highlight on hover over any element.			vendor/reactbits/r/GlareHover-TS-TW.json
+reactbits	GradualBlur-TS-TW	GradualBlur	Progressively un-blurs content based on scroll or trigger creating a cinematic reveal.			vendor/reactbits/r/GradualBlur-TS-TW.json
+reactbits	GhostCursor-TS-TW	GhostCursor	Semi-transparent ghost cursor that smoothly follows the real cursor with a trailing effect.	three@^0.180.0		vendor/reactbits/r/GhostCursor-TS-TW.json
+reactbits	ImageTrail-TS-TW	ImageTrail	Cursor-based image trail with several built-in variants.	gsap@^3.13.0		vendor/reactbits/r/ImageTrail-TS-TW.json
+reactbits	LogoLoop-TS-TW	LogoLoop	Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.			vendor/reactbits/r/LogoLoop-TS-TW.json
+reactbits	Magnet-TS-TW	Magnet	Elements magnetically ease toward the cursor then settle back with spring physics.			vendor/reactbits/r/Magnet-TS-TW.json
+reactbits	MagnetLines-TS-TW	MagnetLines	Animated field lines bend toward the cursor.			vendor/reactbits/r/MagnetLines-TS-TW.json
+reactbits	MetaBalls-TS-TW	MetaBalls	Liquid metaball blobs that merge and separate with smooth implicit surface animation.	ogl@^1.0.11		vendor/reactbits/r/MetaBalls-TS-TW.json
+reactbits	Strands-TS-TW	Strands	Glowing ribbon-like strands that ripple and weave across a transparent canvas.	ogl@^1.0.11		vendor/reactbits/r/Strands-TS-TW.json
+reactbits	MetallicPaint-TS-TW	MetallicPaint	Liquid metallic paint shader which can be applied to SVG elements.			vendor/reactbits/r/MetallicPaint-TS-TW.json
+reactbits	Noise-TS-TW	Noise	Animated film grain / noise overlay adding subtle texture and motion.			vendor/reactbits/r/Noise-TS-TW.json
+reactbits	PixelTrail-TS-TW	PixelTrail	Pixelated cursor trail emitting fading squares with retro digital feel.	@react-three/drei@^10.7.4,@react-three/fiber@^9.3.0,three@^0.180.0		vendor/reactbits/r/PixelTrail-TS-TW.json
+reactbits	PixelTransition-TS-TW	PixelTransition	Pixel dissolve transition for content reveal on hover.	gsap@^3.13.0		vendor/reactbits/r/PixelTransition-TS-TW.json
+reactbits	Ribbons-TS-TW	Ribbons	Flowing responsive ribbons/cursor trail driven by physics and pointer motion.	ogl@^1.0.11		vendor/reactbits/r/Ribbons-TS-TW.json
+reactbits	ShapeBlur-TS-TW	ShapeBlur	Morphing blurred geometric shape. The effect occurs on hover.	three@^0.180.0		vendor/reactbits/r/ShapeBlur-TS-TW.json
+reactbits	SplashCursor-TS-TW	SplashCursor	Liquid splash burst at cursor with curling ripples and waves.			vendor/reactbits/r/SplashCursor-TS-TW.json
+reactbits	StarBorder-TS-TW	StarBorder	Animated star / sparkle border orbiting content with twinkle pulses.			vendor/reactbits/r/StarBorder-TS-TW.json
+reactbits	StickerPeel-TS-TW	StickerPeel	Sticker corner lift + peel interaction using 3D transform and shadow depth.	gsap@^3.13.0		vendor/reactbits/r/StickerPeel-TS-TW.json
+reactbits	TargetCursor-TS-TW	TargetCursor	A cursor follow animation with 4 corners that lock onto targets.	gsap@^3.13.0		vendor/reactbits/r/TargetCursor-TS-TW.json
+reactbits	LaserFlow-TS-TW	LaserFlow	Dynamic laser light that flows onto a surface, customizable effect.	three@^0.180.0		vendor/reactbits/r/LaserFlow-TS-TW.json
+reactbits	Antigravity-TS-TW	Antigravity	3D antigravity particle field that repels from the cursor with smooth motion.	@react-three/fiber@^9.3.0,three@^0.180.0		vendor/reactbits/r/Antigravity-TS-TW.json
+reactbits	OrbitImages-TS-TW	OrbitImages	SVG Path customizable orbiting images effect	motion@^12.23.12		vendor/reactbits/r/OrbitImages-TS-TW.json
+reactbits	MagicRings-TS-TW	MagicRings	Interactive magic rings effect with customizable parameters.	three@^0.180.0		vendor/reactbits/r/MagicRings-TS-TW.json
+reactbits	ASCIIText-TS-TW	ASCIIText	Renders text with an animated ASCII background for a retro feel.	three@^0.180.0		vendor/reactbits/r/ASCIIText-TS-TW.json
+reactbits	BlurText-TS-TW	BlurText	Text starts blurred then crisply resolves for a soft-focus reveal effect.	motion@^12.23.12		vendor/reactbits/r/BlurText-TS-TW.json
+reactbits	CircularText-TS-TW	CircularText	Layouts characters around a circle with optional rotation animation.	motion@^12.23.12		vendor/reactbits/r/CircularText-TS-TW.json
+reactbits	CountUp-TS-TW	CountUp	Animated number counter supporting formatting and decimals.	motion@^12.23.12		vendor/reactbits/r/CountUp-TS-TW.json
+reactbits	CurvedLoop-TS-TW	CurvedLoop	Flowing looping text path along a customizable curve with drag interaction.			vendor/reactbits/r/CurvedLoop-TS-TW.json
+reactbits	DecryptedText-TS-TW	DecryptedText	Hacker-style decryption cycling random glyphs until resolving to real text.	motion@^12.23.12		vendor/reactbits/r/DecryptedText-TS-TW.json
+reactbits	FallingText-TS-TW	FallingText	Characters fall with gravity + bounce creating a playful entrance.	matter-js@^0.20.0		vendor/reactbits/r/FallingText-TS-TW.json
+reactbits	FuzzyText-TS-TW	FuzzyText	Vibrating fuzzy text with controllable hover intensity.			vendor/reactbits/r/FuzzyText-TS-TW.json
+reactbits	GlitchText-TS-TW	GlitchText	RGB split and distortion glitch effect with jitter effects.			vendor/reactbits/r/GlitchText-TS-TW.json
+reactbits	GradientText-TS-TW	GradientText	Animated gradient sweep across live text with speed and color control.	motion@^12.23.12		vendor/reactbits/r/GradientText-TS-TW.json
+reactbits	RotatingText-TS-TW	RotatingText	Cycles through multiple phrases with 3D rotate / flip transitions.	motion@^12.23.12		vendor/reactbits/r/RotatingText-TS-TW.json
+reactbits	ScrambledText-TS-TW	ScrambledText	Detects cursor position and applies a distortion effect to text.	gsap@^3.13.0		vendor/reactbits/r/ScrambledText-TS-TW.json
+reactbits	ScrollFloat-TS-TW	ScrollFloat	Text gently floats / parallax shifts on scroll.	gsap@^3.13.0		vendor/reactbits/r/ScrollFloat-TS-TW.json
+reactbits	ScrollReveal-TS-TW	ScrollReveal	Text gently unblurs and reveals on scroll.	gsap@^3.13.0		vendor/reactbits/r/ScrollReveal-TS-TW.json
+reactbits	ScrollVelocity-TS-TW	ScrollVelocity	Text marquee animatio - speed and distortion scale with user's scroll velocity.	motion@^12.23.12		vendor/reactbits/r/ScrollVelocity-TS-TW.json
+reactbits	ShinyText-TS-TW	ShinyText	Metallic sheen sweeps across text producing a reflective highlight.	motion@^12.23.12		vendor/reactbits/r/ShinyText-TS-TW.json
+reactbits	SplitText-TS-TW	SplitText	Splits text into characters / words for staggered entrance animation.	gsap@^3.13.0,@gsap/react@^2.1.2		vendor/reactbits/r/SplitText-TS-TW.json
+reactbits	TextCursor-TS-TW	TextCursor	Make any text element follow your cursor, leaving a trail of copies behind it.	motion@^12.23.12		vendor/reactbits/r/TextCursor-TS-TW.json
+reactbits	TextPressure-TS-TW	TextPressure	Characters scale / warp interactively based on pointer pressure zone.			vendor/reactbits/r/TextPressure-TS-TW.json
+reactbits	TextType-TS-TW	TextType	Typewriter effect with blinking cursor and adjustable typing cadence.	gsap@^3.13.0		vendor/reactbits/r/TextType-TS-TW.json
+reactbits	TrueFocus-TS-TW	TrueFocus	Applies dynamic blur / clarity based over a series of words in order.	motion@^12.23.12		vendor/reactbits/r/TrueFocus-TS-TW.json
+reactbits	VariableProximity-TS-TW	VariableProximity	Letter styling changes continuously with pointer distance mapping.	motion@^12.23.12		vendor/reactbits/r/VariableProximity-TS-TW.json
+reactbits	Shuffle-TS-TW	Shuffle	Animated text reveal where characters shuffle before settling.	gsap@^3.13.0,@gsap/react@^2.1.2		vendor/reactbits/r/Shuffle-TS-TW.json
+reactbits	AnimatedList-TS-TW	AnimatedList	List items enter with staggered motion variants for polished reveals.	motion@^12.23.12		vendor/reactbits/r/AnimatedList-TS-TW.json
+reactbits	BounceCards-TS-TW	BounceCards	Cards bounce that bounce in on mount.	gsap@^3.13.0		vendor/reactbits/r/BounceCards-TS-TW.json
+reactbits	BubbleMenu-TS-TW	BubbleMenu	Floating circular expanding menu with staggered item reveal.	gsap@^3.13.0		vendor/reactbits/r/BubbleMenu-TS-TW.json
+reactbits	CardNav-TS-TW	CardNav	Expandable navigation bar with card panels revealing nested links.	gsap@^3.13.0,react-icons@^5.5.0		vendor/reactbits/r/CardNav-TS-TW.json
+reactbits	CardSwap-TS-TW	CardSwap	Cards animate position swapping with smooth layout transitions.	gsap@^3.13.0		vendor/reactbits/r/CardSwap-TS-TW.json
+reactbits	Carousel-TS-TW	Carousel	Responsive carousel with touch gestures, looping and transitions.	motion@^12.23.12,react-icons@^5.5.0		vendor/reactbits/r/Carousel-TS-TW.json
+reactbits	ChromaGrid-TS-TW	ChromaGrid	A responsive grid of grayscale tiles. Hovering the grid reaveals their colors.	gsap@^3.13.0		vendor/reactbits/r/ChromaGrid-TS-TW.json
+reactbits	CircularGallery-TS-TW	CircularGallery	Circular orbit gallery rotating images.	ogl@^1.0.11		vendor/reactbits/r/CircularGallery-TS-TW.json
+reactbits	Counter-TS-TW	Counter	Flexible animated counter supporting increments + easing.	motion@^12.23.12		vendor/reactbits/r/Counter-TS-TW.json
+reactbits	DecayCard-TS-TW	DecayCard	Hover parallax effect that disintegrates the content of a card.	gsap@^3.13.0		vendor/reactbits/r/DecayCard-TS-TW.json
+reactbits	Dock-TS-TW	Dock	macOS style magnifying dock with proximity scaling of icons.	motion@^12.23.12		vendor/reactbits/r/Dock-TS-TW.json
+reactbits	DomeGallery-TS-TW	DomeGallery	Immersive 3D dome gallery projecting images on a hemispheric surface.	@use-gesture/react@^10.2.27		vendor/reactbits/r/DomeGallery-TS-TW.json
+reactbits	ElasticSlider-TS-TW	ElasticSlider	Slider handle stretches elastically then snaps with spring physics.	motion@^12.23.12		vendor/reactbits/r/ElasticSlider-TS-TW.json
+reactbits	FlowingMenu-TS-TW	FlowingMenu	Liquid flowing active indicator glides between menu items.	gsap@^3.13.0		vendor/reactbits/r/FlowingMenu-TS-TW.json
+reactbits	FluidGlass-TS-TW	FluidGlass	Glassmorphism container with animated liquid distortion refraction.	three@^0.180.0,@react-three/fiber@^9.3.0,@react-three/drei@^10.7.4,maath@^0.10.8		vendor/reactbits/r/FluidGlass-TS-TW.json
+reactbits	FlyingPosters-TS-TW	FlyingPosters	3D posters rotate on scroll infinitely.	ogl@^1.0.11		vendor/reactbits/r/FlyingPosters-TS-TW.json
+reactbits	Folder-TS-TW	Folder	Interactive folder opens to reveal nested content smooth motion.			vendor/reactbits/r/Folder-TS-TW.json
+reactbits	GlassIcons-TS-TW	GlassIcons	Icon set styled with frosted glass blur.			vendor/reactbits/r/GlassIcons-TS-TW.json
+reactbits	GlassSurface-TS-TW	GlassSurface	Advanced Apple-style glass surface with real-time distortion + lighting.			vendor/reactbits/r/GlassSurface-TS-TW.json
+reactbits	GooeyNav-TS-TW	GooeyNav	Navigation indicator morphs with gooey blob transitions between items.			vendor/reactbits/r/GooeyNav-TS-TW.json
+reactbits	InfiniteMenu-TS-TW	InfiniteMenu	Horizontally looping menu effect that scrolls endlessly with seamless wrap.	gl-matrix@^3.4.3		vendor/reactbits/r/InfiniteMenu-TS-TW.json
+reactbits	Lanyard-TS-TW	Lanyard	Swinging 3D lanyard / badge card with realistic inertial motion.			vendor/reactbits/r/Lanyard-TS-TW.json
+reactbits	MagicBento-TS-TW	MagicBento	Interactive bento grid tiles expand + animate with various options.	gsap@^3.13.0		vendor/reactbits/r/MagicBento-TS-TW.json
+reactbits	Masonry-TS-TW	Masonry	Responsive masonry layout with animated reflow + gaps optimization.	gsap@^3.13.0		vendor/reactbits/r/Masonry-TS-TW.json
+reactbits	ModelViewer-TS-TW	ModelViewer	Three.js model viewer with orbit controls and lighting presets.	@react-three/fiber@^9.3.0,@react-three/drei@^10.7.4,three@^0.180.0		vendor/reactbits/r/ModelViewer-TS-TW.json
+reactbits	PillNav-TS-TW	PillNav	Minimal pill nav with sliding active highlight + smooth easing.	react-router-dom@^6.30.1,gsap@^3.13.0		vendor/reactbits/r/PillNav-TS-TW.json
+reactbits	PixelCard-TS-TW	PixelCard	Card content revealed through pixel expansion transition.			vendor/reactbits/r/PixelCard-TS-TW.json
+reactbits	ProfileCard-TS-TW	ProfileCard	Animated profile card glare with 3D hover effect.			vendor/reactbits/r/ProfileCard-TS-TW.json
+reactbits	ScrollStack-TS-TW	ScrollStack	Overlapping card stack reveals on scroll with depth layering.	lenis@^1.3.13		vendor/reactbits/r/ScrollStack-TS-TW.json
+reactbits	SpotlightCard-TS-TW	SpotlightCard	Dynamic spotlight follows cursor casting gradient illumination.			vendor/reactbits/r/SpotlightCard-TS-TW.json
+reactbits	BorderGlow-TS-TW	BorderGlow	Glowing mesh-gradient border that follows cursor direction and intensifies near edges.			vendor/reactbits/r/BorderGlow-TS-TW.json
+reactbits	LineSidebar-TS-TW	LineSidebar	Static list navigation with a cursor-proximity effect that shifts and highlights nearby items.			vendor/reactbits/r/LineSidebar-TS-TW.json
+reactbits	OptionWheel-TS-TW	OptionWheel	Curved option picker that spins via scroll, drag, or arrow keys, fading and tilting items away from the selection.			vendor/reactbits/r/OptionWheel-TS-TW.json
+reactbits	SpecularButton-TS-TW	SpecularButton	Glass button with a shader-driven specular rim light that sweeps around the edge and follows the cursor.	ogl@^1.0.11		vendor/reactbits/r/SpecularButton-TS-TW.json
+reactbits	CursorGrid-TS-TW	CursorGrid	Canvas grid whose cells light up around the cursor with configurable radius, falloff and click pulses.			vendor/reactbits/r/CursorGrid-TS-TW.json
+reactbits	CurvedInput-TS-TW	CurvedInput	Arc-bent input bar with text, caret and submit button all following the curve.			vendor/reactbits/r/CurvedInput-TS-TW.json
+reactbits	Stack-TS-TW	Stack	Layered stack with swipe animations, autoplay and smooth transitions.	motion@^12.23.12		vendor/reactbits/r/Stack-TS-TW.json
+reactbits	Stepper-TS-TW	Stepper	Animated multi-step progress indicator with active state transitions.	motion@^12.23.12		vendor/reactbits/r/Stepper-TS-TW.json
+reactbits	TiltedCard-TS-TW	TiltedCard	3D perspective tilt card reacting to pointer.	motion@^12.23.12		vendor/reactbits/r/TiltedCard-TS-TW.json
+reactbits	StaggeredMenu-TS-TW	StaggeredMenu	Menu with staggered item animations and smooth transitions on open/close.	gsap@^3.13.0		vendor/reactbits/r/StaggeredMenu-TS-TW.json
+reactbits	ReflectiveCard-TS-TW	ReflectiveCard	Card with dynamic webcam reflection and glare effects that respond to cursor movement.	lucide-react@^0.542.0		vendor/reactbits/r/ReflectiveCard-TS-TW.json
+reactbits	Aurora-TS-TW	Aurora	Flowing aurora gradient background.	ogl@^1.0.11		vendor/reactbits/r/Aurora-TS-TW.json
+reactbits	Balatro-TS-TW	Balatro	The balatro shader, fully customizalbe and interactive.	ogl@^1.0.11		vendor/reactbits/r/Balatro-TS-TW.json
+reactbits	Ballpit-TS-TW	Ballpit	Physics ball pit simulation with bouncing colorful spheres.	gsap@^3.13.0,three@^0.180.0		vendor/reactbits/r/Ballpit-TS-TW.json
+reactbits	Beams-TS-TW	Beams	Crossing animated ribbons with customizable properties.	three@^0.180.0,@react-three/fiber@^9.3.0,@react-three/drei@^10.7.4		vendor/reactbits/r/Beams-TS-TW.json
+reactbits	ColorBends-TS-TW	ColorBends	Vibrant color bends with smooth flowing animation.	three@^0.180.0		vendor/reactbits/r/ColorBends-TS-TW.json
+reactbits	DarkVeil-TS-TW	DarkVeil	Subtle dark background with a smooth animation and postprocessing.	ogl@^1.0.11		vendor/reactbits/r/DarkVeil-TS-TW.json
+reactbits	Dither-TS-TW	Dither	Retro dithered noise shader background.	@react-three/fiber@^9.3.0,@react-three/postprocessing@^3.0.4,postprocessing@^6.36.0,three@^0.180.0		vendor/reactbits/r/Dither-TS-TW.json
+reactbits	DotField-TS-TW	DotField	Interactive dot grid with cursor bulge, glow, sparkle, and wave effects.			vendor/reactbits/r/DotField-TS-TW.json
+reactbits	DotGrid-TS-TW	DotGrid	Animated dot grid with cursor interactions.	gsap@^3.13.0		vendor/reactbits/r/DotGrid-TS-TW.json
+reactbits	FaultyTerminal-TS-TW	FaultyTerminal	Terminal CRT scanline squares effect with flicker + noise.	ogl@^1.0.11		vendor/reactbits/r/FaultyTerminal-TS-TW.json
+reactbits	Galaxy-TS-TW	Galaxy	Parallax realistic starfield with pointer interactions.	ogl@^1.0.11		vendor/reactbits/r/Galaxy-TS-TW.json
+reactbits	GradientBlinds-TS-TW	GradientBlinds	Layered gradient blinds with spotlight and noise distortion.	ogl@^1.0.11		vendor/reactbits/r/GradientBlinds-TS-TW.json
+reactbits	Lightfall-TS-TW	Lightfall	Colorful light streaks raining down a glowing tunnel with a cursor light.	ogl@^1.0.11		vendor/reactbits/r/Lightfall-TS-TW.json
+reactbits	Ferrofluid-TS-TW	Ferrofluid	A churning magnetic fluid traced by glowing contour lines, with a cursor magnet.	ogl@^1.0.11		vendor/reactbits/r/Ferrofluid-TS-TW.json
+reactbits	Grainient-TS-TW	Grainient	Grainy gradient swirls with soft wave distortion.	ogl@^1.0.11		vendor/reactbits/r/Grainient-TS-TW.json
+reactbits	GridScan-TS-TW	GridScan	Animated grid room 3D scan effect and cool interactions.	face-api.js@^0.22.2,postprocessing@^6.36.0,three@^0.180.0		vendor/reactbits/r/GridScan-TS-TW.json
+reactbits	GridDistortion-TS-TW	GridDistortion	Warped grid mesh distorts smoothly reacting to cursor.	three@^0.180.0		vendor/reactbits/r/GridDistortion-TS-TW.json
+reactbits	GridMotion-TS-TW	GridMotion	Perspective moving grid lines based on cusror position.	gsap@^3.13.0		vendor/reactbits/r/GridMotion-TS-TW.json
+reactbits	Hyperspeed-TS-TW	Hyperspeed	Animated lines continuously moving to simulate hyperspace travel on click hold.	postprocessing@^6.36.0,three@^0.180.0		vendor/reactbits/r/Hyperspeed-TS-TW.json
+reactbits	Iridescence-TS-TW	Iridescence	Slick iridescent shader with shifting waves.	ogl@^1.0.11		vendor/reactbits/r/Iridescence-TS-TW.json
+reactbits	LetterGlitch-TS-TW	LetterGlitch	Matrix style letter animation.			vendor/reactbits/r/LetterGlitch-TS-TW.json
+reactbits	LightRays-TS-TW	LightRays	Volumetric light rays/beams with customizable direction.	ogl@^1.0.11		vendor/reactbits/r/LightRays-TS-TW.json
+reactbits	Lightning-TS-TW	Lightning	Procedural lightning bolts with branching and glow flicker.			vendor/reactbits/r/Lightning-TS-TW.json
+reactbits	LineWaves-TS-TW	LineWaves	Animated line wave pattern with colorful warped distortion.	ogl@^1.0.11		vendor/reactbits/r/LineWaves-TS-TW.json
+reactbits	EvilEye-TS-TW	EvilEye	Procedural evil eye shader with animated iris, slit pupil, and fiery outer glow.	ogl@^1.0.11		vendor/reactbits/r/EvilEye-TS-TW.json
+reactbits	Radar-TS-TW	Radar	Radar sweep effect with concentric rings, radial spokes, and a rotating beam.	ogl@^1.0.11		vendor/reactbits/r/Radar-TS-TW.json
+reactbits	SoftAurora-TS-TW	SoftAurora	Soft aurora borealis shader with 3D Perlin noise and cosine gradient palettes.	ogl@^1.0.11		vendor/reactbits/r/SoftAurora-TS-TW.json
+reactbits	LiquidChrome-TS-TW	LiquidChrome	Liquid metallic chrome shader with flowing reflective surface.	ogl@^1.0.11		vendor/reactbits/r/LiquidChrome-TS-TW.json
+reactbits	Orb-TS-TW	Orb	Floating energy orb with customizable hover effect.	ogl@^1.0.11		vendor/reactbits/r/Orb-TS-TW.json
+reactbits	Particles-TS-TW	Particles	Configurable particle system.	ogl@^1.0.11		vendor/reactbits/r/Particles-TS-TW.json
+reactbits	PixelBlast-TS-TW	PixelBlast	Exploding pixel particle bursts with optional liquid postprocessing.	postprocessing@^6.36.0,three@^0.180.0		vendor/reactbits/r/PixelBlast-TS-TW.json
+reactbits	Plasma-TS-TW	Plasma	Organic plasma gradients swirl + morph with smooth turbulence.	ogl@^1.0.11		vendor/reactbits/r/Plasma-TS-TW.json
+reactbits	PlasmaWave-TS-TW	PlasmaWave	Raymarched plasma waves with dual-wave interference and OGL.	ogl@^1.0.11		vendor/reactbits/r/PlasmaWave-TS-TW.json
+reactbits	Prism-TS-TW	Prism	Rotating prism with configurable intensity, size, and colors.	ogl@^1.0.11		vendor/reactbits/r/Prism-TS-TW.json
+reactbits	PrismaticBurst-TS-TW	PrismaticBurst	Burst of light rays with controllable color, distortion, amount.	ogl@^1.0.11		vendor/reactbits/r/PrismaticBurst-TS-TW.json
+reactbits	RippleGrid-TS-TW	RippleGrid	A grid that continuously animates with a ripple effect.	ogl@^1.0.11		vendor/reactbits/r/RippleGrid-TS-TW.json
+reactbits	Silk-TS-TW	Silk	Smooth waves background with soft lighting.	@react-three/fiber@^9.3.0,three@^0.180.0		vendor/reactbits/r/Silk-TS-TW.json
+reactbits	SideRays-TS-TW	SideRays	Animated light rays emanating from the side with customizable colors and speed.	ogl@^1.0.11		vendor/reactbits/r/SideRays-TS-TW.json
+reactbits	ShapeGrid-TS-TW	ShapeGrid	Animated grid with shape variants (square, hexagon, circle, triangle) + direction customization.			vendor/reactbits/r/ShapeGrid-TS-TW.json
+reactbits	Threads-TS-TW	Threads	Animated pattern of lines forming a fabric-like motion.	ogl@^1.0.11		vendor/reactbits/r/Threads-TS-TW.json
+reactbits	Waves-TS-TW	Waves	Layered lines that form smooth wave patterns with animation.			vendor/reactbits/r/Waves-TS-TW.json
+reactbits	LiquidEther-TS-TW	LiquidEther	Interactive liquid shader with flowing distortion and customizable colors.	three@^0.180.0		vendor/reactbits/r/LiquidEther-TS-TW.json
+reactbits	FloatingLines-TS-TW	FloatingLines	3D floating lines that react to cursor movement.	three@^0.180.0		vendor/reactbits/r/FloatingLines-TS-TW.json
+reactbits	LightPillar-TS-TW	LightPillar	Vertical pillar of light with glow effects.	three@^0.180.0		vendor/reactbits/r/LightPillar-TS-TW.json
+reactbits	PixelSnow-TS-TW	PixelSnow	Falling pixelated snow effect with customizable density and speed.	three@^0.180.0		vendor/reactbits/r/PixelSnow-TS-TW.json
+motion-primitives	accordion	Accordion	A collapsible content component with smooth animations for showing and hiding content.	motion		vendor/motion-primitives/core/accordion.tsx
+motion-primitives	animated-background	Animated Background	A component that provides animated background effects for UI elements.	motion		vendor/motion-primitives/core/animated-background.tsx
+motion-primitives	animated-group	Animated Group	A container component that applies coordinated animations to a group of child elements.	motion		vendor/motion-primitives/core/animated-group.tsx
+motion-primitives	animated-number	Animated Number	A component that animates number changes with smooth transitions.	motion		vendor/motion-primitives/core/animated-number.tsx
+motion-primitives	border-trail	Border Trail	An effect that creates animated border trails around elements on interaction.	motion		vendor/motion-primitives/core/border-trail.tsx
+motion-primitives	carousel	Carousel	A component for cycling through elements with smooth transitions.	motion		vendor/motion-primitives/core/carousel.tsx
+motion-primitives	cursor	Cursor	A custom cursor component with animated effects and interactions.	motion		vendor/motion-primitives/core/cursor.tsx
+motion-primitives	dialog	Dialog	A modal dialog component with smooth entrance and exit animations.	motion		vendor/motion-primitives/core/dialog.tsx
+motion-primitives	disclosure	Disclosure	A component that shows and hides content with animated transitions.	motion		vendor/motion-primitives/core/disclosure.tsx
+motion-primitives	in-view	In View	A component that triggers animations when elements enter the viewport.	motion		vendor/motion-primitives/core/in-view.tsx
+motion-primitives	infinite-slider	Infinite Slider	A slider component that loops infinitely through its content.	motion,react-use-measure		vendor/motion-primitives/core/infinite-slider.tsx
+motion-primitives	transition-panel	Transition Panel	A panel component with smooth transitions between different states.	motion		vendor/motion-primitives/core/transition-panel.tsx
+motion-primitives	text-effect	Text Effect	A component that applies animated effects to text content.	motion		vendor/motion-primitives/core/text-effect.tsx
+motion-primitives	text-loop	Text Loop	A component that cycles through different text phrases with animations.	motion		vendor/motion-primitives/core/text-loop.tsx
+motion-primitives	text-morph	Text Morph	A component that morphs between different text strings with smooth transitions.	motion		vendor/motion-primitives/core/text-morph.tsx
+motion-primitives	text-roll	Text Roll	A component that animates text with a rolling effect.	motion		vendor/motion-primitives/core/text-roll.tsx
+motion-primitives	text-scramble	Text Scramble	A component that creates a scrambling text effect during transitions.	motion		vendor/motion-primitives/core/text-scramble.tsx
+motion-primitives	text-shimmer	Text Shimmer	A component that applies a shimmering effect to text.	motion		vendor/motion-primitives/core/text-shimmer.tsx
+motion-primitives	text-shimmer-wave	Text Shimmer Wave	A component that creates a wave-like shimmer effect on text.	motion		vendor/motion-primitives/core/text-shimmer-wave.tsx
+motion-primitives	magnetic	Magnetic	A component that creates a magnetic attraction effect on hover.	motion		vendor/motion-primitives/core/magnetic.tsx
+motion-primitives	morphing-dialog	Morphing Dialog	A dialog that morphs from its trigger element with smooth transitions.	motion		vendor/motion-primitives/core/morphing-dialog.tsx
+motion-primitives	morphing-popover	Morphing Popover	A popover component that morphs from its trigger with fluid animations.	motion		vendor/motion-primitives/core/morphing-popover.tsx
+motion-primitives	dock	Dock	A macOS-style dock component with scaling and movement effects.	motion		vendor/motion-primitives/core/dock.tsx
+motion-primitives	glow-effect	Glow Effect	A component that creates a glowing effect on elements based on cursor movement.	motion		vendor/motion-primitives/core/glow-effect.tsx
+motion-primitives	image-comparison	Image Comparison	A component for comparing two images with an interactive slider.	motion		vendor/motion-primitives/core/image-comparison.tsx
+motion-primitives	toolbar-dynamic	Toolbar Dynamic	A toolbar component with dynamic appearance based on user interaction.	motion		vendor/motion-primitives/core/toolbar-dynamic.tsx
+motion-primitives	toolbar-expandable	Toolbar Expandable	An expandable toolbar that reveals additional options with animations.	motion,react-use-measure		vendor/motion-primitives/core/toolbar-expandable.tsx
+motion-primitives	progressive-blur	Progressive Blur	A component that applies progressive blur effects to elements.	motion		vendor/motion-primitives/core/progressive-blur.tsx
+motion-primitives	scroll-progress	Scroll Progress	A component that visualizes scroll progress with animated indicators.	motion		vendor/motion-primitives/core/scroll-progress.tsx
+motion-primitives	sliding-number	Sliding Number	A component that transitions between numbers with a sliding animation.	motion,react-use-measure		vendor/motion-primitives/core/sliding-number.tsx
+motion-primitives	spotlight	Spotlight	A component that creates a spotlight effect following cursor movement.	motion		vendor/motion-primitives/core/spotlight.tsx
+motion-primitives	spinning-text	Spinning Text	A component that animates text with a spinning rotation effect.	motion		vendor/motion-primitives/core/spinning-text.tsx
+motion-primitives	tilt	Tilt	A component that applies 3D tilt effects to elements based on cursor position.	motion		vendor/motion-primitives/core/tilt.tsx
