@@ -18,28 +18,45 @@ treatments on one page.
 - Placeholders: never abstract filler art. Omit the section, or make the
   placeholder look intentional (styled cards, real copy, CSS treatments)
   and mark it for replacement.
+- Every recipe ends with an **Amplify** ladder — sanctioned escalations, in
+  order. Climb it by default (Rule 0): stop only where the brief, the stack,
+  or a restraint ceiling stops you — never out of laziness. Each rung must
+  pass the coherence check (brief tokens, one motion vocabulary, one icon
+  weight); Amplify extends a recipe, it never stacks a second recipe's
+  background or text vocabulary. New arsenal sources join recipes as new
+  rungs, so the ladders are also where the arsenal grows.
 - Before calling a build done: RENDER IT AND LOOK AT IT. Ask: is there at
   least one memorable moment? does the rhythm hold through a full scroll?
   would the chosen inspiration references sit comfortably beside it? how many
-  arsenal sources are genuinely working together? is it impressive, exciting,
-  engaging — or merely correct? would this exact hero appear on any other
-  client's site? (if yes, re-pick the treatment — see Rule 0 variation law).
-  Fix, re-look, then ship. Full rubric: `evals/judging.md`.
+  arsenal sources are genuinely working together? how many Amplify rungs did
+  you climb — and can you justify every rung you skipped? is it impressive,
+  exciting, engaging — or merely correct? would this exact hero appear on any
+  other client's site? (if yes, re-pick the treatment — see Rule 0 variation
+  law). Fix, re-look, then ship. Full rubric: `evals/judging.md`.
 
 ## 1. Statement hero (award-site energy)
 
-Shader gradient + split-text reveal + smooth scroll.
-1. Background: `sources/shadergradient.md` → pick preset from
-   `_index/shadergradient-presets.tsv` (halo = warm plane, pensive = purple
-   sphere, mint = water). `npm i @shadergradient/react @react-three/fiber three`.
-   Render absolutely-positioned behind hero, `pointer-events: none`.
-2. Headline: grep `split\|text` in `_index/components.tsv` — reactbits
-   `SplitText-TS-TW` (GSAP-based) or magicui `text-animate`. One text effect
-   per page.
-3. Scroll: `sources/lenis.md` init in layout; hero content parallax via GSAP
-   ScrollTrigger (`sources/gsap.md`, wire Lenis to GSAP ticker — see card).
-4. CTA hover: brief's hover token only (e.g. 150ms scale). No extra flourish.
-Cost note: one WebGL canvas — do not add vanta elsewhere on the page.
+Animated background + split-text reveal + smooth scroll — the full treatment.
+0. Direction FIRST: grep `_index/inspiration.tsv` for the vertical, palette
+   from `_index/palettes.tsv`/brand → brief tokens (orchestration.md Phase 0).
+1. Hero moment — shortlist 3 across classes per Rule 0: a shadergradient
+   preset (`_index/shadergradient-presets.tsv`, R3F:
+   `npm i @shadergradient/react @react-three/fiber three`) vs a vanta scene
+   (recipe 5's mood map) vs a component background (grep
+   `beam\|grid\|particle` in `components.tsv`). Pick the most client-specific;
+   render absolutely-positioned behind the hero, `pointer-events: none`.
+2. Headline: reactbits `SplitText-TS-TW` (GSAP) or magicui `text-animate` —
+   ONE text-effect vocabulary per page, and the hero owns it.
+3. Scroll: `sources/lenis.md` init in layout, wired to the GSAP ticker (card
+   snippet); hero parallax + below-fold reveals via ScrollTrigger.
+4. Below the hero is still a full page (craft floor anatomy): entrances from
+   ONE animista family staggered 60–90ms, phosphor icons ONE weight, proof
+   row via magicui `number-ticker`.
+5. CTA hover: brief's hover token only (e.g. 150ms scale).
+Amplify: marquee logo strip under the hero → motion-primitives
+`scroll-progress` → the hero's SAME text effect as line-reveals on section
+headlines (extend the vocabulary, never add a second one).
+Restraint ceiling: ONE WebGL canvas, one text vocabulary, one icon weight.
 
 ## 2. Dark SaaS landing page
 
@@ -58,6 +75,14 @@ Cost note: one WebGL canvas — do not add vanta elsewhere on the page.
    brief tokens (plain markup + shadcn/ui), reusing the section entrance vocab.
 6. Entrances: animista `fade-in-bottom` family (grep `_index/animista.tsv`),
    staggered 60–90ms, wrapped in `prefers-reduced-motion` guard.
+7. Scroll: lenis on the gsap ticker; scroll-enter triggers via ScrollTrigger
+   or IntersectionObserver — a marketing page never ships on raw scroll.
+8. One text moment on the hero headline (magicui `text-animate` or reactbits
+   `SplitText-TS-TW`) — the page's single text-effect vocabulary.
+Amplify: motion-primitives `accordion` for the FAQ → kokonutui cards for
+testimonials → magicui `shine-border` on the featured pricing tier (css-
+carrying: orchestrator merges its globals) → `warp-background` as ONE section
+divider (this spends the page's component-background budget).
 
 ## 3. Product dashboard shell
 
@@ -69,6 +94,11 @@ Restraint: no page backgrounds, motion only as feedback.
 3. Micro-feedback: motion (`sources/motion.md`) springs for
    press/expand; animista `scale-in-center` (200ms) for popovers/toasts.
 4. No lenis (native scroll for app UIs), no WebGL, no text effects.
+Amplify (feedback depth, never decoration — ambition in an app UI means every
+interaction answers): motion-primitives `morphing-dialog` for detail views →
+`animated-number` on every KPI that changes → `disclosure` rows →
+motion layout animations on list reorder/filter → hover + `focus-visible` +
+press states on EVERY interactive element. Nothing else moves.
 
 ## 4. Scroll-driven story page
 
@@ -80,6 +110,10 @@ Restraint: no page backgrounds, motion only as feedback.
    `vendor/gsap/skills/`.
 4. Progress: motion-primitives `scroll-progress`.
 5. Reduced-motion: gate every scrub/pin; provide static fallback.
+Amplify: scrubbed count-ups inside pinned scenes (gsap, numbers land as the
+scene completes) → per-scene token shifts (background/accent custom props
+tweened by scene, still the brief's palette) → phosphor chapter icons in a
+sticky mini-nav → the SAME SplitText vocabulary on each scene's kicker line.
 
 ## 5. Ambient section background (WebGL, controlled)
 
@@ -102,9 +136,18 @@ vanta for organic scenes when shadergradient is too abstract.
    vanta.<effect>.min.js` into the project; two script tags; `VANTA.<EFFECT>({el})`.
 4. One vanta instance per page, never in scroll-recycled lists; pause when
    off-viewport via IntersectionObserver.
+Amplify: recolor EVERY effect option to brief hex ints (never ship stock
+colors — stock colors are how every vanta site looks the same) → choreograph
+the overlay content's entrances against the scene (animista family, staggered)
+→ CSS fallback background that carries the same palette when WebGL is absent.
 
 ## 6. Zero-build static page (no npm at all)
 
+**The reference build (`evals/reference/fern-and-stone/`) is this recipe
+executed to the craft floor — study it before building.** Its floor: full
+conversion anatomy (hero + proof stats, services, checklist about, process,
+testimonials, contact band), alternating panel rhythm, ONE animista text
+effect on the hero, lenis, phosphor duotone, palette + refs from the indexes.
 Everything served from vendored files copied into the project:
 - Scroll: `vendor/lenis/dist/lenis.min.js` + `lenis.css`.
 - Background: recipe 5's zero-build path.
@@ -114,6 +157,10 @@ Everything served from vendored files copied into the project:
 - Icons: `get-icon.sh <name> <weight> assets/icons/<name>.svg`, inline into HTML.
 - GSAP (if needed): jsdelivr pinned `gsap@3.15.0/dist/gsap.min.js` — the one
   allowed CDN exception, or copy from a node_modules elsewhere.
+Amplify: a vanta zero-build scene behind the hero (recipe 5's shortlist + its
+Amplify recoloring; spends the ONE canvas) → gsap count-ups on the stats band
+→ a recurring SVG motif (divider/watermark drawn from the brand's language)
+carried through every section → CSS-only marquee for a logo/keyword strip.
 
 ## 7. Micro-interaction polish pass (existing UI)
 
@@ -125,3 +172,9 @@ Run as the LAST specialist pass (see orchestration.md Phase 2 rules).
 4. Page transitions (Next.js): motion `AnimatePresence`, 300ms, fade+8px.
 5. Audit: nothing animates that the brief doesn't name; everything respects
    `prefers-reduced-motion`.
+Amplify: `focus-visible` rings on every interactive element (missing rings are
+a defect, not a style choice) → unify stray icon families to the project's one
+phosphor weight → ONE signature hover on primary CTAs (drawn from the brief's
+motion vocab, used consistently) → staggered list/grid entrances where lists
+exist → replace `transition: all` with explicit property lists as you touch
+each element.
