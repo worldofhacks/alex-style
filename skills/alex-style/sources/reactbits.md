@@ -66,7 +66,6 @@ Alternative when network is allowed and the project already uses shadcn: `npx sh
 - **Deps are per-component and mandatory**: manual copy skips the auto-install the shadcn CLI would do; always install the item's pinned `dependencies` or the import fails at build. `registryDependencies` is empty across all 139 vendored items — no chaining to worry about.
 - **The docs site is a Vite SPA**: WebFetch on reactbits.dev component pages returns empty HTML. Only `llms.txt` and `/r/*.json` are useful text surfaces; `llms-full.txt` returns 200 but serves the SPA shell.
 - **WebGL weight**: ogl/three/r3f components (53 of 139) run continuous rAF render loops. Client-only — add `'use client'` and dynamic-import with `ssr: false` in Next.js; cap to one WebGL background per page.
-- **`ModelViewer-TS-TW` runtime network trap**: its default `environmentPreset='forest'` fetches HDRIs from raw.githack at RUNTIME — breaks offline/production and violates hard rule 1. Always pass a local file via drei `<Environment files=…>`; local CC0 HDRIs live at `vendor/assets-3d/hdri/` (see `sources/r3f-drei.md` TRAP 1).
 - **Runtime targets**: upstream targets react ^19 (mostly fine on 18, unverified) and Tailwind v4 — TW variants assume Tailwind is configured.
 - **License scanners** will flag "NOASSERTION" — cite `vendor/reactbits/LICENSE.md` (MIT + Commons Clause; app use fine, resale/redistribution of components banned).
 

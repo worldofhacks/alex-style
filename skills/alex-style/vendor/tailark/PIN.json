@@ -1,9 +1,0 @@
-{
-  "repo": "github.com/tailark/blocks",
-  "base": "radix only",
-  "sha": "8139698115c1341bfd2e3e286c04bb4d8146f472",
-  "synced_at": "2026-08-03T03:06:46Z",
-  "registry_items": 260,
-  "vendored_payloads": 255,
-  "excluded_dupes": 5
-}

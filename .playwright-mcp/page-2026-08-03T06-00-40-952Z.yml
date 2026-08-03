@@ -1,4 +1,0 @@
-- generic [ref=f11e3]:
-  - button "test model" [ref=f11e6]
-  - region "Live announcements":
-    - status

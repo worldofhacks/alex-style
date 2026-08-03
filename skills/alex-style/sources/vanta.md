@@ -1,10 +1,6 @@
 # Vanta.js — webgl-backgrounds
 > 14 prebuilt, mouse-reactive 3D/WebGL background effects (waves, net, fog, birds...) that attach to any DOM element in a few lines — no shader knowledge needed.
 
-> **Routing note**: `paper-shaders` (`sources/paper-shaders.md`) is now the DEFAULT background
-> source for ambient/gradient/texture looks. Reach for vanta only for mouse/touch-reactive or
-> organic animated 3D scenes (birds, fog, net, globe) — Paper Shaders has no pointer uniforms.
-
 ## At a glance
 - **What**: Self-contained UMD builds (`VANTA.EFFECTNAME(options)`), one file per effect (~10–30KB min). 12 effects render via three.js, 2 (trunk, topology) via p5.js. Instance API: `setOptions()`, `resize()`, `destroy()`. Common options: `el, mouseControls (true), touchControls (true), gyroControls (false), minHeight, minWidth, scale, scaleMobile`.
 - **License**: MIT (Copyright 2020 Teng Bao, `vendor/vanta/LICENSE.md`). Commercial use, modification, redistribution all permitted. README credits third-party shader origins (Inigo Quilez, Rune Stubbe, zz85, Kjetil Golid) but everything ships under MIT.

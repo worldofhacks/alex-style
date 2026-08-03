@@ -1,26 +1,8 @@
 {
-  "synced_at": "2026-08-03T06:22:11Z",
+  "synced_at": "2026-08-01T21:29:05Z",
   "pinned": {
     "phosphor_core": "2.1.1",
-    "lenis": "1.3.25",
-    "radix_colors": "3.0.0",
-    "paper_shaders": "0.0.78",
-    "axe_core": "4.12.1",
-    "tailark_blocks": "8139698115c1341bfd2e3e286c04bb4d8146f472",
-    "origin_coss": "3c6058e484e51e1fc14849c9b59a9cca6269c539",
-    "fancy_commit": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
-    "atropos": "2.0.2",
-    "curtains": "8.1.6",
-    "curtains_commit": "840acaf7d960931350a4e9334b78161aa9b471b7",
-    "model_viewer": "4.3.1",
-    "khronos_gltf": "2bac6f8c57bf471df0d2a1e8a8ec023c7801dddf",
-    "media_chrome": "4.19.2",
-    "player_style": "12c9ad656e98998f998d24f0b94e6cddc0e07796",
-    "vfx_js": "1.1.0",
-    "noise_webgl": "22434e04d7753f7e949e8d724ab3da2864c17a0f",
-    "noise_psrd": "419175a270862ce7ae692038fafafb42ec0427e9",
-    "drei_docs": "10.7.7",
-    "r3f_docs": "9.7.0"
+    "lenis": "1.3.25"
   },
   "failures": []
 }

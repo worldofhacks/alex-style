@@ -1,10 +1,6 @@
 # ShaderGradient — shader-gradients
 > Animated 3D shader gradient backgrounds (plane/sphere/waterPlane deformed by GLSL noise) as two React components; one urlString prop can encode an entire look.
 
-> **Routing note (demoted)**: `paper-shaders` (`sources/paper-shaders.md`) is now the DEFAULT
-> gradient/ambient source. Retained only for R3F projects reproducing an exact
-> shadergradient.co/customize URL or its true-3D sphere/orbit presets. Flagged for retirement review at next audit.
-
 ## At a glance
 - **What**: `@shadergradient/react` (npm latest 2.4.20, ESM-only) — `ShaderGradientCanvas` wrapper + `ShaderGradient` renderer on three.js/react-three-fiber. ~40 typed props (colors, mesh type, noise, orbit camera, lighting, film grain) or a single shadergradient.co/customize URL via `control='query'`. 10 named presets exported as data (`presets`, `presetsArray`).
 - **License**: MIT (declared in package.json of both npm packages and README). Commercial use permitted. Caveat: repo has NO root LICENSE file — grant rests on package.json/README declaration; flag if legal needs actual license text. Figma plugin has a paid Pro tier, but that applies to the plugin only, not the npm library.

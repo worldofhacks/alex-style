@@ -1,5 +1,0 @@
-/**
- * Render element content to canvas and return it.
- * @internal
- */
-export default function getCanvasFromElement(element: HTMLElement, originalOpacity: number, oldCanvas?: OffscreenCanvas, maxSize?: number): Promise<OffscreenCanvas>;

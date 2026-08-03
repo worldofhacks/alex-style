@@ -4,11 +4,11 @@
     {
       "id": 0,
       "eval_name": "portfolio-hero-static",
-      "prompt": "i need a personal portfolio landing page. im a creative developer named Alex Rivers. want it to feel like an awwwards site \u2014 dark, big type, something alive in the background, buttery smooth scroll, tasteful entrance animations. no build tools please, just static files i can drop on netlify and open locally with no internet. put a hero, a short about blurb, 3 selected-work cards, and a contact footer with social icons.",
+      "prompt": "i need a personal portfolio landing page. im a creative developer named Alex Rivers. want it to feel like an awwwards site — dark, big type, something alive in the background, buttery smooth scroll, tasteful entrance animations. no build tools please, just static files i can drop on netlify and open locally with no internet. put a hero, a short about blurb, 3 selected-work cards, and a contact footer with social icons.",
       "expected_output": "Self-contained static site (index.html + local css/js assets). Animated background (one WebGL canvas max), smooth scrolling, entrance animations with prefers-reduced-motion fallback, consistent icon family, zero external network dependencies.",
       "files": [],
       "assertions": [
-        "Offline-complete: no runtime resource is loaded from the network \u2014 no external script src, stylesheet href, font/url() or image URL in any delivered file (social profile links are fine)",
+        "Offline-complete: no runtime resource is loaded from the network — no external script src, stylesheet href, font/url() or image URL in any delivered file (social profile links are fine)",
         "All requested sections present: hero with the name Alex Rivers, about blurb, exactly 3 selected-work cards, contact footer with social icons",
         "Animated background exists (WebGL canvas or CSS-animated) and at most ONE canvas/WebGL instance is created",
         "Smooth scrolling implemented via a real mechanism (bundled Lenis or equivalent JS, or CSS scroll-behavior with easing work), not just default browser scroll",
@@ -21,7 +21,7 @@
     {
       "id": 1,
       "eval_name": "saas-landing-react",
-      "prompt": "build a landing page for 'Driftboard' \u2014 an AI meeting-notes tool for remote teams. dark mode, premium feel, animated but tasteful. needs: hero, logo strip of customers, 3 feature cards, a stats row, pricing with 3 tiers, footer. react + tailwind, next.js app-router style files. dont install anything or run a build \u2014 just write the files, and include a NOTES.md that lists every npm dep i need to install and any css that must go in globals.css.",
+      "prompt": "build a landing page for 'Driftboard' — an AI meeting-notes tool for remote teams. dark mode, premium feel, animated but tasteful. needs: hero, logo strip of customers, 3 feature cards, a stats row, pricing with 3 tiers, footer. react + tailwind, next.js app-router style files. dont install anything or run a build — just write the files, and include a NOTES.md that lists every npm dep i need to install and any css that must go in globals.css.",
       "expected_output": "page.tsx + section components + globals.css additions + NOTES.md with complete dep list. All 6 sections present, central color tokens, one icon family, motion respects prefers-reduced-motion, imports consistent with NOTES.md deps.",
       "files": [],
       "assertions": [
@@ -32,25 +32,24 @@
         "Stats row numbers animate (count-up/ticker) triggered on scroll into view, not on mount",
         "Animations respect prefers-reduced-motion (CSS media query, matchMedia, or the animation lib's reducedMotion config)",
         "Required globals.css additions (keyframes/theme vars needed by any used component) are actually provided in the delivered globals.css content",
-        "Client/server component hygiene: every file using hooks or event handlers carries 'use client'",
-        "Arsenal-miss handled: the pricing tiers are hand-built — no import references a vendor/registry component that does not exist in the arsenal (pricing tables are not vendored, so a hallucinated pricing-component import fails this)"
+        "Client/server component hygiene: every file using hooks or event handlers carries 'use client'"
       ]
     },
     {
       "id": 2,
       "eval_name": "dashboard-polish",
-      "prompt": "here's my analytics dashboard component (StatsPanel.tsx). it works but feels dead. add micro-interactions and polish \u2014 hover states, number count-up animations, smooth staggered reveals, nicer status indicators. keep it professional, this is a b2b fintech app. don't redesign the layout or change the data/api shape, just bring it to life. include a NOTES.md listing new npm deps if any.",
-      "expected_output": "Updated StatsPanel.tsx preserving structure/exports/data shape; count-up on stats, subtle hovers and staggered reveals \u2264300ms, reduced-motion handling, no backgrounds/WebGL added, NOTES.md with deps.",
+      "prompt": "here's my analytics dashboard component (StatsPanel.tsx). it works but feels dead. add micro-interactions and polish — hover states, number count-up animations, smooth staggered reveals, nicer status indicators. keep it professional, this is a b2b fintech app. don't redesign the layout or change the data/api shape, just bring it to life. include a NOTES.md listing new npm deps if any.",
+      "expected_output": "Updated StatsPanel.tsx preserving structure/exports/data shape; count-up on stats, subtle hovers and staggered reveals ≤300ms, reduced-motion handling, no backgrounds/WebGL added, NOTES.md with deps.",
       "files": [
         "evals/fixtures/StatsPanel.tsx"
       ],
       "assertions": [
         "Structure preserved: default export StatsPanel remains, the 4 stat cards and the transactions table are still present, STATS/TXNS data shapes and the simulated-fetch pattern are unchanged",
         "Number count-up animation on the stat values (not just a CSS fade), formatting preserved (currency/locale/suffix)",
-        "Staggered reveal on cards and/or table rows with per-item interaction durations \u2264 300ms and modest stagger gaps (\u2264 100ms per item)",
+        "Staggered reveal on cards and/or table rows with per-item interaction durations ≤ 300ms and modest stagger gaps (≤ 100ms per item)",
         "Hover states added to stat cards, table rows, and the Export button",
         "Status indicators upgraded beyond bare colored text (e.g. dot/badge/pill), still readable and professional",
-        "NO decorative background, WebGL, canvas, gradient mesh, or page-level animation added \u2014 restraint appropriate for b2b fintech",
+        "NO decorative background, WebGL, canvas, gradient mesh, or page-level animation added — restraint appropriate for b2b fintech",
         "Reduced-motion handled: prefers-reduced-motion media query, matchMedia, or the animation lib's built-in reduced-motion support",
         "NOTES.md exists and every new non-react import in the delivered code appears in its dep list (or it states zero deps and code uses none)"
       ]
