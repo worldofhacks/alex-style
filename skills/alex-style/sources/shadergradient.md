@@ -16,7 +16,7 @@ Use for:
 - Reproducing an exact look from a shadergradient.co/customize URL — paste string, zero tuning. Uniquely codegen-friendly: one query string = one complete look.
 
 NOT for:
-- Vanilla JS / Vue / Svelte / static HTML → use **paper-shaders** (zero-build ESM, `vendor/_index/paper-shaders.tsv`); **vanta** for pointer-reactive 3D scenes.
+- Vanilla JS / Vue / Svelte / static HTML → React-only runtime; use **vanta** (zero-build dists) or CSS gradients instead.
 - JS-weight-sensitive pages: pulls three.js (~600 KB+ min) + R3F for a background → CSS-only motion via **animista**, or a static palette from **layers** (`palettes.tsv`).
 - SSR/static screenshots/email — WebGL canvas is client-only (IntersectionObserver lazy-load).
 - Icons/components/typography — this source does exactly one thing.

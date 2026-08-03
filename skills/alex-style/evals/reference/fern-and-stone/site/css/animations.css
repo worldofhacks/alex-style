@@ -1,0 +1,59 @@
+/*
+ * Animations by Animista (https://animista.net/)
+ * See http://animista.net/license for more info.
+ *
+ * FreeBSD License
+ *
+ * COPYRIGHT 2017 ANA TRAVAS
+ *
+ * Redistribution and use in source and binary forms, with or without modification, are permitted provided
+ * that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this list of conditions and
+ *    the following disclaimer.
+ *
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+ *    and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+/* ---- Keyframes (Animista) ---- */
+
+@keyframes fade-in-bottom{0%{transform:translateY(50px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes fade-in{0%{opacity:0}to{opacity:1}}
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}to{opacity:1}}
+
+/* ---- Utility classes (composed from Animista's tuned defaults) ---- */
+
+.fade-in-bottom{animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1) both}
+.fade-in{animation:fade-in .6s cubic-bezier(.39,.575,.565,1) both}
+.tracking-in-expand{animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1) both}
+
+/* ---- Scroll-reveal gating ----
+   JS adds .js-anim to <html> when motion is allowed; until an element is
+   revealed it is held invisible, so entrance keyframes never flash content.
+   Without JS (or with reduced motion) everything is simply visible. */
+
+.js-anim [data-reveal]{opacity:0}
+.js-anim [data-reveal].is-revealed{opacity:1;animation:fade-in-bottom .6s cubic-bezier(.39,.575,.565,1) both;animation-delay:var(--reveal-delay,0ms)}
+
+/* ---- Print: never hold content invisible ---- */
+
+@media print{
+  .js-anim [data-reveal]{opacity:1;animation:none}
+}
+
+/* ---- Reduced motion: no entrances, no text effect ---- */
+
+@media (prefers-reduced-motion: reduce){
+  .fade-in-bottom,.fade-in,.tracking-in-expand,
+  .js-anim [data-reveal].is-revealed{animation:none}
+  .js-anim [data-reveal]{opacity:1}
+}

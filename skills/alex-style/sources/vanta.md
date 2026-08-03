@@ -17,7 +17,7 @@ Use for:
 
 NOT for:
 - Dashboards/admin/data-dense UI — continuous GPU loop distracts and drains battery.
-- Custom gradient/texture looks — sibling `paper-shaders` (the default background source); `shadergradient` only for its exact presets in R3F projects.
+- Custom gradient/texture looks — sibling `shadergradient` (shader planes/spheres, R3F) or CSS gradients; vanta is scenes, not gradients.
 - Scroll-driven/choreographed motion — sibling `gsap` or `motion`; vanta is a fire-and-forget ambient loop.
 - Lightweight CSS-only ambience or mobile-critical pages — sibling `animista`; vanta itself warns some effects fail on mobile (always set a CSS fallback background).
 - Projects already on modern three (>=0.135) — vanta breaks (see Pitfalls); don't share a three instance with modern scene code.
