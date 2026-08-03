@@ -21,6 +21,25 @@ metadata, color palettes — is vendored under `vendor/` in this skill directory
 4. **For multi-section or multi-page builds, follow `orchestration.md`** —
    dispatch parallel section agents only after writing the design brief.
 
+**Rule 0 — ambition (outranks every restraint below).** A plain request is a
+request for the FULL treatment — "simple" means simple to use, never sparse.
+Fill EVERY expressive role the stack allows, each from its arsenal source, and
+prefer COMBINATIONS that cohere (that is what `recipes.md` exists for):
+direction + palette (inspiration/palettes.tsv) → type with real hierarchy →
+one designed hero moment (animated background, illustration, or text effect) →
+entrance choreography (animista/motion) → smooth scroll on marketing pages
+(lenis, wired to gsap when scenes scroll) → one icon family (phosphor) →
+social proof + stats. A build that leaves expressive roles unfilled — or uses
+one source where a proven recipe combines three — is the defect. Restraint
+rules are ceilings to build UP to, never targets.
+VARIATION IS PART OF CRAFT: worked examples in cards and first rows of TSVs
+are arbitrary, never defaults. For every hero moment, shortlist THREE candidate
+treatments from different sources/classes and pick the one most specific to
+THIS brief — if your pick is what every similar site would choose, re-pick.
+Judge your own output the way it will be judged (`evals/judging.md`): arsenal
+utilization and variation, whether the page is impressive/exciting/engaging,
+and craft.
+
 ## The arsenal
 
 | Slug | What | Size | Index (grep this) | Card |
@@ -98,7 +117,8 @@ Distill matches into a written design brief (see `orchestration.md`). Reference
 metadata only — never copy imagery; sources are for *direction*, not assets.
 
 **Building a full page/site** → `orchestration.md` (parallel swarm playbook).
-**Combining sources** (hero + bg + scroll + icons) → `recipes.md`.
+**Combining sources** (hero + bg + scroll + icons) → `recipes.md` — its Craft
+floor applies to EVERY build, swarm or solo, no matter how basic the prompt.
 
 ## Token discipline
 

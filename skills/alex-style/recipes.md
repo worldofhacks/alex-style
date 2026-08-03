@@ -4,6 +4,28 @@ Each recipe names exact sources, files, and the wiring that makes them work
 together. Adapt tokens to the design brief; never stack two recipes' background
 treatments on one page.
 
+## Craft floor (applies to every recipe, every build)
+
+- Business/marketing pages ship the full conversion anatomy: hero with a
+  proof point, services/features, social proof, process or about, a WORKING
+  contact form or explicit contact band, footer. A missing section needs a
+  reason, not a shrug.
+- Rhythm: no two adjacent sections share the same background treatment —
+  alternate tints, dark bands, dividers; sparse-next-to-sparse is a defect.
+- Combine sources per the recipes: a hero without motion, a marketing page
+  without scroll behavior, sections without entrances are unfilled roles —
+  reach for the combination, not the single tool.
+- Placeholders: never abstract filler art. Omit the section, or make the
+  placeholder look intentional (styled cards, real copy, CSS treatments)
+  and mark it for replacement.
+- Before calling a build done: RENDER IT AND LOOK AT IT. Ask: is there at
+  least one memorable moment? does the rhythm hold through a full scroll?
+  would the chosen inspiration references sit comfortably beside it? how many
+  arsenal sources are genuinely working together? is it impressive, exciting,
+  engaging — or merely correct? would this exact hero appear on any other
+  client's site? (if yes, re-pick the treatment — see Rule 0 variation law).
+  Fix, re-look, then ship. Full rubric: `evals/judging.md`.
+
 ## 1. Statement hero (award-site energy)
 
 Shader gradient + split-text reveal + smooth scroll.
@@ -62,8 +84,13 @@ Restraint: no page backgrounds, motion only as feedback.
 ## 5. Ambient section background (WebGL, controlled)
 
 vanta for organic scenes when shadergradient is too abstract.
-1. `grep <mood> vendor/_index/vanta.tsv` — fog (soft), waves (calm), net
-   (techy), birds (playful), globe/rings (data-y). Options in the TSV's
+1. All 14 effects, by mood — birds (playful flocking), cells (organic),
+   clouds/clouds2 (open sky), dots (minimal pulse), fog (soft mist), globe
+   (worldwide/data), halo (aura glow), net (connected/techy), rings (orbital),
+   ripple (liquid), topology (drifting terrain, p5), trunk (organic growth
+   rings, p5), waves (ocean swell). Row order and card examples are ARBITRARY —
+   never treat any effect as the default. Shortlist 3 that could serve the
+   brief, pick the one most specific to THIS client; options in the TSV's
    default_options column; colors from brief.
 2. React: `npm i vanta three@0.134.0`; init in `useEffect` on a ref'd div,
    `effect.destroy()` on unmount. three MUST be r134-line (see card — newer

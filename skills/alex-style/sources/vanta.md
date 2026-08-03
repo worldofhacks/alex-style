@@ -23,9 +23,9 @@ NOT for:
 - Projects already on modern three (>=0.135) — vanta breaks (see Pitfalls); don't share a three instance with modern scene code.
 
 ## How to consume (token discipline)
-1. Pick an effect from the index (name + defaults in one line): `awk -F'\t' '$1=="fog"' vendor/_index/vanta.tsv`. List all: `cut -f1 vendor/_index/vanta.tsv | tail -n +2`.
+1. Pick an effect from the index (name + defaults in one line): `awk -F'\t' '$1=="topology"' vendor/_index/vanta.tsv`. List all: `cut -f1 vendor/_index/vanta.tsv | tail -n +2`. The effect names in these examples are placeholders, NOT recommendations — shortlist 3 candidates per the brief and pick the most client-specific; the obvious/safe pick must beat two named alternatives.
 2. Only if tuning beyond the tsv defaults, read the effect's source (50–200 lines each): `Read vendor/vanta/src/vanta.fog.js` — the `defaultOptions` / `getDefaultOptions()` object is the complete param list. NOTE: the tsv's `halo` row is empty (halo defines `getDefaultOptions()` instead of `prototype.defaultOptions`); get halo params from `vendor/vanta/src/vanta.halo.js` lines 13–31.
-3. Ship the runtime: either `cp vendor/vanta/dist/vanta.fog.min.js vendor/vanta/three.r134.min.js <project>/public/` for script tags, or `npm i vanta three@0.134.0` for bundlers.
+3. Ship the runtime: either `cp vendor/vanta/dist/vanta.<effect>.min.js vendor/vanta/three.r134.min.js <project>/public/` for script tags, or `npm i vanta three@0.134.0` for bundlers.
 4. NEVER read `dist/*.min.js` or `three.r134.min.js` into context — minified bundles, copy only. README recipes: `grep -n -A 20 "React" vendor/vanta/README.md` rather than a full read.
 
 ## Core usage
