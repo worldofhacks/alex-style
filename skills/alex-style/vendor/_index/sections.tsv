@@ -1,0 +1,161 @@
+# name	kit	category	description	npm_deps	heavy_deps	vendored_file
+dusk-call-to-action-1	dusk	call-to-action	Tailark Dusk call-to-action variant 1 block			vendor/tailark/r/dusk-call-to-action-1.json
+dusk-call-to-action-2	dusk	call-to-action	Tailark Dusk call-to-action variant 2 block			vendor/tailark/r/dusk-call-to-action-2.json
+dusk-content-1	dusk	content	Tailark Dusk content variant 1 block			vendor/tailark/r/dusk-content-1.json
+dusk-content-2	dusk	content	Tailark Dusk content variant 2 block			vendor/tailark/r/dusk-content-2.json
+dusk-content-3	dusk	content	Tailark Dusk content variant 3 block			vendor/tailark/r/dusk-content-3.json
+dusk-content-4	dusk	content	Tailark Dusk content variant 4 block			vendor/tailark/r/dusk-content-4.json
+dusk-faqs-1	dusk	faqs	Tailark Dusk faqs variant 1 block			vendor/tailark/r/dusk-faqs-1.json
+dusk-features-1	dusk	features	Tailark Dusk features variant 1 block			vendor/tailark/r/dusk-features-1.json
+dusk-features-2	dusk	features	Tailark Dusk features variant 2 block			vendor/tailark/r/dusk-features-2.json
+dusk-features-3	dusk	features	Tailark Dusk features variant 3 block			vendor/tailark/r/dusk-features-3.json
+dusk-features-4	dusk	features	Tailark Dusk features variant 4 block			vendor/tailark/r/dusk-features-4.json
+dusk-features-5	dusk	features	Tailark Dusk features variant 5 block			vendor/tailark/r/dusk-features-5.json
+dusk-features-6	dusk	features	Tailark Dusk features variant 6 block			vendor/tailark/r/dusk-features-6.json
+dusk-features-7	dusk	features	Tailark Dusk features variant 7 block	dotted-map,recharts	HEAVY:dotted-map+recharts	vendor/tailark/r/dusk-features-7.json
+dusk-footer-1	dusk	footer	Tailark Dusk footer variant 1 block			vendor/tailark/r/dusk-footer-1.json
+dusk-footer-2	dusk	footer	Tailark Dusk footer variant 2 block			vendor/tailark/r/dusk-footer-2.json
+dusk-hero-section-1	dusk	hero-section	Tailark Dusk hero-section variant 1 block			vendor/tailark/r/dusk-hero-section-1.json
+dusk-hero-section-2	dusk	hero-section	Tailark Dusk hero-section variant 2 block	motion		vendor/tailark/r/dusk-hero-section-2.json
+dusk-hero-section-3	dusk	hero-section	Tailark Dusk hero-section variant 3 block			vendor/tailark/r/dusk-hero-section-3.json
+dusk-hero-section-4	dusk	hero-section	Tailark Dusk hero-section variant 4 block	motion		vendor/tailark/r/dusk-hero-section-4.json
+dusk-hero-section-5	dusk	hero-section	Tailark Dusk hero-section variant 5 block	motion		vendor/tailark/r/dusk-hero-section-5.json
+dusk-hero-section-6	dusk	hero-section	Tailark Dusk hero-section variant 6 block	motion		vendor/tailark/r/dusk-hero-section-6.json
+dusk-hero-section-7	dusk	hero-section	Tailark Dusk hero-section variant 7 block	motion		vendor/tailark/r/dusk-hero-section-7.json
+dusk-hero-section-8	dusk	hero-section	Tailark Dusk hero-section variant 8 block			vendor/tailark/r/dusk-hero-section-8.json
+dusk-hero-section-9	dusk	hero-section	Tailark Dusk hero-section variant 9 block	motion		vendor/tailark/r/dusk-hero-section-9.json
+dusk-hero-section-10	dusk	hero-section	Tailark Dusk hero-section variant 10 block	motion		vendor/tailark/r/dusk-hero-section-10.json
+dusk-integrations-1	dusk	integrations	Tailark Dusk integrations variant 1 block			vendor/tailark/r/dusk-integrations-1.json
+dusk-logo-cloud-1	dusk	logo-cloud	Tailark Dusk logo-cloud variant 1 block			vendor/tailark/r/dusk-logo-cloud-1.json
+dusk-logo-cloud-2	dusk	logo-cloud	Tailark Dusk logo-cloud variant 2 block	motion		vendor/tailark/r/dusk-logo-cloud-2.json
+dusk-logo-cloud-3	dusk	logo-cloud	Tailark Dusk logo-cloud variant 3 block			vendor/tailark/r/dusk-logo-cloud-3.json
+dusk-logo-cloud-4	dusk	logo-cloud	Tailark Dusk logo-cloud variant 4 block	motion		vendor/tailark/r/dusk-logo-cloud-4.json
+dusk-pricing-1	dusk	pricing	Tailark Dusk pricing variant 1 block			vendor/tailark/r/dusk-pricing-1.json
+dusk-pricing-2	dusk	pricing	Tailark Dusk pricing variant 2 block			vendor/tailark/r/dusk-pricing-2.json
+dusk-stats-1	dusk	stats	Tailark Dusk stats variant 1 block			vendor/tailark/r/dusk-stats-1.json
+dusk-stats-2	dusk	stats	Tailark Dusk stats variant 2 block			vendor/tailark/r/dusk-stats-2.json
+dusk-team-1	dusk	team	Tailark Dusk team variant 1 block			vendor/tailark/r/dusk-team-1.json
+dusk-team-2	dusk	team	Tailark Dusk team variant 2 block			vendor/tailark/r/dusk-team-2.json
+dusk-testimonials-1	dusk	testimonials	Tailark Dusk testimonials variant 1 block			vendor/tailark/r/dusk-testimonials-1.json
+dusk-testimonials-2	dusk	testimonials	Tailark Dusk testimonials variant 2 block			vendor/tailark/r/dusk-testimonials-2.json
+dusk-landing-1	dusk	full-page	Tailark Dusk landing variant 1 page	lucide-react		vendor/tailark/r/dusk-landing-1.json
+dusk-landing-2	dusk	full-page	Tailark Dusk landing variant 2 page	lucide-react,motion		vendor/tailark/r/dusk-landing-2.json
+dusk-landing-3	dusk	full-page	Tailark Dusk landing variant 3 page	lucide-react		vendor/tailark/r/dusk-landing-3.json
+dusk-landing-4	dusk	full-page	Tailark Dusk landing variant 4 page	dotted-map,lucide-react,motion,recharts	HEAVY:dotted-map+recharts	vendor/tailark/r/dusk-landing-4.json
+dusk-landing-5	dusk	full-page	Tailark Dusk landing variant 5 page	lucide-react,motion		vendor/tailark/r/dusk-landing-5.json
+dusk-landing-6	dusk	full-page	Tailark Dusk landing variant 6 page	lucide-react,motion		vendor/tailark/r/dusk-landing-6.json
+dusk-landing-7	dusk	full-page	Tailark Dusk landing variant 7 page	dotted-map,lucide-react,motion,recharts	HEAVY:dotted-map+recharts	vendor/tailark/r/dusk-landing-7.json
+dusk-landing-8	dusk	full-page	Tailark Dusk landing variant 8 page	lucide-react		vendor/tailark/r/dusk-landing-8.json
+dusk-landing-9	dusk	full-page	Tailark Dusk landing variant 9 page	dotted-map,lucide-react,motion,recharts	HEAVY:dotted-map+recharts	vendor/tailark/r/dusk-landing-9.json
+dusk-landing-10	dusk	full-page	Tailark Dusk landing variant 10 page	lucide-react,motion		vendor/tailark/r/dusk-landing-10.json
+mist-call-to-action-1	mist	call-to-action	Tailark Mist call-to-action variant 1 block			vendor/tailark/r/mist-call-to-action-1.json
+mist-call-to-action-2	mist	call-to-action	Tailark Mist call-to-action variant 2 block			vendor/tailark/r/mist-call-to-action-2.json
+mist-call-to-action-3	mist	call-to-action	Tailark Mist call-to-action variant 3 block			vendor/tailark/r/mist-call-to-action-3.json
+mist-comparator-1	mist	comparator	Tailark Mist comparator variant 1 block			vendor/tailark/r/mist-comparator-1.json
+mist-contact-1	mist	contact	Tailark Mist contact variant 1 block			vendor/tailark/r/mist-contact-1.json
+mist-content-1	mist	content	Tailark Mist content variant 1 block			vendor/tailark/r/mist-content-1.json
+mist-content-2	mist	content	Tailark Mist content variant 2 block			vendor/tailark/r/mist-content-2.json
+mist-content-3	mist	content	Tailark Mist content variant 3 block			vendor/tailark/r/mist-content-3.json
+mist-content-4	mist	content	Tailark Mist content variant 4 block			vendor/tailark/r/mist-content-4.json
+mist-faqs-1	mist	faqs	Tailark Mist faqs variant 1 block			vendor/tailark/r/mist-faqs-1.json
+mist-faqs-2	mist	faqs	Tailark Mist faqs variant 2 block			vendor/tailark/r/mist-faqs-2.json
+mist-faqs-3	mist	faqs	Tailark Mist faqs variant 3 block			vendor/tailark/r/mist-faqs-3.json
+mist-features-1	mist	features	Tailark Mist features variant 1 block			vendor/tailark/r/mist-features-1.json
+mist-features-2	mist	features	Tailark Mist features variant 2 block			vendor/tailark/r/mist-features-2.json
+mist-features-3	mist	features	Tailark Mist features variant 3 block			vendor/tailark/r/mist-features-3.json
+mist-features-4	mist	features	Tailark Mist features variant 4 block			vendor/tailark/r/mist-features-4.json
+mist-features-5	mist	features	Tailark Mist features variant 5 block			vendor/tailark/r/mist-features-5.json
+mist-features-6	mist	features	Tailark Mist features variant 6 block			vendor/tailark/r/mist-features-6.json
+mist-features-7	mist	features	Tailark Mist features variant 7 block			vendor/tailark/r/mist-features-7.json
+mist-features-8	mist	features	Tailark Mist features variant 8 block			vendor/tailark/r/mist-features-8.json
+mist-features-9	mist	features	Tailark Mist features variant 9 block			vendor/tailark/r/mist-features-9.json
+mist-features-10	mist	features	Tailark Mist features variant 10 block			vendor/tailark/r/mist-features-10.json
+mist-features-11	mist	features	Tailark Mist features variant 11 block			vendor/tailark/r/mist-features-11.json
+mist-footer-1	mist	footer	Tailark Mist footer variant 1 block			vendor/tailark/r/mist-footer-1.json
+mist-footer-2	mist	footer	Tailark Mist footer variant 2 block			vendor/tailark/r/mist-footer-2.json
+mist-footer-3	mist	footer	Tailark Mist footer variant 3 block			vendor/tailark/r/mist-footer-3.json
+mist-footer-4	mist	footer	Tailark Mist footer variant 4 block			vendor/tailark/r/mist-footer-4.json
+mist-forgot-password-1	mist	forgot-password	Tailark Mist forgot-password variant 1 block			vendor/tailark/r/mist-forgot-password-1.json
+mist-hero-section-1	mist	hero-section	Tailark Mist hero-section variant 1 block			vendor/tailark/r/mist-hero-section-1.json
+mist-hero-section-2	mist	hero-section	Tailark Mist hero-section variant 2 block			vendor/tailark/r/mist-hero-section-2.json
+mist-hero-section-3	mist	hero-section	Tailark Mist hero-section variant 3 block			vendor/tailark/r/mist-hero-section-3.json
+mist-hero-section-4	mist	hero-section	Tailark Mist hero-section variant 4 block			vendor/tailark/r/mist-hero-section-4.json
+mist-hero-section-5	mist	hero-section	Tailark Mist hero-section variant 5 block			vendor/tailark/r/mist-hero-section-5.json
+mist-hero-section-6	mist	hero-section	Tailark Mist hero-section variant 6 block			vendor/tailark/r/mist-hero-section-6.json
+mist-integrations-1	mist	integrations	Tailark Mist integrations variant 1 block			vendor/tailark/r/mist-integrations-1.json
+mist-integrations-2	mist	integrations	Tailark Mist integrations variant 2 block			vendor/tailark/r/mist-integrations-2.json
+mist-integrations-3	mist	integrations	Tailark Mist integrations variant 3 block			vendor/tailark/r/mist-integrations-3.json
+mist-login-1	mist	login	Tailark Mist login variant 1 block			vendor/tailark/r/mist-login-1.json
+mist-logo-cloud-1	mist	logo-cloud	Tailark Mist logo-cloud variant 1 block			vendor/tailark/r/mist-logo-cloud-1.json
+mist-logo-cloud-2	mist	logo-cloud	Tailark Mist logo-cloud variant 2 block			vendor/tailark/r/mist-logo-cloud-2.json
+mist-pricing-1	mist	pricing	Tailark Mist pricing variant 1 block			vendor/tailark/r/mist-pricing-1.json
+mist-pricing-2	mist	pricing	Tailark Mist pricing variant 2 block			vendor/tailark/r/mist-pricing-2.json
+mist-sign-up-1	mist	sign-up	Tailark Mist sign-up variant 1 block			vendor/tailark/r/mist-sign-up-1.json
+mist-stats-1	mist	stats	Tailark Mist stats variant 1 block			vendor/tailark/r/mist-stats-1.json
+mist-stats-2	mist	stats	Tailark Mist stats variant 2 block			vendor/tailark/r/mist-stats-2.json
+mist-stats-3	mist	stats	Tailark Mist stats variant 3 block			vendor/tailark/r/mist-stats-3.json
+mist-stats-4	mist	stats	Tailark Mist stats variant 4 block			vendor/tailark/r/mist-stats-4.json
+mist-team-1	mist	team	Tailark Mist team variant 1 block			vendor/tailark/r/mist-team-1.json
+mist-team-2	mist	team	Tailark Mist team variant 2 block			vendor/tailark/r/mist-team-2.json
+mist-testimonials-1	mist	testimonials	Tailark Mist testimonials variant 1 block			vendor/tailark/r/mist-testimonials-1.json
+mist-testimonials-2	mist	testimonials	Tailark Mist testimonials variant 2 block			vendor/tailark/r/mist-testimonials-2.json
+mist-testimonials-3	mist	testimonials	Tailark Mist testimonials variant 3 block			vendor/tailark/r/mist-testimonials-3.json
+mist-testimonials-4	mist	testimonials	Tailark Mist testimonials variant 4 block			vendor/tailark/r/mist-testimonials-4.json
+mist-testimonials-5	mist	testimonials	Tailark Mist testimonials variant 5 block			vendor/tailark/r/mist-testimonials-5.json
+veil-call-to-action-1	veil	call-to-action	Tailark Veil call-to-action variant 1 block			vendor/tailark/r/veil-call-to-action-1.json
+veil-call-to-action-2	veil	call-to-action	Tailark Veil call-to-action variant 2 block			vendor/tailark/r/veil-call-to-action-2.json
+veil-call-to-action-3	veil	call-to-action	Tailark Veil call-to-action variant 3 block			vendor/tailark/r/veil-call-to-action-3.json
+veil-call-to-action-4	veil	call-to-action	Tailark Veil call-to-action variant 4 block			vendor/tailark/r/veil-call-to-action-4.json
+veil-comparator-1	veil	comparator	Tailark Veil comparator variant 1 block			vendor/tailark/r/veil-comparator-1.json
+veil-comparator-2	veil	comparator	Tailark Veil comparator variant 2 block			vendor/tailark/r/veil-comparator-2.json
+veil-comparator-3	veil	comparator	Tailark Veil comparator variant 3 block			vendor/tailark/r/veil-comparator-3.json
+veil-contact-1	veil	contact	Tailark Veil contact variant 1 block			vendor/tailark/r/veil-contact-1.json
+veil-contact-2	veil	contact	Tailark Veil contact variant 2 block			vendor/tailark/r/veil-contact-2.json
+veil-content-1	veil	content	Tailark Veil content variant 1 block			vendor/tailark/r/veil-content-1.json
+veil-content-2	veil	content	Tailark Veil content variant 2 block			vendor/tailark/r/veil-content-2.json
+veil-content-3	veil	content	Tailark Veil content variant 3 block			vendor/tailark/r/veil-content-3.json
+veil-faqs-1	veil	faqs	Tailark Veil faqs variant 1 block			vendor/tailark/r/veil-faqs-1.json
+veil-faqs-2	veil	faqs	Tailark Veil faqs variant 2 block			vendor/tailark/r/veil-faqs-2.json
+veil-faqs-3	veil	faqs	Tailark Veil faqs variant 3 block			vendor/tailark/r/veil-faqs-3.json
+veil-faqs-4	veil	faqs	Tailark Veil faqs variant 4 block			vendor/tailark/r/veil-faqs-4.json
+veil-faqs-5	veil	faqs	Tailark Veil faqs variant 5 block			vendor/tailark/r/veil-faqs-5.json
+veil-features-1	veil	features	Tailark Veil features variant 1 block			vendor/tailark/r/veil-features-1.json
+veil-features-2	veil	features	Tailark Veil features variant 2 block			vendor/tailark/r/veil-features-2.json
+veil-features-3	veil	features	Tailark Veil features variant 3 block			vendor/tailark/r/veil-features-3.json
+veil-footer-1	veil	footer	Tailark Veil footer variant 1 block			vendor/tailark/r/veil-footer-1.json
+veil-footer-2	veil	footer	Tailark Veil footer variant 2 block			vendor/tailark/r/veil-footer-2.json
+veil-footer-3	veil	footer	Tailark Veil footer variant 3 block			vendor/tailark/r/veil-footer-3.json
+veil-footer-4	veil	footer	Tailark Veil footer variant 4 block			vendor/tailark/r/veil-footer-4.json
+veil-footer-5	veil	footer	Tailark Veil footer variant 5 block	next-themes		vendor/tailark/r/veil-footer-5.json
+veil-footer-6	veil	footer	Tailark Veil footer variant 6 block	next-themes		vendor/tailark/r/veil-footer-6.json
+veil-forgot-password-1	veil	forgot-password	Tailark Veil forgot-password variant 1 block			vendor/tailark/r/veil-forgot-password-1.json
+veil-forgot-password-2	veil	forgot-password	Tailark Veil forgot-password variant 2 block			vendor/tailark/r/veil-forgot-password-2.json
+veil-forgot-password-3	veil	forgot-password	Tailark Veil forgot-password variant 3 block			vendor/tailark/r/veil-forgot-password-3.json
+veil-hero-section-1	veil	hero-section	Tailark Veil hero-section variant 1 block			vendor/tailark/r/veil-hero-section-1.json
+veil-hero-section-2	veil	hero-section	Tailark Veil hero-section variant 2 block	motion		vendor/tailark/r/veil-hero-section-2.json
+veil-hero-section-3	veil	hero-section	Tailark Veil hero-section variant 3 block			vendor/tailark/r/veil-hero-section-3.json
+veil-hero-section-4	veil	hero-section	Tailark Veil hero-section variant 4 block	motion		vendor/tailark/r/veil-hero-section-4.json
+veil-hero-section-5	veil	hero-section	Tailark Veil hero-section variant 5 block			vendor/tailark/r/veil-hero-section-5.json
+veil-integrations-1	veil	integrations	Tailark Veil integrations variant 1 block			vendor/tailark/r/veil-integrations-1.json
+veil-integrations-2	veil	integrations	Tailark Veil integrations variant 2 block			vendor/tailark/r/veil-integrations-2.json
+veil-login-1	veil	login	Tailark Veil login variant 1 block			vendor/tailark/r/veil-login-1.json
+veil-login-2	veil	login	Tailark Veil login variant 2 block			vendor/tailark/r/veil-login-2.json
+veil-login-3	veil	login	Tailark Veil login variant 3 block			vendor/tailark/r/veil-login-3.json
+veil-logo-cloud-1	veil	logo-cloud	Tailark Veil logo-cloud variant 1 block			vendor/tailark/r/veil-logo-cloud-1.json
+veil-logo-cloud-2	veil	logo-cloud	Tailark Veil logo-cloud variant 2 block	motion		vendor/tailark/r/veil-logo-cloud-2.json
+veil-pricing-1	veil	pricing	Tailark Veil pricing variant 1 block			vendor/tailark/r/veil-pricing-1.json
+veil-pricing-2	veil	pricing	Tailark Veil pricing variant 2 block			vendor/tailark/r/veil-pricing-2.json
+veil-pricing-3	veil	pricing	Tailark Veil pricing variant 3 block			vendor/tailark/r/veil-pricing-3.json
+veil-sign-up-1	veil	sign-up	Tailark Veil sign-up variant 1 block			vendor/tailark/r/veil-sign-up-1.json
+veil-sign-up-2	veil	sign-up	Tailark Veil sign-up variant 2 block			vendor/tailark/r/veil-sign-up-2.json
+veil-sign-up-3	veil	sign-up	Tailark Veil sign-up variant 3 block			vendor/tailark/r/veil-sign-up-3.json
+veil-stats-1	veil	stats	Tailark Veil stats variant 1 block			vendor/tailark/r/veil-stats-1.json
+veil-stats-2	veil	stats	Tailark Veil stats variant 2 block			vendor/tailark/r/veil-stats-2.json
+veil-stats-3	veil	stats	Tailark Veil stats variant 3 block			vendor/tailark/r/veil-stats-3.json
+veil-stats-4	veil	stats	Tailark Veil stats variant 4 block			vendor/tailark/r/veil-stats-4.json
+veil-team-1	veil	team	Tailark Veil team variant 1 block			vendor/tailark/r/veil-team-1.json
+veil-team-2	veil	team	Tailark Veil team variant 2 block			vendor/tailark/r/veil-team-2.json
+veil-testimonials-1	veil	testimonials	Tailark Veil testimonials variant 1 block			vendor/tailark/r/veil-testimonials-1.json
+veil-testimonials-2	veil	testimonials	Tailark Veil testimonials variant 2 block			vendor/tailark/r/veil-testimonials-2.json
+veil-testimonials-3	veil	testimonials	Tailark Veil testimonials variant 3 block			vendor/tailark/r/veil-testimonials-3.json
+veil-testimonials-4	veil	testimonials	Tailark Veil testimonials variant 4 block			vendor/tailark/r/veil-testimonials-4.json

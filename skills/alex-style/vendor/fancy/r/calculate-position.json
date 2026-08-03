@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calculate-position",
+  "type": "registry:lib",
+  "title": "Calculate Position",
+  "description": "A lib component.",
+  "dependencies": [],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "utils/calculate-position.ts",
+      "content": "export function calculatePosition(\n  value: number | string | undefined,\n  containerSize: number,\n  elementSize: number\n): number {\n  // Handle percentage strings (e.g. \"50%\")\n  if (typeof value === \"string\" && value.endsWith(\"%\")) {\n    const percentage = parseFloat(value) / 100\n    return containerSize * percentage\n  }\n\n  // Handle direct pixel values\n  if (typeof value === \"number\") {\n    return value\n  }\n\n  // If no value provided, center the element\n  return (containerSize - elementSize) / 2\n}\n",
+      "type": "registry:lib",
+      "target": "utils/calculate-position.ts"
+    }
+  ],
+  "_vendoredFrom": "danielpetho/fancy@f9f62c61207b2dd3210476dd98af3c9a5be24094 via fancycomponents.dev/r — alex-style maintained fork (sync_fancy applies vendor-time patches); never re-fetch items from the live site"
+}

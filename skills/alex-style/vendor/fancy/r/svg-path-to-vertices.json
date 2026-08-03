@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "svg-path-to-vertices",
+  "type": "registry:lib",
+  "title": "Svg Path To Vertices",
+  "description": "A lib component.",
+  "dependencies": [
+    "svg-path-commander"
+  ],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "utils/svg-path-to-vertices.ts",
+      "content": "import SVGPathCommander from \"svg-path-commander\"\n\n// Function to convert SVG path `d` to vertices\nexport function parsePathToVertices(path: string, sampleLength = 15) {\n  // Convert path to absolute commands\n  const commander = new SVGPathCommander(path)\n\n  const points: { x: number; y: number }[] = []\n  let lastPoint: { x: number; y: number } | null = null\n\n  // Get total length of the path\n  const totalLength = commander.getTotalLength()\n  let length = 0\n\n  // Sample points along the path\n  while (length < totalLength) {\n    const point = commander.getPointAtLength(length)\n\n    // Only add point if it's different from the last one\n    if (!lastPoint || point.x !== lastPoint.x || point.y !== lastPoint.y) {\n      points.push({ x: point.x, y: point.y })\n      lastPoint = point\n    }\n\n    length += sampleLength\n  }\n\n  // Ensure we get the last point\n  const finalPoint = commander.getPointAtLength(totalLength)\n  if (\n    lastPoint &&\n    (finalPoint.x !== lastPoint.x || finalPoint.y !== lastPoint.y)\n  ) {\n    points.push({ x: finalPoint.x, y: finalPoint.y })\n  }\n\n  return points\n}",
+      "type": "registry:lib",
+      "target": "utils/svg-path-to-vertices.ts"
+    }
+  ],
+  "_vendoredFrom": "danielpetho/fancy@f9f62c61207b2dd3210476dd98af3c9a5be24094 via fancycomponents.dev/r — alex-style maintained fork (sync_fancy applies vendor-time patches); never re-fetch items from the live site"
+}
