@@ -1,0 +1,24 @@
+# function	file	dims	tiling	derivatives	cost_tier	use_for
+snoise	webgl-noise/noise2D.glsl	2D	no	no	cheap	general 2D simplex: grain, wobble, domain-warp input
+snoise	webgl-noise/noise3D.glsl	3D	no	no	medium	animated 2D fields (x, y, time): smoke, clouds, fog
+snoise	webgl-noise/noise3Dgrad.glsl	3D	no	analytic gradient (out vec3)	medium-high	flow/curl fields without 4x finite-difference taps
+snoise	webgl-noise/noise4D.glsl	4D	no	no	high	animated 3D fields (xyz + time); loop via circle trick
+cnoise	webgl-noise/classicnoise2D.glsl	2D	no	no	cheap	classic Perlin look, softer than simplex
+pnoise	webgl-noise/classicnoise2D.glsl	2D	yes (rep param)	no	cheap	tiling 2D classic: repeating paper/fabric textures
+cnoise	webgl-noise/classicnoise3D.glsl	3D	no	no	medium	classic Perlin volumes
+pnoise	webgl-noise/classicnoise3D.glsl	3D	yes (rep param)	no	medium	looping animated classic tiles
+cnoise	webgl-noise/classicnoise4D.glsl	4D	no	no	high	classic Perlin space+time
+pnoise	webgl-noise/classicnoise4D.glsl	4D	yes (rep param)	no	high	fully seamless space AND time loops
+cellular	webgl-noise/cellular2D.glsl	2D	no	no	medium	Worley F1/F2: cells, voronoi, caustics, cracked surfaces
+cellular2x2	webgl-noise/cellular2x2.glsl	2D	no	no	cheap	fast Worley (2x2 window; F2 approximate) — mobile cellular
+cellular2x2x2	webgl-noise/cellular2x2x2.glsl	3D	no	no	medium	fast 3D Worley (2x2x2 window; F2 approximate)
+cellular	webgl-noise/cellular3D.glsl	3D	no	no	high	accurate 3D Worley F1/F2
+psrdnoise	psrdnoise/psrdnoise2.glsl	2D	yes (any integer period)	analytic gradient (out vec2)	medium	THE default tiling noise: seamless loops + rotating-gradient flow via alpha
+psrdnoise	psrdnoise/psrdnoise3.glsl	3D	yes (any integer period)	analytic gradient (out vec3)	high	tiling 3D volumes with flow
+psrddnoise	psrdnoise/psrddnoise2.glsl	2D	yes	analytic 1st + 2nd derivatives	high	curl noise, advection, crease/ridge shaping
+psrddnoise	psrdnoise/psrddnoise3.glsl	3D	yes	analytic 1st + 2nd derivatives	very-high	full-featured 3D flow — desktop only, never mobile
+psrdnoise	psrdnoise/psrdnoise2-min.glsl	2D	yes	analytic gradient	medium	code-golfed psrdnoise2, same API, smallest source
+psrdnoise	psrdnoise/psrdnoise3-min.glsl	3D	yes	analytic gradient	high	code-golfed psrdnoise3, same API
+mpsrdnoise	psrdnoise/mpsrdnoise2.glsl	2D	yes	analytic gradient	cheap (mediump-safe)	MOBILE DEFAULT: correct on 16-bit half-float GPUs
+psrdnoise2	psrdnoise/psrdnoise2.wgsl	2D	yes	analytic (struct return)	medium	WGSL port — future WebGPU surfaces only
+psrdnoise3	psrdnoise/psrdnoise3.wgsl	3D	yes	analytic (struct return)	high	WGSL port — future WebGPU surfaces only

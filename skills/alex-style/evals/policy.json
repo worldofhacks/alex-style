@@ -12,7 +12,10 @@
     "_index/logos\\.tsv",
     "_index/sections\\.tsv",
     "_index/application-ui\\.tsv",
-    "vendor/origin/registry\\.json"
+    "vendor/origin/registry\\.json",
+    "vendor/curtains/documentation/.*\\.html",
+    "model-viewer.*\\.min\\.js",
+    "\\.hdr$"
   ],
   "vendor_slugs": [
     "_index",
@@ -35,6 +38,14 @@
     "review-packs",
     "tailark",
     "origin",
-    "fancy"
+    "fancy",
+    "atropos",
+    "curtains",
+    "model-viewer",
+    "assets-3d",
+    "media-chrome",
+    "vfx-js",
+    "noise",
+    "r3f-drei"
   ]
 }

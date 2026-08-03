@@ -1,0 +1,159 @@
+- generic [ref=f8e4]:
+  - banner [ref=f8e5]:
+    - generic [ref=f8e6]:
+      - link "Pixabay" [ref=f8e8] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f8e15]:
+        - button "Search Pixabay" [ref=f8e16] [cursor=pointer]:
+          - img "Search" [ref=f8e17]
+        - searchbox "Search Pixabay" [ref=f8e21]
+        - button "All images" [ref=f8e24] [cursor=pointer]
+      - generic [ref=f8e25]:
+        - button "Explore" [ref=f8e29] [cursor=pointer]
+        - button "Log in" [ref=f8e31] [cursor=pointer]
+        - button "Join" [ref=f8e32] [cursor=pointer]
+        - button "Upload" [ref=f8e34] [cursor=pointer]
+  - generic [ref=f8e35]:
+    - navigation [ref=f8e36]:
+      - link "FAQ" [ref=f8e38] [cursor=pointer]:
+        - /url: /service/faq/
+      - link "License Summary" [ref=f8e40] [cursor=pointer]:
+        - /url: /service/license-summary/
+      - link "Terms of Service" [ref=f8e42] [cursor=pointer]:
+        - /url: /service/terms/
+      - link "Privacy Policy" [ref=f8e44] [cursor=pointer]:
+        - /url: /service/privacy/
+      - link "Cookies Policy" [ref=f8e46] [cursor=pointer]:
+        - /url: /service/cookies/
+      - link "Digital Services Act" [ref=f8e48] [cursor=pointer]:
+        - /url: /service/digital-services-act/
+      - link "Report Content" [ref=f8e50] [cursor=pointer]:
+        - /url: /content-reports/
+    - generic [ref=f8e51]:
+      - generic [ref=f8e52]:
+        - heading "Content License Summary" [level=1] [ref=f8e53]
+        - generic [ref=f8e54]:
+          - paragraph [ref=f8e55]: Welcome to Pixabay! Pixabay is a vibrant community of authors, artists and creators sharing royalty-free images, video, audio and other media. We refer to this collectively as "Content". By accessing and using Content, or by contributing Content, you agree to comply with our Content License.
+          - paragraph [ref=f8e56]:
+            - text: At Pixabay, we like to keep things as simple as possible. For this reason, we have created this short summary of our Content License which is available in full
+            - link "here" [ref=f8e57] [cursor=pointer]:
+              - /url: /service/terms/
+            - text: . Please keep in mind that only the full Content License is legally binding.
+      - generic [ref=f8e58]:
+        - heading "What are you allowed to do with Content?" [level=4] [ref=f8e59]
+        - generic [ref=f8e60]:
+          - paragraph [ref=f8e61]: "Subject to the Prohibited Uses (see below), the Content License allows users to:"
+          - table [ref=f8e62]:
+            - rowgroup [ref=f8e63]:
+              - row [ref=f8e64]:
+                - cell "✓" [ref=f8e65]
+                - cell "Use Content for free" [ref=f8e66]
+              - row [ref=f8e67]:
+                - cell "✓" [ref=f8e68]
+                - cell "Use Content without having to attribute the author (although giving credit is always appreciated by our community!)" [ref=f8e69]
+              - row [ref=f8e70]:
+                - cell "✓" [ref=f8e71]
+                - cell "Modify or adapt Content into new works" [ref=f8e72]
+      - generic [ref=f8e73]:
+        - heading "What are you not allowed to do with Content?" [level=4] [ref=f8e74]
+        - generic [ref=f8e75]:
+          - paragraph [ref=f8e76]: "We refer to these as Prohibited Uses which include:"
+          - table [ref=f8e77]:
+            - rowgroup [ref=f8e78]:
+              - row [ref=f8e79]:
+                - cell "✕" [ref=f8e80]
+                - cell "You cannot sell or distribute Content (either in digital or physical form) on a Standalone basis. Standalone means where no creative effort has been applied to the Content and it remains in substantially the same form as it exists on our website." [ref=f8e81]
+              - row [ref=f8e82]:
+                - cell "✕" [ref=f8e83]
+                - cell "If Content contains any recognisable trademarks, logos or brands, you cannot use that Content for commercial purposes in relation to goods and services. In particular, you cannot print that Content on merchandise or other physical products for sale." [ref=f8e84]
+              - row [ref=f8e85]:
+                - cell "✕" [ref=f8e86]
+                - cell "You cannot use Content in any immoral or illegal way, especially Content which features recognisable people." [ref=f8e87]
+              - row [ref=f8e88]:
+                - cell "✕" [ref=f8e89]
+                - cell "You cannot use Content in a misleading or deceptive way." [ref=f8e90]
+              - row [ref=f8e91]:
+                - cell "✕" [ref=f8e92]
+                - cell "You cannot use any of the Content as part of a trade-mark, design-mark, trade-name, business name or service mark." [ref=f8e93]
+      - generic [ref=f8e94]: Please be aware that certain Content may be subject to additional intellectual property rights (such as copyrights, trademarks, design rights), moral rights, proprietary rights, property rights, privacy rights or similar. It is your responsibility to check whether you require the consent of a third party or a license to use Content.
+  - contentinfo [ref=f8e95]:
+    - generic [ref=f8e96]:
+      - generic [ref=f8e97]:
+        - generic [ref=f8e102]: Over 6.2 million+ high quality stock images, videos and music shared by our talented community.
+        - generic [ref=f8e103]:
+          - link "Instagram" [ref=f8e104] [cursor=pointer]:
+            - /url: https://www.instagram.com/pixabay/
+            - img "Instagram" [ref=f8e105]
+          - link "Facebook" [ref=f8e108] [cursor=pointer]:
+            - /url: https://www.facebook.com/pixabay
+            - img "Facebook" [ref=f8e109]
+          - link "TikTok" [ref=f8e112] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@pixabaymedia
+            - img "TikTokBrand" [ref=f8e113]
+          - link "Twitter" [ref=f8e124] [cursor=pointer]:
+            - /url: https://x.com/pixabay
+            - img "TwitterX" [ref=f8e125]
+          - link "LinkedIn" [ref=f8e131] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/pixabay/
+            - img "Linkedin" [ref=f8e132]
+          - link "YouTube" [ref=f8e135] [cursor=pointer]:
+            - /url: https://www.youtube.com/@pixabaymedia
+            - img "Youtube" [ref=f8e136]
+          - link "Pinterest" [ref=f8e139] [cursor=pointer]:
+            - /url: https://pinterest.com/pixabay/
+            - img "Pinterest" [ref=f8e140]
+      - generic [ref=f8e143]:
+        - generic [ref=f8e144]: Discover
+        - generic [ref=f8e145]:
+          - link "Editor's Choice" [ref=f8e146] [cursor=pointer]:
+            - /url: /editors_choice/
+          - link "Curated Collections" [ref=f8e148] [cursor=pointer]:
+            - /url: /collections/
+          - link "Pixabay Radio" [ref=f8e150] [cursor=pointer]:
+            - /url: /playlists/
+          - link "Popular Images" [ref=f8e152] [cursor=pointer]:
+            - /url: /images/search/
+          - link "Popular Videos" [ref=f8e154] [cursor=pointer]:
+            - /url: /videos/search/
+          - link "Popular Music" [ref=f8e156] [cursor=pointer]:
+            - /url: /music/search/
+          - link "Popular Searches" [ref=f8e158] [cursor=pointer]:
+            - /url: /popular-searches/
+      - generic [ref=f8e160]:
+        - generic [ref=f8e161]: Community
+        - generic [ref=f8e162]:
+          - link "Contests Live" [ref=f8e163] [cursor=pointer]:
+            - /url: /contests/
+            - generic [ref=f8e164]: Contests
+            - generic [ref=f8e165]: Live
+          - link "Creators" [ref=f8e168] [cursor=pointer]:
+            - /url: /users/
+          - link "Ambassadors New" [ref=f8e170] [cursor=pointer]:
+            - /url: /service/ambassador/
+            - generic [ref=f8e171]: Ambassadors
+            - generic [ref=f8e172]: New
+          - link "Forum" [ref=f8e174] [cursor=pointer]:
+            - /url: /forum/
+          - link "Blog" [ref=f8e176] [cursor=pointer]:
+            - /url: /blog/
+      - generic [ref=f8e178]:
+        - generic [ref=f8e179]: About
+        - generic [ref=f8e180]:
+          - link "About Us" [ref=f8e181] [cursor=pointer]:
+            - /url: /service/about/
+          - link "FAQ" [ref=f8e183] [cursor=pointer]:
+            - /url: /service/faq/
+          - link "License Summary" [ref=f8e185] [cursor=pointer]:
+            - /url: /service/license-summary/
+          - link "Terms of Service" [ref=f8e187] [cursor=pointer]:
+            - /url: /service/terms/
+          - link "Privacy Policy" [ref=f8e189] [cursor=pointer]:
+            - /url: /service/privacy/
+          - link "Cookies Policy" [ref=f8e191] [cursor=pointer]:
+            - /url: /service/cookies/
+          - link "Digital Services Act" [ref=f8e193] [cursor=pointer]:
+            - /url: /service/digital-services-act/
+          - link "Report Content" [ref=f8e195] [cursor=pointer]:
+            - /url: /content-reports/
+          - link "API" [ref=f8e197] [cursor=pointer]:
+            - /url: /service/about/api/

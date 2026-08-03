@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // alex-style catalog builder — distills vendor/ into grep-able TSV indexes at vendor/_index/.
 // Re-run after every sync.sh. No dependencies, pure Node.
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -542,6 +542,209 @@ const readJSON = (p) => JSON.parse(readFileSync(p, 'utf8'));
   write('application-ui.tsv', 'name	type	tags	description_or_title	npm_deps	payload_file', rows);
 }
 
+// ============================================================================
+// ASSETS-3D FRAGMENT for scripts/build-catalogs.mjs (Wave 3)
+// Drop this block in alongside the other index blocks (uses the existing
+// readFileSync/existsSync/readJSON/write helpers, V and join). ONE import
+// change needed at the top of build-catalogs.mjs: add `statSync` to the
+// node:fs import list (byte-equality verification needs it).
+// The licenses.tsv rows for 'polyhaven-assets' + 'khronos-gltf' ship
+// separately in license-row.txt.
+// ============================================================================
+
+// ---------------------------------------------------------------- assets-3d.tsv (3D asset shelf)
+{
+  // Class-scoped index (adding-a-source.md #10): HDRIs/glbs are an ASSET shelf,
+  // never rows in components.tsv. Source of truth is the ledger
+  // vendor/assets-3d/assets.tsv (curation filter as data, incl. evidence-backed
+  // exclusion rows — sync_assets_3d writes it and gates byte-equality at sync
+  // time; this block RE-verifies bytes on disk so a hand-edited vendor dir can
+  // never publish a lying index). Only status=vendored rows are indexed: the
+  // core glb tier (owner sign-off, ASSETS3D_TIER=core) and the exclusion
+  // evidence stay in the ledger, out of the routing surface.
+  const ledgerPath = join(V, 'assets-3d/assets.tsv');
+  if (!existsSync(ledgerPath))
+    throw new Error('assets-3d: ledger vendor/assets-3d/assets.tsv missing — run: bash scripts/sync.sh assets-3d');
+  const ledger = readFileSync(ledgerPath, 'utf8')
+    .split('\n').filter((l) => l && !l.startsWith('#')).map((l) => l.split('\t'));
+  const rows = [];
+  let excluded = 0, pending = 0;
+  for (const [file, kind, tags, bytes, license, , url, usage, status] of ledger) {
+    if (status === 'excluded') { excluded++; continue; }
+    if (status === 'core-tier-pending-signoff') { pending++; continue; }
+    if (status !== 'vendored')
+      throw new Error(`assets-3d: unknown ledger status '${status}' on ${file} — refusing to write`);
+    const p = join(V, 'assets-3d', file);
+    if (!existsSync(p))
+      throw new Error(`assets-3d: ledger says ${file} is vendored but it is missing — re-run: bash scripts/sync.sh assets-3d`);
+    const disk = statSync(p).size;
+    // byte-equality vs the ledger (audit mandate) — a drifted asset must fail
+    // loud here, never silently swap content under a stable filename
+    if (String(disk) !== bytes)
+      throw new Error(`assets-3d: ${file} is ${disk} bytes on disk, ledger pins ${bytes} — content drifted, refusing to index`);
+    if (license !== 'CC0')
+      throw new Error(`assets-3d: ${file} license '${license}' != CC0 — only CC0 assets may be indexed`);
+    rows.push([`vendor/assets-3d/${file}`, kind, tags, bytes, license, url, usage]);
+  }
+  // shape gates: HDRI tier = exactly 2 hdri rows; SheenChair/ToyCar are either
+  // vendored (core tier signed off) or pending — never missing; the 8 exclusion
+  // rows are evidence and may never be dropped by a ledger rewrite.
+  const hdris = rows.filter((r) => r[1] === 'hdri').length;
+  const models = rows.filter((r) => r[1] === 'model').length;
+  if (hdris !== 2)
+    throw new Error(`assets-3d: ${hdris} vendored hdri rows (want exactly 2: venice_sunset_1k + studio_small_03_1k)`);
+  if (models + pending !== 2)
+    throw new Error(`assets-3d: ${models} vendored + ${pending} pending model rows (want 2 total: SheenChair/ToyCar)`);
+  if (excluded !== 8)
+    throw new Error(`assets-3d: ${excluded} exclusion rows (want exactly 8: DamagedHelmet, MaterialsVariantsShoe, FlightHelmet, ABeautifulGame, MosquitoInAmber, BoomBox, Lantern, WaterBottle)`);
+  // license evidence must exist and still read all-CC0 for BOTH core-tier
+  // models, vendored or not (the Khronos repo has no top-level license — the
+  // per-model metadata.json legal[] arrays ARE the license, string "CC0" +
+  // publicdomain/zero/1.0 URL, not the SPDX id)
+  for (const m of ['SheenChair', 'ToyCar']) {
+    const meta = readJSON(join(V, 'assets-3d/models', `${m}.metadata.json`));
+    if (!Array.isArray(meta.legal) || meta.legal.length < 1
+        || !meta.legal.every((e) => e.license === 'CC0' && /publicdomain\/zero\/1\.0/.test(e.licenseUrl ?? '')))
+      throw new Error(`assets-3d: ${m}.metadata.json legal[] is not all-CC0 — the model may not sit on the shelf`);
+  }
+  write('assets-3d.tsv', 'file	kind	mood_tags	bytes	license	source_url	usage', rows);
+}
+
+// ============================================================================
+// MEDIA-CHROME FRAGMENT for scripts/build-catalogs.mjs (Wave 3)
+// Drop this block in alongside the other index blocks (uses the existing
+// readJSON/write helpers plus V/join/existsSync/readdirSync/readFileSync, all
+// already imported at the top of build-catalogs.mjs). The licenses.tsv row for
+// 'media-chrome' ships separately in license-row.txt.
+// ============================================================================
+
+// ---------------------------------------------------------------- player-themes.tsv (media-chrome)
+{
+  // CLASS-SCOPED index (judge mandate): 'branded inline video player' routes
+  // ONLY here — 3 curated player.style themes, deliberately tiny so routing
+  // never mistakes a novelty theme for an answer. Mood text is curated data
+  // (upstream descriptions are npm-blurb prose); the controls census is
+  // extracted from each vendored template at build time so the index can never
+  // claim controls a theme doesn't render.
+  const THEMES = {
+    minimal: 'clean thin bottom control bar, transparent controls, tooltips off — the default pick for product demos and testimonials on marketing pages',
+    microvideo: 'compact overlay chrome for small inline/short-form clips — icon controls only, no time text; best at narrow widths',
+    sutro: 'flagship cinematic theme (Mux) — settings/rendition/captions/playback-rate menus, chapter + preview thumbnails on the time range; the full-featured pick',
+  };
+  // PERMANENT EXCLUSIONS (trade-dress law, sources/media-chrome.md): if one of
+  // these ever appears in the vendor dir, someone bypassed sync_media_chrome.
+  const LOOKALIKES = ['notflix', 'yt', 'vimeonova', 'winamp', 'instaplay'];
+  const tdir = join(V, 'media-chrome/themes');
+  const present = existsSync(tdir) ? readdirSync(tdir).filter((n) => !n.startsWith('.')) : [];
+  for (const n of present) {
+    if (LOOKALIKES.includes(n))
+      throw new Error(`player-themes: brand-lookalike theme '${n}' in vendor dir — permanently excluded on trade-dress grounds; re-run: bash scripts/sync.sh media-chrome`);
+    if (!(n in THEMES))
+      throw new Error(`player-themes: theme '${n}' is outside the owner-approved allowlist (minimal/microvideo/sutro) — a non-allowlisted theme reaching the index would hand routing a novelty answer; refusing to write`);
+  }
+  const rows = [];
+  for (const [name, mood] of Object.entries(THEMES)) {
+    const dir = join(tdir, name);
+    // fail loud: a missing allowlisted theme means a broken vendor dir — a
+    // silently thinner index is worse than a build failure
+    if (!existsSync(join(dir, 'template.html')))
+      throw new Error(`player-themes: allowlisted theme '${name}' missing from vendor/media-chrome/themes — run: bash scripts/sync.sh media-chrome`);
+    const pkg = readJSON(join(dir, 'package.json'));
+    if (pkg.license !== 'MIT')
+      throw new Error(`player-themes: theme '${name}' package.json license '${pkg.license}' != MIT — refusing to index`);
+    const tpl = readFileSync(join(dir, 'template.html'), 'utf8');
+    const controls = [...new Set([...tpl.matchAll(/<media-([a-z-]+)/g)].map((m) => m[1]))]
+      .filter((c) => c !== 'controller' && c !== 'control-bar').sort();
+    if (controls.length < 5)
+      throw new Error(`player-themes: theme '${name}' census found only ${controls.length} controls — template reshaped, re-audit before indexing`);
+    rows.push([name, pkg.name, mood, controls.join(','), tpl.length,
+      `vendor/media-chrome/themes/${name}/template.html`]);
+  }
+  if (rows.length !== 3)
+    throw new Error(`player-themes: ${rows.length} rows (want exactly 3: the owner-approved allowlist) — refusing to write`);
+  write('player-themes.tsv', 'theme	npm_pkg	mood	controls	template_bytes	template_file', rows);
+}
+
+// ============================================================================
+// VFX-JS FRAGMENT for scripts/build-catalogs.mjs (Wave 3)
+// Drop this block in alongside the other index blocks (uses the existing
+// readFileSync/write helpers and V/join from the top of build-catalogs.mjs).
+// The licenses.tsv row for 'vfx-js' ships separately in license-row.txt.
+// ============================================================================
+
+// ---------------------------------------------------------------- vfx-presets.tsv (VFX-JS)
+{
+  // Dedicated CLASS-SCOPED index (adding-a-source.md §10): preset effects ON
+  // real DOM media route here — never into components.tsv, and never as a
+  // second background answer (backgrounds stay paper-shaders/vanta/
+  // shadergradient; custom-shader/DOM-synced scroll distortion is curtains.js).
+  //
+  // GROUND TRUTH (perf audit 2026-08-03, pinned 1.1.0): the shipped shaders
+  // map in constants.js carries 23 keys — 22 effect presets + the 'none'
+  // identity copy shader. That is MORE than the docs claim (and more than the
+  // gate audit's 17): rgbGlitch, invert, grayscale, vignette and chromatic
+  // ship undocumented. The curated META below is the filter as data; the
+  // parser fail-louds in BOTH directions so a version bump that adds or
+  // removes presets forces a deliberate re-curation, never a silent drift.
+  const src = readFileSync(join(V, 'vfx-js/lib/esm/constants.js'), 'utf8');
+  const body = src.match(/export const shaders = \{([\s\S]*)\n\};/)?.[1];
+  if (!body) throw new Error('vfx-presets: shaders map not found in constants.js — upstream reshaped, refusing to write');
+  const shipped = [...body.matchAll(/\n    ([a-zA-Z0-9]+):/g)].map((m) => m[1]);
+
+  // columns: class (closed set: media-fx|motion-fx|transition) / character /
+  // animation (continuous = time-driven every frame; static = no time term,
+  // zero motion; static-at-speed-0 = animated cycle, freezes at speed:0;
+  // enter-leave = driven by viewport enter/leave uniforms only) /
+  // uniform_params (custom uniforms read from the GLSL; '-' = time/mouse
+  // plumbing only) / mobile_safe (audit judgment: yes | caution | no) /
+  // use_case tags. text-headline-EXPERIMENTAL tags the presets sanctioned
+  // for the experimental text mode — single headlines only, never body copy.
+  const META = {
+    uvGradient: ['media-fx', 'animated UV-gradient fill masked by element alpha', 'continuous', '-', 'yes', 'logo-tint,text-headline-EXPERIMENTAL,brand-moment'],
+    rainbow: ['media-fx', 'hue-cycling colorize over luminance', 'continuous', '-', 'yes', 'logo-tint,playful-accent,text-headline-EXPERIMENTAL'],
+    glitch: ['media-fx', 'broken-signal glitch: scanline tears + chromatic aberration bursts', 'continuous', '-', 'caution (up to 9 texture taps in bursts; pixelRatio 1 + <=2 elements on mobile)', 'hover-glitch,showreel-tile,hero-image,text-headline-EXPERIMENTAL'],
+    pixelate: ['media-fx', 'mosaic pixelation, block size oscillates with time', 'continuous', '-', 'yes', 'retro-reveal,hover-tile'],
+    rgbGlitch: ['media-fx', 'intermittent RGB channel tear bursts (undocumented upstream)', 'continuous', '-', 'yes', 'glitch-accent,music-culture'],
+    rgbShift: ['media-fx', 'analog scanline RGB channel separation', 'continuous', '-', 'yes', 'vhs-footage,retro-media'],
+    halftone: ['media-fx', 'rotated-grid CMY halftone dots (grid size hardcoded upstream)', 'static', '-', 'no (15 texture taps/fragment — heaviest preset; desktop pointer:fine, small areas only)', 'editorial-print,poster-image'],
+    sinewave: ['motion-fx', 'RGB wave displacement with x-blur', 'continuous', '-', 'caution (9 texture taps)', 'liquid-media,underwater'],
+    shine: ['motion-fx', 'rotating radial light sweep (flattens color to highlight)', 'continuous', '-', 'yes', 'logo-shine,badge,text-headline-EXPERIMENTAL'],
+    blink: ['motion-fx', 'brightness pulse ~0.8Hz (below flash-risk thresholds; still motion)', 'continuous', '-', 'yes', 'attention-pulse,terminal-cursor'],
+    spring: ['motion-fx', 'elastic scale wobble', 'continuous', '-', 'yes', 'sticker-pop,playful-logo'],
+    duotone: ['media-fx', 'two-color gradient map; cycles when speed>0', 'static-at-speed-0', 'color1,color2,speed', 'yes', 'brand-duotone,scroll-linked-footage,editorial-video'],
+    tritone: ['media-fx', 'three-color gradient map; cycles when speed>0', 'static-at-speed-0', 'color1,color2,color3,speed', 'yes', 'brand-tritone,poster-video'],
+    hueShift: ['media-fx', 'fixed hue rotation by uniform', 'static', 'shift', 'yes', 'theme-match-media,hover-tint'],
+    warpTransition: ['transition', 'horizontal scanline warp on viewport enter/leave', 'enter-leave', 'enterTime,leaveTime (auto-fed)', 'yes', 'scroll-entrance,gallery-swap'],
+    slitScanTransition: ['transition', 'slit-scan wipe reveal on enter/leave', 'enter-leave', 'enterTime,leaveTime (auto-fed)', 'yes', 'scroll-entrance,section-reveal'],
+    pixelateTransition: ['transition', 'mosaic resolve-in on enter/leave', 'enter-leave', 'enterTime,leaveTime (auto-fed)', 'yes', 'scroll-entrance,retro-reveal'],
+    focusTransition: ['transition', 'double-image defocus converge on enter', 'enter-leave', 'intersection (auto-fed)', 'yes', 'scroll-entrance,photo-gallery'],
+    invert: ['media-fx', 'color inversion (undocumented upstream)', 'static', '-', 'yes', 'dark-mode-media,hover-invert'],
+    grayscale: ['media-fx', 'luminance grayscale (undocumented upstream)', 'static', '-', 'yes', 'muted-media,team-photos'],
+    vignette: ['media-fx', 'edge-darkening vignette (undocumented upstream)', 'static', 'intensity,radius,power', 'yes', 'photo-frame,cinematic-still'],
+    chromatic: ['media-fx', 'radial chromatic-aberration lens (undocumented upstream)', 'static', 'intensity,radius,power', 'yes', 'lens-look,hero-photo'],
+  };
+
+  // fail-loud in BOTH directions ('none' is plumbing — the identity copy
+  // shader — deliberately not indexed as an effect row)
+  const curated = new Set(Object.keys(META));
+  for (const name of shipped) {
+    if (name === 'none') continue;
+    if (!curated.has(name))
+      throw new Error(`vfx-presets: constants.js ships uncurated preset '${name}' — audit it and extend META deliberately (never index blind)`);
+  }
+  for (const name of curated) {
+    if (!shipped.includes(name))
+      throw new Error(`vfx-presets: curated preset '${name}' missing from constants.js — upstream removed it; re-audit card + TSV before writing`);
+  }
+  if (!shipped.includes('none'))
+    throw new Error("vfx-presets: identity shader 'none' missing from constants.js — map reshaped, refusing to write");
+
+  const rows = Object.entries(META).map(([name, m]) => [name, ...m]);
+  if (rows.length !== 22)
+    throw new Error(`vfx-presets: ${rows.length} rows != 22 (constants.js @1.1.0 ships 23 keys incl. 'none') — refusing to write`);
+  write('vfx-presets.tsv', 'preset	class	character	animation	uniform_params	mobile_safe	use_case', rows);
+}
+
 // ---------------------------------------------------------------- licenses.tsv (curated)
 {
   const rows = [
@@ -561,6 +764,24 @@ const readJSON = (p) => JSON.parse(readFileSync(p, 'utf8'));
     ['tailark', 'MIT (upstream file is LICENCE.md, British spelling; (c) 2025 Irung) — embedded core-* brand SVGs (Spotify, Vercel, Claude, OpenAI…) remain TRADEMARKS of their owners', 'code/blocks: yes (MIT); brand SVGs: nominative use only — NEVER ship placeholder logo clouds as fake customer walls or implied endorsement (replace via svgl law before ship)', 'no', 'vendor/tailark/LICENSE'],
     ['origin', 'MIT — apps/origin subtree of cosscom/coss ONLY ("Originally Copyright (c) 2025 Origin UI"); the monorepo ROOT is AGPLv3 - never vendor or copy anything from that repo outside apps/origin/', 'yes (the vendored apps/origin payloads; standard MIT)', 'no', 'vendor/origin/LICENSE.md'],
     ['fancy', 'MIT, (c) 2024 Daniel Petho', 'yes (MIT) - but vendored copies are an alex-style PATCHED FORK of a curated 8-item subset (registryDependencies localized, use-client added, poly-decomp ESM import, lodash.debounce); redistributing/refreshing from the live site instead reintroduces the four patched defects', 'no', 'vendor/fancy/LICENSE'],
+    ['atropos', 'MIT, (c) 2021 Vladimir Kharlampidi — verified MIT at all 23 published versions (relicense history clean)', 'yes (MIT) - vendored copy is a 15-file curated subset of the npm tarball with per-file byte pins (vendor/atropos/PIN.json); refresh only via sync.sh atropos, never by re-downloading upstream ad hoc (feature-frozen upstream: future fixes are PATCHED(alex-style) in-vendor)', 'no', 'vendor/atropos/LICENSE'],
+['curtains', 'MIT, (c) 2018 Martin Laxenaire', 'yes (MIT) - vendored examples are STRIPPED of bundled third-party runtimes (locomotive-scroll.min.js/.css: one-smoothing-layer law, lenis wiring in sources/curtains.md supersedes; stale gsap.min.js: GSAP routes via vendor/gsap pins) - never re-fetch the stripped files; upstream frozen at 8.1.6 (maintenance mode, no tags - the arsenal owns patches)', 'no', 'vendor/curtains/LICENSE.txt'],
+// MODEL-VIEWER row for the licenses.tsv block in scripts/build-catalogs.mjs
+// (insert into the `rows` array; keep adjacent to the other Apache source, paper-shaders)
+    ['model-viewer', 'Apache-2.0 at pinned 4.3.1 (file-level LICENSE in tarball; no upstream NOTICE file at this version; bundle embeds standard BSD-3-Clause lit headers - compatible)', 'yes - ship vendor/model-viewer/LICENSE alongside redistributed dist files', 'no', 'vendor/model-viewer/LICENSE'],
+// Two rows for the licenses block in build-catalogs.mjs (audit condition:
+// "licenses.tsv gains polyhaven-assets and khronos-gltf rows"). Insert after
+// the 'shadergradient' row so the no-classic-LICENSE-file cases read together.
+
+    ['polyhaven-assets', 'CC0 1.0 public-domain dedication - declared site-wide (polyhaven.com/license: "CC0 means absolute freedom"; redistribution incl. in sold products explicitly allowed) AND page-level per asset (both vendored HDRIs verified 2026-08-03)', 'yes - redistribute/resell freely (CC0); shelf law still applies: scaffolding/lighting assets, never shipped as the final client asset without replacement', 'no (CC0) - provenance recorded anyway in vendor/assets-3d/assets.tsv + LICENSE-NOTICE.md (audit trail)', 'vendor/assets-3d/LICENSE-NOTICE.md'],
+    ['khronos-gltf', 'NO top-level repo license (GitHub API license: null, verified 2026-08-03) - per-model metadata.json legal[] arrays ARE the license; shelf rule: EVERY entry must be CC0 (string "CC0" + publicdomain/zero/1.0 URL, not the SPDX id). SheenChair 1x CC0 (Chadwick/Wayfair), ToyCar 2x CC0 verified @ pin 2bac6f8c; DamagedHelmet et al. excluded as evidence rows in assets.tsv', 'CC0 models: yes; NEVER vendor/copy any other model without checking its OWN metadata.json first - the repo mixes CC0/CC-BY/CC-BY-NC/SCEA', 'no for the all-CC0 shelf models; CC-BY models are owner-opt-in ONLY with an attribution row added to assets.tsv first', 'vendor/assets-3d/models/<Name>.metadata.json (adjacent to every glb)'],
+// licenses.tsv row for the curated block in build-catalogs.mjs (and the same
+// row lands in vendor/_index/licenses.tsv when the block is re-run):
+    ['media-chrome', 'MIT, (c) 2020 Mux, Inc. — media-chrome 4.19.2 vanilla web-components subset + player.style themes minimal/microvideo/sutro (each MIT per its vendored package.json); NOTE the LICENSE file has no "MIT License" heading, it opens with the copyright + permission grant', 'yes (MIT) - vendored copy is a curated VANILLA SUBSET (40-file ESM closure + iife/all.js; dist/react, cjs and menu/cast/airplay/live controls excluded — React consumers install media-chrome@4.19.2 from npm and import media-chrome/react); brand-lookalike player.style themes (notflix, yt, vimeonova, winamp, instaplay) are PERMANENTLY excluded on trade-dress grounds - never vendor, never imitate', 'no', 'vendor/media-chrome/LICENSE'],
+    ['vfx-js', 'MIT at all 23 published versions (verified in registry 2026-08-03; the 0.1.0-era three dep was removed at 0.13.0 - 1.x is zero-dep)', 'yes (MIT) - wart: the package internally vendors a port of matt-way/gifuct-js (MIT upstream) WITHOUT its copyright header; upstream hygiene defect inherited when redistributing, recorded not blocking', 'no', 'vendor/vfx-js/LICENSE'],
+    ['noise', 'MIT twice over — webgl-noise: LICENSE file ((C) 2011 Ashima Arts + 2011-2016 Stefan Gustavson; grant text without the words "MIT License"); psrdnoise: MIT via in-file headers + README ONLY, NO upstream LICENSE file exists ((c) 2021 Stefan Gustavson and Ian McEwan; authored notice at vendor/noise/psrdnoise/LICENSE-NOTICE.md — shadergradient precedent)', 'yes (MIT) - the in-file MIT headers ARE the operative license text for psrdnoise: never strip them from vendored or project copies (sync + self-test hard-fail on a missing header); LYGIA remains rejected (Prosperity 3.0.0, not open source) and Shadertoy transcription stays banned (CC-BY-NC default) - this source is the only sanctioned shader-noise origin', 'no (MIT notice preservation only - the headers travel with the code)', 'vendor/noise/webgl-noise/LICENSE + vendor/noise/psrdnoise/LICENSE-NOTICE.md'],
+    ['r3f-drei', 'MIT (both pmndrs packages, verified in the npm registry at the pinned docs versions r3f 9.7.0 / drei 10.7.7); vendored artifacts are the projects\' own llms-full.txt doc exports', 'docs pack for local grep only - the r3f/drei RUNTIME is never vendored (users npm-install into their project; vendoring it would re-open the rejected pinned-three-infrastructure debate); environment lighting answers cite LOCAL vendor/assets-3d HDRIs, never a drei preset (presets runtime-fetch raw.githack - hard rule 1 violation)', 'no', 'upstream LICENSE (pmndrs/react-three-fiber, pmndrs/drei)'],
+    ['video-policy', 'policy card only, nothing vendored - Coverr License + Pexels License + Pixabay Content License (2026 terms; every row browser-verified 2026-08-03; Pixabay/Pexels 403 curl - re-verify via the Playwright path)', 'NEVER vendor or redistribute stock video FILES - all three licenses prohibit standalone redistribution (Pexels "Don\'t redistribute or sell...on other stock photo or wallpaper platforms"; Pixabay "cannot sell or distribute Content...on a Standalone basis"; Coverr FAQ "No you\'re not" + no compiling into a competing service); projects download their own footage into the shipped site/app; hotlinking banned', 'Coverr: YES for free-tier downloads (2026 summary block requires credit; longform contradicts on-page - attribute to be safe; Coverr+ exempt); Pexels/Pixabay: no (appreciated)', 'sources/video-policy.md'],
     ['wig', 'MIT (Copyright 2025 Vercel Labs)', 'yes', 'no', 'vendor/review-packs/wig/LICENSE'],
     ['axe-core', 'MPL-2.0 (file-level copyleft)', 'yes WITH conditions - redistribute axe.min.js ONLY unmodified (header intact) with its LICENSE alongside; never ship in product builds - the Phase 4 review-time copy in the served dir MUST be deleted after the run', 'YES - the MPL-2.0 license file (and LICENSE-3RD-PARTY.txt) must travel with any redistributed copy of axe.min.js', 'vendor/review-packs/axe/LICENSE'],
     ['shadergradient', 'MIT per package.json + README ONLY - no LICENSE file exists upstream; flag legal if formal text is required', 'yes (with the above caveat)', 'no', 'package.json declaration only'],

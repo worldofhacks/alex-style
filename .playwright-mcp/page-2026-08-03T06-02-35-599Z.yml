@@ -1,0 +1,8 @@
+- generic [active] [ref=f2e1]:
+  - heading "vfx-js audit" [level=1] [ref=f2e3]
+  - generic [ref=f2e5]:
+    - img "a" [ref=f2e6]
+    - img "b" [ref=f2e7]
+  - generic [ref=f2e8]:
+    - img "c" [ref=f2e9]
+    - paragraph [ref=f2e10]: tail content for scrolling

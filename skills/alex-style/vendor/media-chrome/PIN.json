@@ -1,0 +1,24 @@
+{
+  "package": "media-chrome",
+  "version": "4.19.2",
+  "subset": "vanilla web-components import closure (11 core controls + media-theme-element)",
+  "subset_files": 40,
+  "subset_bytes": 316666,
+  "iife": "dist/iife/all.js (defines media-theme; iife/index.js does not)",
+  "themes_repo": "github.com/muxinc/player.style",
+  "themes_sha": "12c9ad656e98998f998d24f0b94e6cddc0e07796",
+  "themes": [
+    "minimal",
+    "microvideo",
+    "sutro"
+  ],
+  "themes_excluded_permanently": [
+    "notflix",
+    "yt",
+    "vimeonova",
+    "winamp",
+    "instaplay"
+  ],
+  "themes_exclusion_reason": "brand-lookalike trade dress — fails the marketing-grade bar; excluded, not deferred",
+  "synced_at": "2026-08-03T06:22:07Z"
+}
