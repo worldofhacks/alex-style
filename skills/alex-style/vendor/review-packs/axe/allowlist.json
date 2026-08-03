@@ -1,0 +1,17 @@
+{
+  "_law": "Closed 22-rule set for the Phase 4 axe pass (law lives in sources/review-packs.md). Never widen ad hoc; tag-based runOnly is forbidden; 'target-size' is the only sanctioned opt-in.",
+  "runOnly": {
+    "type": "rule",
+    "values": [
+      "color-contrast", "link-in-text-block",
+      "button-name", "link-name", "input-button-name", "select-name", "label", "summary-name",
+      "image-alt", "svg-img-alt", "role-img-alt",
+      "aria-allowed-attr", "aria-valid-attr", "aria-valid-attr-value", "aria-required-attr",
+      "aria-hidden-focus", "aria-command-name", "nested-interactive",
+      "meta-viewport",
+      "tabindex", "scrollable-region-focusable",
+      "heading-order"
+    ]
+  },
+  "optional_opt_in": ["target-size"]
+}

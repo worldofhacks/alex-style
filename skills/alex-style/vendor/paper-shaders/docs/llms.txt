@@ -1,0 +1,45 @@
+# Paper Shaders
+
+## Docs
+
+- [ShaderMount](https://mintlify.wiki/paper-design/shaders/api/shader-mount.md): The core ShaderMount class for rendering GLSL shaders on the web
+- [Shader Sizing](https://mintlify.wiki/paper-design/shaders/api/shader-sizing.md): Shader sizing options and utilities for controlling layout and transforms
+- [TypeScript Types](https://mintlify.wiki/paper-design/shaders/api/types.md): Core TypeScript types and interfaces used throughout Paper Shaders
+- [Utility Functions](https://mintlify.wiki/paper-design/shaders/api/utilities.md): Helper functions for color conversion, texture generation, and more
+- [Customization](https://mintlify.wiki/paper-design/shaders/guides/customization.md): Guide to customizing shaders with colors, parameters, and presets
+- [Performance](https://mintlify.wiki/paper-design/shaders/guides/performance.md): Performance optimization tips and best practices for Paper Shaders
+- [React Usage](https://mintlify.wiki/paper-design/shaders/guides/react-usage.md): Complete guide to using Paper Shaders in React applications
+- [Sizing and Fit](https://mintlify.wiki/paper-design/shaders/guides/sizing-and-fit.md): Guide to shader sizing, fit modes, and responsive behavior
+- [Vanilla JavaScript Usage](https://mintlify.wiki/paper-design/shaders/guides/vanilla-usage.md): Complete guide to using Paper Shaders with vanilla JavaScript
+- [Installation](https://mintlify.wiki/paper-design/shaders/installation.md): Install Paper Shaders in your project with npm, yarn, or pnpm
+- [Introduction](https://mintlify.wiki/paper-design/shaders/introduction.md): Beautiful, performant WebGL shaders for modern web applications
+- [Quick Start](https://mintlify.wiki/paper-design/shaders/quickstart.md): Create your first Paper Shader in under 5 minutes
+- [Color Panels](https://mintlify.wiki/paper-design/shaders/shaders/color-panels.md): Pseudo-3D semi-transparent panels rotating around a central axis
+- [Dithering](https://mintlify.wiki/paper-design/shaders/shaders/dithering.md): Animated 2-color dithering over multiple pattern sources
+- [Dot Grid](https://mintlify.wiki/paper-design/shaders/shaders/dot-grid.md): Static grid pattern with circles, diamonds, squares or triangles
+- [Dot Orbit](https://mintlify.wiki/paper-design/shaders/shaders/dot-orbit.md): Animated multi-color dots orbiting around cell centers
+- [Fluted Glass](https://mintlify.wiki/paper-design/shaders/shaders/fluted-glass.md): Fluted glass image filter with streaked, ribbed distortions
+- [God Rays](https://mintlify.wiki/paper-design/shaders/shaders/god-rays.md): Animated rays of light radiating from center
+- [Grain Gradient](https://mintlify.wiki/paper-design/shaders/shaders/grain-gradient.md): Multi-color gradients with grainy noise texture in 7 animated abstract forms
+- [Halftone CMYK](https://mintlify.wiki/paper-design/shaders/shaders/halftone-cmyk.md): CMYK halftone printing effect with customizable ink colors
+- [Halftone Dots](https://mintlify.wiki/paper-design/shaders/shaders/halftone-dots.md): Halftone dot image filter with customizable grids and dot styles
+- [Heatmap](https://mintlify.wiki/paper-design/shaders/shaders/heatmap.md): Glowing gradient animation flowing through an input shape
+- [Image Dithering](https://mintlify.wiki/paper-design/shaders/shaders/image-dithering.md): Dithering image filter with multiple algorithms and color palettes
+- [Liquid Metal](https://mintlify.wiki/paper-design/shaders/shaders/liquid-metal.md): Futuristic liquid metal material with animated stripe patterns
+- [Mesh Gradient](https://mintlify.wiki/paper-design/shaders/shaders/mesh-gradient.md): A flowing composition of color spots with organic distortion and animation
+- [Metaballs](https://mintlify.wiki/paper-design/shaders/shaders/metaballs.md): Up to 20 colored gooey balls that merge into smooth organic shapes
+- [Neuro Noise](https://mintlify.wiki/paper-design/shaders/shaders/neuro-noise.md): Glowing web-like structure of fluid lines and soft intersections
+- [Shaders Overview](https://mintlify.wiki/paper-design/shaders/shaders/overview.md): Explore all available Paper Shaders with visual examples and categories
+- [Paper Texture](https://mintlify.wiki/paper-design/shaders/shaders/paper-texture.md): A realistic paper and cardboard texture shader with multiple noise layers
+- [Perlin Noise](https://mintlify.wiki/paper-design/shaders/shaders/perlin-noise.md): Classic animated 3D Perlin noise with exposed controls for octaves, persistence, and lacunarity
+- [Pulsing Border](https://mintlify.wiki/paper-design/shaders/shaders/pulsing-border.md): Luminous trails of color merging into a glowing gradient contour
+- [Simplex Noise](https://mintlify.wiki/paper-design/shaders/shaders/simplex-noise.md): Multi-color gradient mapped into smooth animated curves built with Simplex noise
+- [Smoke Ring](https://mintlify.wiki/paper-design/shaders/shaders/smoke-ring.md): Radial multi-colored gradient shaped with layered noise for a natural, smoky aesthetic
+- [Spiral](https://mintlify.wiki/paper-design/shaders/shaders/spiral.md): Single-colored animated spiral with morphing shapes
+- [Static Mesh Gradient](https://mintlify.wiki/paper-design/shaders/shaders/static-mesh-gradient.md): Multi-point mesh gradient with wave distortion and adjustable blend sharpness
+- [Static Radial Gradient](https://mintlify.wiki/paper-design/shaders/shaders/static-radial-gradient.md): Radial gradient with focal point control, shape distortion, and advanced mixing modes
+- [Swirl](https://mintlify.wiki/paper-design/shaders/shaders/swirl.md): Animated bands of color twisting and bending
+- [Voronoi](https://mintlify.wiki/paper-design/shaders/shaders/voronoi.md): Animated cellular pattern with smooth customizable edges and glow effects
+- [Warp](https://mintlify.wiki/paper-design/shaders/shaders/warp.md): Animated color fields warped by noise and swirls
+- [Water](https://mintlify.wiki/paper-design/shaders/shaders/water.md): Water-like surface distortion with natural caustic realism
+- [Waves](https://mintlify.wiki/paper-design/shaders/shaders/waves.md): Static line pattern from zigzags to smooth waves
