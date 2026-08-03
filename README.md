@@ -131,6 +131,8 @@ data. Pending proposals live in [proposals/](proposals/) until signed off.
 
 ## Licensing notes
 
+This repo's own content — scripts, docs, cards, playbooks — is [MIT](LICENSE).
+Everything under `vendor/` retains its upstream license:
 `vendor/_index/licenses.tsv` has one row per source with the
 resale/redistribution verdict. Highlights: React Bits (MIT + Commons Clause —
 never resell the components themselves), GSAP (free Webflow license incl.
