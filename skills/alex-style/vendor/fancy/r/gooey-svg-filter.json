@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gooey-svg-filter",
+  "type": "registry:ui",
+  "title": "Gooey Svg Filter",
+  "description": "A ui component.",
+  "dependencies": [],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "fancy/filter/gooey-svg-filter.tsx",
+      "content": "const GooeySvgFilter = ({\n  id = \"gooey-filter\",\n  strength = 10,\n}: {\n  id?: string\n  strength?: number\n}) => {\n  return (\n    <svg className=\"hidden absolute\">\n      <defs>\n        <filter id={id}>\n          <feGaussianBlur\n            in=\"SourceGraphic\"\n            stdDeviation={strength}\n            result=\"blur-sm\"\n          />\n          <feColorMatrix\n            in=\"blur-sm\"\n            type=\"matrix\"\n            values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9\"\n            result=\"goo\"\n          />\n          <feComposite in=\"SourceGraphic\" in2=\"goo\" operator=\"atop\" />\n        </filter>\n      </defs>\n    </svg>\n  )\n}\n\nexport default GooeySvgFilter\n",
+      "type": "registry:ui",
+      "target": "components/fancy/filter/gooey-svg-filter.tsx"
+    }
+  ]
+}

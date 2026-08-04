@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "letter-swap-forward-anim",
+  "type": "registry:ui",
+  "title": "Letter Swap Forward Anim",
+  "description": "A ui component.",
+  "dependencies": [
+    "motion"
+  ],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "fancy/text/letter-swap-forward-anim.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\nimport { AnimationOptions, motion, stagger, useAnimate } from \"motion/react\"\n\ninterface TextProps {\n  label: string\n  reverse?: boolean\n  transition?: AnimationOptions\n  staggerDuration?: number\n  staggerFrom?: \"first\" | \"last\" | \"center\" | number\n  className?: string\n  onClick?: () => void\n}\n\nconst LetterSwapForward = ({\n  label,\n  reverse = true,\n  transition = {\n    type: \"spring\",\n    duration: 0.7,\n  },\n  staggerDuration = 0.03,\n  staggerFrom = \"first\",\n  className,\n  onClick,\n  ...props\n}: TextProps) => {\n  const [scope, animate] = useAnimate()\n  const [blocked, setBlocked] = useState(false)\n\n  const hoverStart = () => {\n    if (blocked) return\n\n    setBlocked(true)\n\n    // Function to merge user transition with stagger and delay\n    const mergeTransition = (baseTransition: AnimationOptions) => ({\n      ...baseTransition,\n      delay: stagger(staggerDuration, {\n        from: staggerFrom,\n      }),\n    })\n\n    animate(\n      \".letter\",\n      { y: reverse ? \"100%\" : \"-100%\" },\n      mergeTransition(transition)\n    ).then(() => {\n      animate(\n        \".letter\",\n        {\n          y: 0,\n        },\n        {\n          duration: 0,\n        }\n      ).then(() => {\n        setBlocked(false)\n      })\n    })\n\n    animate(\n      \".letter-secondary\",\n      {\n        top: \"0%\",\n      },\n      mergeTransition(transition)\n    ).then(() => {\n      animate(\n        \".letter-secondary\",\n        {\n          top: reverse ? \"-100%\" : \"100%\",\n        },\n        {\n          duration: 0,\n        }\n      )\n    })\n  }\n\n  return (\n    <span\n      className={`flex justify-center items-center relative overflow-hidden  ${className} `}\n      onMouseEnter={hoverStart}\n      onClick={onClick}\n      ref={scope}\n      {...props}\n    >\n      <span className=\"sr-only\">{label}</span>\n\n      {label.split(\"\").map((letter: string, i: number) => {\n        return (\n          <span\n            className=\"whitespace-pre relative flex\"\n            key={i}\n            aria-hidden={true}\n          >\n            <motion.span className={`relative letter`} style={{ top: 0 }}>\n              {letter}\n            </motion.span>\n            <motion.span\n              className=\"absolute letter-secondary \"\n              style={{ top: reverse ? \"-100%\" : \"100%\" }}\n            >\n              {letter}\n            </motion.span>\n          </span>\n        )\n      })}\n    </span>\n  )\n}\n\nexport default LetterSwapForward\n",
+      "type": "registry:ui",
+      "target": "components/fancy/text/letter-swap-forward-anim.tsx"
+    }
+  ]
+}

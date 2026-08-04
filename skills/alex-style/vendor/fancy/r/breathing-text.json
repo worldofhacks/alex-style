@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breathing-text",
+  "type": "registry:ui",
+  "title": "Breathing Text",
+  "description": "A ui component.",
+  "dependencies": [
+    "motion"
+  ],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "fancy/text/breathing-text.tsx",
+      "content": "\"use client\"\n\nimport { ElementType } from \"react\"\nimport { motion, Transition, Variants } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface TextProps extends React.HTMLAttributes<HTMLElement> {\n  /**\n   * The content to be displayed and animated\n   */\n  children: React.ReactNode\n\n  /**\n   * HTML Tag to render the component as\n   */\n  as?: ElementType\n\n  /**\n   * Initial font variation settings\n   */\n  fromFontVariationSettings: string\n\n  /**\n   * Target font variation settings to animate to\n   */\n  toFontVariationSettings: string\n\n  /**\n   * Animation transition configuration\n   * @default { duration: 1.5, ease: \"easeInOut\" }\n   */\n  transition?: Transition\n\n  /**\n   * Duration of stagger delay between elements in seconds\n   * @default 0.1\n   */\n  staggerDuration?: number\n\n  /**\n   * Direction to stagger animations from\n   * @default \"first\"\n   */\n  staggerFrom?: \"first\" | \"last\" | \"center\" | number\n\n  /**\n   * Delay between animation repeats in seconds\n   * @default 0.1\n   */\n  repeatDelay?: number\n}\n\nconst BreathingText = ({\n  children,\n  as = \"span\",\n  fromFontVariationSettings,\n  toFontVariationSettings,\n  transition = {\n    duration: 1.5,\n    ease: \"easeInOut\",\n  },\n  staggerDuration = 0.1,\n  staggerFrom = \"first\",\n  repeatDelay = 0.1,\n  className,\n  ...props\n}: TextProps) => {\n  const letterVariants: Variants = {\n    initial: { fontVariationSettings: fromFontVariationSettings },\n    animate: (i) => ({\n      fontVariationSettings: toFontVariationSettings,\n      transition: {\n        ...transition,\n        repeat: Infinity,\n        repeatType: \"mirror\",\n        delay: i * staggerDuration,\n        repeatDelay: repeatDelay,\n      },\n    }),\n  }\n\n  const getCustomIndex = (index: number, total: number) => {\n    if (typeof staggerFrom === \"number\") {\n      return Math.abs(index - staggerFrom)\n    }\n    switch (staggerFrom) {\n      case \"first\":\n        return index\n      case \"last\":\n        return total - 1 - index\n      case \"center\":\n      default:\n        return Math.abs(index - Math.floor(total / 2))\n    }\n  }\n\n  const letters = String(children).split(\"\")\n  const ElementTag = as\n\n  return (\n    <ElementTag\n      className={cn(\n        className,\n        // an after pseudo element is used to create a container large enough to hold the text with full weight. Helps avoid layout shifts\n        \"relative after:absolute after:content-[attr(data-text)] after:font-black after:pointer-none after:overflow-hidden after:select-none after:invisible after:h-0\"\n      )}\n      {...props}\n      data-text={children}\n    >\n      {letters.map((letter: string, i: number) => (\n        <motion.span\n          key={i}\n          className=\"inline-block whitespace-pre\"\n          aria-hidden=\"true\"\n          variants={letterVariants}\n          initial=\"initial\"\n          animate=\"animate\"\n          custom={getCustomIndex(i, letters.length)}\n        >\n          {letter}\n        </motion.span>\n      ))}\n      <span className=\"sr-only\">{children}</span>\n    </ElementTag>\n  )\n}\n\nexport default BreathingText\n",
+      "type": "registry:ui",
+      "target": "components/fancy/text/breathing-text.tsx"
+    }
+  ]
+}

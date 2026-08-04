@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "underline-center",
+  "type": "registry:ui",
+  "title": "Underline Center",
+  "description": "A ui component.",
+  "dependencies": [
+    "motion"
+  ],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "fancy/text/underline-center.tsx",
+      "content": "\"use client\"\n\nimport { ElementType, useEffect, useRef, useMemo } from \"react\"\nimport { motion, ValueAnimationTransition } from \"motion/react\"\nimport { cn } from \"@/lib/utils\"\n\ninterface UnderlineProps {\n  /**\n   * The content to be displayed and animated\n   */\n  children: React.ReactNode\n\n  /**\n   * HTML Tag to render the component as\n   * @default span\n   */\n  as?: ElementType\n\n  /**\n   * Optional class name for styling\n   */\n  className?: string\n\n  /**\n   * Animation transition configuration\n   * @default { duration: 0.25, ease: \"easeInOut\" }\n   */\n  transition?: ValueAnimationTransition\n\n  /**\n   * Height of the underline as a ratio of font size\n   * @default 0.1\n   */\n  underlineHeightRatio?: number\n\n  /**\n   * Padding of the underline as a ratio of font size\n   * @default 0.01\n   */\n  underlinePaddingRatio?: number\n}\n\nconst CenterUnderline = ({\n  children,\n  as,\n  className,\n  transition = { duration: 0.25, ease: \"easeInOut\" },\n  underlineHeightRatio = 0.1,\n  underlinePaddingRatio = 0.01,\n  ...props\n}: UnderlineProps) => {\n  const textRef = useRef<HTMLSpanElement>(null)\n  const MotionComponent = useMemo(() => motion.create(as ?? \"span\"), [as])\n\n  useEffect(() => {\n    const updateUnderlineStyles = () => {\n      if (textRef.current) {\n        const fontSize = parseFloat(getComputedStyle(textRef.current).fontSize)\n        const underlineHeight = fontSize * underlineHeightRatio\n        const underlinePadding = fontSize * underlinePaddingRatio\n        textRef.current.style.setProperty(\n          \"--underline-height\",\n          `${underlineHeight}px`\n        )\n        textRef.current.style.setProperty(\n          \"--underline-padding\",\n          `${underlinePadding}px`\n        )\n      }\n    }\n\n    updateUnderlineStyles()\n    window.addEventListener(\"resize\", updateUnderlineStyles)\n\n    return () => window.removeEventListener(\"resize\", updateUnderlineStyles)\n  }, [underlineHeightRatio, underlinePaddingRatio])\n\n  const underlineVariants = {\n    hidden: {\n      width: 0,\n      originX: 0.5,\n    },\n    visible: {\n      width: \"100%\",\n      transition: transition,\n    },\n  }\n\n  return (\n    <MotionComponent\n      className={cn(\"relative inline-block cursor-pointer\", className)}\n      whileHover=\"visible\"\n      ref={textRef}\n      {...props}\n    >\n      <span>{children}</span>\n      <motion.div\n        className=\"absolute left-1/2 bg-current -translate-x-1/2\"\n        style={{\n          height: \"var(--underline-height)\",\n          bottom: \"calc(-1 * var(--underline-padding))\",\n        }}\n        variants={underlineVariants}\n        aria-hidden=\"true\"\n      />\n    </MotionComponent>\n  )\n}\n\nCenterUnderline.displayName = \"CenterUnderline\"\n\nexport default CenterUnderline\n",
+      "type": "registry:ui",
+      "target": "components/fancy/text/underline-center.tsx"
+    }
+  ]
+}

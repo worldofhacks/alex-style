@@ -55,6 +55,31 @@ const readJSON = (p) => JSON.parse(readFileSync(p, 'utf8'));
     push('motion-primitives', it.name, it.title ?? it.name, it.description, it.dependencies,
       it.registryDependencies, `vendor/motion-primitives/core/${it.name}.tsx`);
 
+  // fancy — curated 15-item subset (danielpetho/fancy, commit-pinned in vendor/fancy/PIN.json;
+  // sync_fancy fetches ONLY these — the rest of the registry is gated out as duplicates).
+  // Rows are static here because upstream ships "A ui component." as every description.
+  // The 3 registry:hook files in vendor/fancy/r/ are elastic-line's dependency closure,
+  // not components — deliberately absent from this catalog.
+  const FANCY = [
+    ['underline-center', 'Underline Center', 'Animated link underline that grows outward from the center on hover.', ['motion'], []],
+    ['underline-comes-in-goes-out', 'Underline Comes In Goes Out', 'Link underline that slides in from one side on hover and exits through the other.', ['clsx', 'motion'], []],
+    ['underline-goes-out-comes-in', 'Underline Goes Out Comes In', 'Link underline that exits through one side on hover and re-enters from the other.', ['clsx', 'motion'], []],
+    ['underline-to-background', 'Underline To Background', 'Link underline that expands upward into a full text background highlight on hover.', ['motion'], []],
+    ['media-between-text', 'Media Between Text', 'Inline image/video that expands between two pieces of text on hover, in-view, or via ref trigger.', ['motion'], []],
+    ['marquee-along-svg-path', 'Marquee Along Svg Path', 'Repeating marquee content flowing along an arbitrary SVG path; hover slowdown and scroll-velocity aware.', ['motion'], []],
+    ['element-along-svg-path', 'Element Along Svg Path', 'Arbitrary React children traveling along an SVG path — auto loop or scroll-driven progress.', ['motion'], []],
+    ['letter-swap-forward-anim', 'Letter Swap Forward Anim', 'Per-letter roll-over hover where letters swap through vertically in stagger (studio nav-link hover).', ['motion'], []],
+    ['letter-swap-pingpong-anim', 'Letter Swap Pingpong Anim', 'Per-letter hover swap that ping-pongs letters up and back with springs; debounced hover.', ['lodash', 'motion'], []],
+    ['text-along-path', 'Text Along Path', 'SVG text following an arbitrary path, with auto or scroll-driven travel and easing control.', ['motion'], []],
+    ['breathing-text', 'Breathing Text', 'Text looping between two fontVariationSettings states — real variable-font axis animation.', ['motion'], []],
+    ['variable-font-hover-by-letter', 'Variable Font Hover By Letter', 'Per-letter variable-font axis interpolation on hover (defaults wght 400→900, slnt 0→-10).', ['lodash', 'motion'], []],
+    ['elastic-line', 'Elastic Line', 'Cursor-bending elastic SVG divider line that springs back on release.', ['motion'], ['use-dimensions', 'use-elastic-line-events']],
+    ['gooey-svg-filter', 'Gooey Svg Filter', 'Reusable gooey SVG filter def — apply via CSS filter url(#id) for metaball/goo effects.', [], []],
+    ['pixelate-svg-filter', 'Pixelate Svg Filter', 'Reusable pixelation SVG filter def — apply via CSS filter url(#id).', [], []],
+  ];
+  for (const [name, title, desc, deps, regDeps] of FANCY)
+    push('fancy', name, title, desc, deps, regDeps, `vendor/fancy/r/${name}.json`);
+
   write('components.tsv', 'source	name	title	description	npm_deps	registry_deps	vendored_file', rows);
 }
 
@@ -200,9 +225,16 @@ const readJSON = (p) => JSON.parse(readFileSync(p, 'utf8'));
     ['phosphor', 'MIT', 'yes', 'no', 'vendor/phosphor/LICENSE'],
     ['animista', 'FreeBSD (2-clause BSD), (c) 2017 Ana Travas', 'yes', 'YES - ship the FULL license text (notice + conditions + disclaimer) with distributed CSS; a one-line comment alone does not satisfy it', 'vendor/animista/LICENSE.txt'],
     ['vanta', 'MIT', 'yes', 'no', 'vendor/vanta/LICENSE.md'],
+    ['atropos', 'MIT', 'yes', 'no', 'vendor/atropos/LICENSE'],
+    ['rough-notation', 'MIT', 'yes', 'no', 'vendor/rough-notation/LICENSE'],
+    ['roughjs', 'MIT', 'yes', 'no', 'vendor/roughjs/LICENSE'],
+    ['paper-shaders', 'Apache-2.0', 'yes - redistribution OK PROVIDED LICENSE and NOTICE travel with any redistributed copy (both vendored in core/ and react/; the zero-build path copies dist into projects, so copy them too). First non-MIT/BSD code source in the arsenal.', 'NOTICE-file retention only, no UI credit', 'vendor/paper-shaders/core/LICENSE'],
+    ['fancy', 'MIT', 'yes', 'no', 'vendor/fancy/LICENSE'],
     ['shadergradient', 'MIT per package.json + README ONLY - no LICENSE file exists upstream; flag legal if formal text is required', 'yes (with the above caveat)', 'no', 'package.json declaration only'],
     ['recent', 'none - third-party copyrighted work; robots signals: ai-train=no, use=reference', 'NEVER - metadata for design direction only; never copy imagery', 'n/a', 'no terms page exists'],
     ['layers', 'none - uploaders retain all IP', 'NEVER - metadata/palette reference only; never copy imagery', 'n/a', 'https://layers.to/legal/terms-and-conditions'],
+    ['fontsource-fonts', 'OFL-1.1 per package (each npm package carries its font\'s own license field; all 56 indexed packages verified OFL-1.1 @ v5.3.0)', 'yes - subset + self-host + vendor freely; ship the OFL license text with distributed font files', 'no', 'https://fontsource.org / per-package LICENSE on npm+jsdelivr'],
+    ['fontshare-itf-ffl', 'ITF Free Font License (FFL) - free commercial use, per-project download ONLY', 'NEVER - FFL §02: no distribution/duplication/upload to public servers/passing to service providers, no copying between projects, NO subsetting or modification; each project downloads its own kit', 'no (optional credit, FFL §01)', 'https://www.fontshare.com/licenses/itf-ffl (verbatim text: License/FFL.txt inside every kit)'],
   ];
   write('licenses.tsv', 'source	license	resale_or_redistribution	attribution_required	license_ref', rows);
 }

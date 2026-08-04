@@ -294,3 +294,18 @@ motion-primitives	sliding-number	Sliding Number	A component that transitions bet
 motion-primitives	spotlight	Spotlight	A component that creates a spotlight effect following cursor movement.	motion		vendor/motion-primitives/core/spotlight.tsx
 motion-primitives	spinning-text	Spinning Text	A component that animates text with a spinning rotation effect.	motion		vendor/motion-primitives/core/spinning-text.tsx
 motion-primitives	tilt	Tilt	A component that applies 3D tilt effects to elements based on cursor position.	motion		vendor/motion-primitives/core/tilt.tsx
+fancy	underline-center	Underline Center	Animated link underline that grows outward from the center on hover.	motion		vendor/fancy/r/underline-center.json
+fancy	underline-comes-in-goes-out	Underline Comes In Goes Out	Link underline that slides in from one side on hover and exits through the other.	clsx,motion		vendor/fancy/r/underline-comes-in-goes-out.json
+fancy	underline-goes-out-comes-in	Underline Goes Out Comes In	Link underline that exits through one side on hover and re-enters from the other.	clsx,motion		vendor/fancy/r/underline-goes-out-comes-in.json
+fancy	underline-to-background	Underline To Background	Link underline that expands upward into a full text background highlight on hover.	motion		vendor/fancy/r/underline-to-background.json
+fancy	media-between-text	Media Between Text	Inline image/video that expands between two pieces of text on hover, in-view, or via ref trigger.	motion		vendor/fancy/r/media-between-text.json
+fancy	marquee-along-svg-path	Marquee Along Svg Path	Repeating marquee content flowing along an arbitrary SVG path; hover slowdown and scroll-velocity aware.	motion		vendor/fancy/r/marquee-along-svg-path.json
+fancy	element-along-svg-path	Element Along Svg Path	Arbitrary React children traveling along an SVG path — auto loop or scroll-driven progress.	motion		vendor/fancy/r/element-along-svg-path.json
+fancy	letter-swap-forward-anim	Letter Swap Forward Anim	Per-letter roll-over hover where letters swap through vertically in stagger (studio nav-link hover).	motion		vendor/fancy/r/letter-swap-forward-anim.json
+fancy	letter-swap-pingpong-anim	Letter Swap Pingpong Anim	Per-letter hover swap that ping-pongs letters up and back with springs; debounced hover.	lodash,motion		vendor/fancy/r/letter-swap-pingpong-anim.json
+fancy	text-along-path	Text Along Path	SVG text following an arbitrary path, with auto or scroll-driven travel and easing control.	motion		vendor/fancy/r/text-along-path.json
+fancy	breathing-text	Breathing Text	Text looping between two fontVariationSettings states — real variable-font axis animation.	motion		vendor/fancy/r/breathing-text.json
+fancy	variable-font-hover-by-letter	Variable Font Hover By Letter	Per-letter variable-font axis interpolation on hover (defaults wght 400→900, slnt 0→-10).	lodash,motion		vendor/fancy/r/variable-font-hover-by-letter.json
+fancy	elastic-line	Elastic Line	Cursor-bending elastic SVG divider line that springs back on release.	motion	use-dimensions,use-elastic-line-events	vendor/fancy/r/elastic-line.json
+fancy	gooey-svg-filter	Gooey Svg Filter	Reusable gooey SVG filter def — apply via CSS filter url(#id) for metaball/goo effects.			vendor/fancy/r/gooey-svg-filter.json
+fancy	pixelate-svg-filter	Pixelate Svg Filter	Reusable pixelation SVG filter def — apply via CSS filter url(#id).			vendor/fancy/r/pixelate-svg-filter.json

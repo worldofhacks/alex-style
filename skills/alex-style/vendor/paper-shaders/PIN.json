@@ -1,0 +1,664 @@
+{
+  "name": "paper-shaders",
+  "version": "0.0.78",
+  "synced_at": "2026-08-04T15:37:01Z",
+  "packages": [
+    {
+      "package": "@paper-design/shaders",
+      "version": "0.0.78",
+      "tarball_sha1": "4c866be9df2a50aea458c7f0b563637c7972f91d",
+      "dir": "core/",
+      "license": "Apache-2.0",
+      "allowlist_files": 82,
+      "total_bytes": 387059,
+      "files": [
+        {
+          "name": "LICENSE",
+          "bytes": 11357
+        },
+        {
+          "name": "NOTICE",
+          "bytes": 91
+        },
+        {
+          "name": "README.md",
+          "bytes": 216
+        },
+        {
+          "name": "dist/empty-pixel.d.ts",
+          "bytes": 112
+        },
+        {
+          "name": "dist/empty-pixel.js",
+          "bytes": 392
+        },
+        {
+          "name": "dist/get-shader-color-from-string.d.ts",
+          "bytes": 334
+        },
+        {
+          "name": "dist/get-shader-color-from-string.js",
+          "bytes": 3299
+        },
+        {
+          "name": "dist/get-shader-noise-texture.d.ts",
+          "bytes": 79
+        },
+        {
+          "name": "dist/get-shader-noise-texture.js",
+          "bytes": 23748
+        },
+        {
+          "name": "dist/index.d.ts",
+          "bytes": 8597
+        },
+        {
+          "name": "dist/index.js",
+          "bytes": 4915
+        },
+        {
+          "name": "dist/shader-color-spaces.d.ts",
+          "bytes": 2550
+        },
+        {
+          "name": "dist/shader-color-spaces.js",
+          "bytes": 2690
+        },
+        {
+          "name": "dist/shader-mount.d.ts",
+          "bytes": 6812
+        },
+        {
+          "name": "dist/shader-mount.js",
+          "bytes": 21549
+        },
+        {
+          "name": "dist/shader-sizing.d.ts",
+          "bytes": 857
+        },
+        {
+          "name": "dist/shader-sizing.js",
+          "bytes": 758
+        },
+        {
+          "name": "dist/shader-utils.d.ts",
+          "bytes": 3460
+        },
+        {
+          "name": "dist/shader-utils.js",
+          "bytes": 3669
+        },
+        {
+          "name": "dist/shaders/color-panels.d.ts",
+          "bytes": 3085
+        },
+        {
+          "name": "dist/shaders/color-panels.js",
+          "bytes": 6626
+        },
+        {
+          "name": "dist/shaders/dithering.d.ts",
+          "bytes": 2975
+        },
+        {
+          "name": "dist/shaders/dithering.js",
+          "bytes": 7402
+        },
+        {
+          "name": "dist/shaders/dot-grid.d.ts",
+          "bytes": 2993
+        },
+        {
+          "name": "dist/shaders/dot-grid.js",
+          "bytes": 3006
+        },
+        {
+          "name": "dist/shaders/dot-orbit.d.ts",
+          "bytes": 2756
+        },
+        {
+          "name": "dist/shaders/dot-orbit.js",
+          "bytes": 3382
+        },
+        {
+          "name": "dist/shaders/fluted-glass.d.ts",
+          "bytes": 5182
+        },
+        {
+          "name": "dist/shaders/fluted-glass.js",
+          "bytes": 10695
+        },
+        {
+          "name": "dist/shaders/gem-smoke.d.ts",
+          "bytes": 4178
+        },
+        {
+          "name": "dist/shaders/gem-smoke.js",
+          "bytes": 20820
+        },
+        {
+          "name": "dist/shaders/god-rays.d.ts",
+          "bytes": 3088
+        },
+        {
+          "name": "dist/shaders/god-rays.js",
+          "bytes": 3979
+        },
+        {
+          "name": "dist/shaders/grain-gradient.d.ts",
+          "bytes": 4016
+        },
+        {
+          "name": "dist/shaders/grain-gradient.js",
+          "bytes": 8674
+        },
+        {
+          "name": "dist/shaders/halftone-cmyk.d.ts",
+          "bytes": 4670
+        },
+        {
+          "name": "dist/shaders/halftone-cmyk.js",
+          "bytes": 10008
+        },
+        {
+          "name": "dist/shaders/halftone-dots.d.ts",
+          "bytes": 3760
+        },
+        {
+          "name": "dist/shaders/halftone-dots.js",
+          "bytes": 8477
+        },
+        {
+          "name": "dist/shaders/heatmap.d.ts",
+          "bytes": 3207
+        },
+        {
+          "name": "dist/shaders/heatmap.js",
+          "bytes": 12089
+        },
+        {
+          "name": "dist/shaders/image-dithering.d.ts",
+          "bytes": 3432
+        },
+        {
+          "name": "dist/shaders/image-dithering.js",
+          "bytes": 5589
+        },
+        {
+          "name": "dist/shaders/liquid-metal.d.ts",
+          "bytes": 4312
+        },
+        {
+          "name": "dist/shaders/liquid-metal.js",
+          "bytes": 22712
+        },
+        {
+          "name": "dist/shaders/mesh-gradient.d.ts",
+          "bytes": 2433
+        },
+        {
+          "name": "dist/shaders/mesh-gradient.js",
+          "bytes": 3547
+        },
+        {
+          "name": "dist/shaders/metaballs.d.ts",
+          "bytes": 2348
+        },
+        {
+          "name": "dist/shaders/metaballs.js",
+          "bytes": 2914
+        },
+        {
+          "name": "dist/shaders/neuro-noise.d.ts",
+          "bytes": 2461
+        },
+        {
+          "name": "dist/shaders/neuro-noise.js",
+          "bytes": 1938
+        },
+        {
+          "name": "dist/shaders/paper-texture.d.ts",
+          "bytes": 3648
+        },
+        {
+          "name": "dist/shaders/paper-texture.js",
+          "bytes": 6735
+        },
+        {
+          "name": "dist/shaders/perlin-noise.d.ts",
+          "bytes": 2614
+        },
+        {
+          "name": "dist/shaders/perlin-noise.js",
+          "bytes": 5036
+        },
+        {
+          "name": "dist/shaders/pulsing-border.d.ts",
+          "bytes": 4403
+        },
+        {
+          "name": "dist/shaders/pulsing-border.js",
+          "bytes": 7764
+        },
+        {
+          "name": "dist/shaders/simplex-noise.d.ts",
+          "bytes": 2320
+        },
+        {
+          "name": "dist/shaders/simplex-noise.js",
+          "bytes": 2590
+        },
+        {
+          "name": "dist/shaders/smoke-ring.d.ts",
+          "bytes": 2767
+        },
+        {
+          "name": "dist/shaders/smoke-ring.js",
+          "bytes": 3843
+        },
+        {
+          "name": "dist/shaders/spiral.d.ts",
+          "bytes": 3070
+        },
+        {
+          "name": "dist/shaders/spiral.js",
+          "bytes": 2409
+        },
+        {
+          "name": "dist/shaders/static-mesh-gradient.d.ts",
+          "bytes": 2976
+        },
+        {
+          "name": "dist/shaders/static-mesh-gradient.js",
+          "bytes": 3688
+        },
+        {
+          "name": "dist/shaders/static-radial-gradient.d.ts",
+          "bytes": 3434
+        },
+        {
+          "name": "dist/shaders/static-radial-gradient.js",
+          "bytes": 5650
+        },
+        {
+          "name": "dist/shaders/swirl.d.ts",
+          "bytes": 2964
+        },
+        {
+          "name": "dist/shaders/swirl.js",
+          "bytes": 2676
+        },
+        {
+          "name": "dist/shaders/voronoi.d.ts",
+          "bytes": 3128
+        },
+        {
+          "name": "dist/shaders/voronoi.js",
+          "bytes": 3516
+        },
+        {
+          "name": "dist/shaders/warp.d.ts",
+          "bytes": 3359
+        },
+        {
+          "name": "dist/shaders/warp.js",
+          "bytes": 3714
+        },
+        {
+          "name": "dist/shaders/water.d.ts",
+          "bytes": 2918
+        },
+        {
+          "name": "dist/shaders/water.js",
+          "bytes": 3404
+        },
+        {
+          "name": "dist/shaders/waves.d.ts",
+          "bytes": 2545
+        },
+        {
+          "name": "dist/shaders/waves.js",
+          "bytes": 2045
+        },
+        {
+          "name": "dist/types.d.ts",
+          "bytes": 135
+        },
+        {
+          "name": "dist/types.js",
+          "bytes": 264
+        },
+        {
+          "name": "dist/vertex-shader.d.ts",
+          "bytes": 5272
+        },
+        {
+          "name": "dist/vertex-shader.js",
+          "bytes": 5370
+        },
+        {
+          "name": "package.json",
+          "bytes": 563
+        }
+      ]
+    },
+    {
+      "package": "@paper-design/shaders-react",
+      "version": "0.0.78",
+      "tarball_sha1": "b9219503f718ec7c0204471ac12dc64cb3cdcc2e",
+      "dir": "react/",
+      "license": "Apache-2.0",
+      "allowlist_files": 76,
+      "total_bytes": 177351,
+      "files": [
+        {
+          "name": "LICENSE",
+          "bytes": 11357
+        },
+        {
+          "name": "NOTICE",
+          "bytes": 91
+        },
+        {
+          "name": "README.md",
+          "bytes": 607
+        },
+        {
+          "name": "dist/color-props-are-equal.d.ts",
+          "bytes": 201
+        },
+        {
+          "name": "dist/color-props-are-equal.js",
+          "bytes": 1164
+        },
+        {
+          "name": "dist/index.d.ts",
+          "bytes": 7050
+        },
+        {
+          "name": "dist/index.js",
+          "bytes": 4311
+        },
+        {
+          "name": "dist/set-min-image-size.d.ts",
+          "bytes": 225
+        },
+        {
+          "name": "dist/set-min-image-size.js",
+          "bytes": 667
+        },
+        {
+          "name": "dist/shader-mount.d.ts",
+          "bytes": 1744
+        },
+        {
+          "name": "dist/shader-mount.js",
+          "bytes": 4851
+        },
+        {
+          "name": "dist/shaders/color-panels.d.ts",
+          "bytes": 645
+        },
+        {
+          "name": "dist/shaders/color-panels.js",
+          "bytes": 4234
+        },
+        {
+          "name": "dist/shaders/dithering.d.ts",
+          "bytes": 777
+        },
+        {
+          "name": "dist/shaders/dithering.js",
+          "bytes": 3653
+        },
+        {
+          "name": "dist/shaders/dot-grid.d.ts",
+          "bytes": 441
+        },
+        {
+          "name": "dist/shaders/dot-grid.js",
+          "bytes": 3740
+        },
+        {
+          "name": "dist/shaders/dot-orbit.d.ts",
+          "bytes": 611
+        },
+        {
+          "name": "dist/shaders/dot-orbit.js",
+          "bytes": 3491
+        },
+        {
+          "name": "dist/shaders/fluted-glass.d.ts",
+          "bytes": 715
+        },
+        {
+          "name": "dist/shaders/fluted-glass.js",
+          "bytes": 5918
+        },
+        {
+          "name": "dist/shaders/gem-smoke.d.ts",
+          "bytes": 742
+        },
+        {
+          "name": "dist/shaders/gem-smoke.js",
+          "bytes": 5596
+        },
+        {
+          "name": "dist/shaders/god-rays.d.ts",
+          "bytes": 588
+        },
+        {
+          "name": "dist/shaders/god-rays.js",
+          "bytes": 4018
+        },
+        {
+          "name": "dist/shaders/grain-gradient.d.ts",
+          "bytes": 776
+        },
+        {
+          "name": "dist/shaders/grain-gradient.js",
+          "bytes": 4112
+        },
+        {
+          "name": "dist/shaders/halftone-cmyk.d.ts",
+          "bytes": 663
+        },
+        {
+          "name": "dist/shaders/halftone-cmyk.js",
+          "bytes": 5667
+        },
+        {
+          "name": "dist/shaders/halftone-dots.d.ts",
+          "bytes": 668
+        },
+        {
+          "name": "dist/shaders/halftone-dots.js",
+          "bytes": 4434
+        },
+        {
+          "name": "dist/shaders/heatmap.d.ts",
+          "bytes": 646
+        },
+        {
+          "name": "dist/shaders/heatmap.js",
+          "bytes": 4517
+        },
+        {
+          "name": "dist/shaders/image-dithering.d.ts",
+          "bytes": 754
+        },
+        {
+          "name": "dist/shaders/image-dithering.js",
+          "bytes": 3938
+        },
+        {
+          "name": "dist/shaders/liquid-metal.d.ts",
+          "bytes": 779
+        },
+        {
+          "name": "dist/shaders/liquid-metal.js",
+          "bytes": 5206
+        },
+        {
+          "name": "dist/shaders/mesh-gradient.d.ts",
+          "bytes": 652
+        },
+        {
+          "name": "dist/shaders/mesh-gradient.js",
+          "bytes": 3249
+        },
+        {
+          "name": "dist/shaders/metaballs.d.ts",
+          "bytes": 622
+        },
+        {
+          "name": "dist/shaders/metaballs.js",
+          "bytes": 3194
+        },
+        {
+          "name": "dist/shaders/neuro-noise.d.ts",
+          "bytes": 637
+        },
+        {
+          "name": "dist/shaders/neuro-noise.js",
+          "bytes": 3275
+        },
+        {
+          "name": "dist/shaders/paper-texture.d.ts",
+          "bytes": 955
+        },
+        {
+          "name": "dist/shaders/paper-texture.js",
+          "bytes": 4841
+        },
+        {
+          "name": "dist/shaders/perlin-noise.d.ts",
+          "bytes": 647
+        },
+        {
+          "name": "dist/shaders/perlin-noise.js",
+          "bytes": 3726
+        },
+        {
+          "name": "dist/shaders/pulsing-border.d.ts",
+          "bytes": 680
+        },
+        {
+          "name": "dist/shaders/pulsing-border.js",
+          "bytes": 5423
+        },
+        {
+          "name": "dist/shaders/simplex-noise.d.ts",
+          "bytes": 664
+        },
+        {
+          "name": "dist/shaders/simplex-noise.js",
+          "bytes": 3125
+        },
+        {
+          "name": "dist/shaders/smoke-ring.d.ts",
+          "bytes": 613
+        },
+        {
+          "name": "dist/shaders/smoke-ring.js",
+          "bytes": 3654
+        },
+        {
+          "name": "dist/shaders/spiral.d.ts",
+          "bytes": 578
+        },
+        {
+          "name": "dist/shaders/spiral.js",
+          "bytes": 3928
+        },
+        {
+          "name": "dist/shaders/static-mesh-gradient.d.ts",
+          "bytes": 732
+        },
+        {
+          "name": "dist/shaders/static-mesh-gradient.js",
+          "bytes": 3919
+        },
+        {
+          "name": "dist/shaders/static-radial-gradient.d.ts",
+          "bytes": 764
+        },
+        {
+          "name": "dist/shaders/static-radial-gradient.js",
+          "bytes": 4574
+        },
+        {
+          "name": "dist/shaders/swirl.d.ts",
+          "bytes": 568
+        },
+        {
+          "name": "dist/shaders/swirl.js",
+          "bytes": 3782
+        },
+        {
+          "name": "dist/shaders/voronoi.d.ts",
+          "bytes": 591
+        },
+        {
+          "name": "dist/shaders/voronoi.js",
+          "bytes": 3601
+        },
+        {
+          "name": "dist/shaders/warp.d.ts",
+          "bytes": 644
+        },
+        {
+          "name": "dist/shaders/warp.js",
+          "bytes": 4663
+        },
+        {
+          "name": "dist/shaders/water.d.ts",
+          "bytes": 648
+        },
+        {
+          "name": "dist/shaders/water.js",
+          "bytes": 3917
+        },
+        {
+          "name": "dist/shaders/waves.d.ts",
+          "bytes": 570
+        },
+        {
+          "name": "dist/shaders/waves.js",
+          "bytes": 3543
+        },
+        {
+          "name": "dist/suspend.d.ts",
+          "bytes": 403
+        },
+        {
+          "name": "dist/suspend.js",
+          "bytes": 1392
+        },
+        {
+          "name": "dist/transparent-pixel.d.ts",
+          "bytes": 118
+        },
+        {
+          "name": "dist/transparent-pixel.js",
+          "bytes": 410
+        },
+        {
+          "name": "dist/use-merge-refs.d.ts",
+          "bytes": 298
+        },
+        {
+          "name": "dist/use-merge-refs.js",
+          "bytes": 1314
+        },
+        {
+          "name": "package.json",
+          "bytes": 840
+        }
+      ]
+    }
+  ],
+  "total_bytes": 564410,
+  "excluded": "everything not in files[] — all *.map sourcemaps (39 core + 36 react, ~669KB, about half the tarball bytes) and any stray artifact; the allowlist makes the exclusion structural. LICENSE and NOTICE are load-bearing (Apache-2.0 redistribution condition), never excludable.",
+  "pin_is_law": "upstream ships breaking changes under 0.0.x — never float this version; bumping is a deliberate re-audit + re-pin of both tarball sha1s"
+}

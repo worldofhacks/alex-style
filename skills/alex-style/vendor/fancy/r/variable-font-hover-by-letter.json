@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "variable-font-hover-by-letter",
+  "type": "registry:ui",
+  "title": "Variable Font Hover By Letter",
+  "description": "A ui component.",
+  "dependencies": [
+    "lodash",
+    "motion"
+  ],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "fancy/text/variable-font-hover-by-letter.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\nimport { debounce } from \"lodash\"\nimport { AnimationOptions, motion, stagger, useAnimate } from \"motion/react\"\n\ninterface TextProps {\n  label: string\n  fromFontVariationSettings: string\n  toFontVariationSettings: string\n  transition?: AnimationOptions\n  staggerDuration?: number\n  staggerFrom?: \"first\" | \"last\" | \"center\" | number\n  className?: string\n  onClick?: () => void\n}\n\nconst VariableFontHoverByLetter = ({\n  label,\n  fromFontVariationSettings = \"'wght' 400, 'slnt' 0\",\n  toFontVariationSettings = \"'wght' 900, 'slnt' -10\",\n  transition = {\n    type: \"spring\",\n    duration: 0.7,\n  },\n  staggerDuration = 0.03,\n  staggerFrom = \"first\",\n  className,\n  onClick,\n  ...props\n}: TextProps) => {\n  const [scope, animate] = useAnimate()\n  const [isHovered, setIsHovered] = useState(false)\n\n  const mergeTransition = (baseTransition: AnimationOptions) => ({\n    ...baseTransition,\n    delay: stagger(staggerDuration, {\n      from: staggerFrom,\n    }),\n  })\n\n  const hoverStart = debounce(\n    () => {\n      if (isHovered) return\n      setIsHovered(true)\n\n      animate(\n        \".letter\",\n        { fontVariationSettings: toFontVariationSettings },\n        mergeTransition(transition)\n      )\n    },\n    100,\n    { leading: true, trailing: true }\n  )\n\n  const hoverEnd = debounce(\n    () => {\n      setIsHovered(false)\n\n      animate(\n        \".letter\",\n        { fontVariationSettings: fromFontVariationSettings },\n        mergeTransition(transition)\n      )\n    },\n    100,\n    { leading: true, trailing: true }\n  )\n\n  return (\n    <motion.span\n      className={`${className}`}\n      onHoverStart={hoverStart}\n      onHoverEnd={hoverEnd}\n      onClick={onClick}\n      ref={scope}\n      {...props}\n    >\n      <span className=\"sr-only\">{label}</span>\n\n      {label.split(\"\").map((letter: string, i: number) => {\n        return (\n          <motion.span\n            key={i}\n            className=\"inline-block whitespace-pre letter\"\n            aria-hidden=\"true\"\n          >\n            {letter}\n          </motion.span>\n        )\n      })}\n    </motion.span>\n  )\n}\n\nexport default VariableFontHoverByLetter\n",
+      "type": "registry:ui",
+      "target": "components/fancy/text/variable-font-hover-by-letter.tsx"
+    }
+  ]
+}

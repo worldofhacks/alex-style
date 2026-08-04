@@ -20,7 +20,7 @@
 
 **Use for**: landing/marketing hero motion (`blur-fade`, `text-animate`, `animated-gradient-text`, `hero-video-dialog`); logo/testimonial strips (`marquee`, `avatar-circles`, `tweet-card`); integration/feature showcases (`bento-grid`, `animated-beam`, `orbiting-circles`, `dock`, `icon-cloud`); decorative section backgrounds (`dot-pattern`, `grid-pattern`, `flickering-grid`, `meteors`, `particles`, `retro-grid`, `warp-background`); CTAs and stats (`shimmer-button`, `rainbow-button`, `number-ticker`, `border-beam`, `shine-border`); product shots in frames (`iphone`, `android`, `safari`, `terminal`); celebration (`confetti`).
 
-**Do NOT use for**: app UI primitives (forms, tables, dialogs → shadcn/ui proper); non-React stacks (everything is `"use client"` TSX); restrained/enterprise dashboards (most components are deliberately high-motion — prefer `motion-primitives` for subtle motion); exotic shader/3D backgrounds (→ `reactbits`, `vanta`, `shadergradient`); CSS-only keyframe snippets for arbitrary elements (→ `animista`); charts/data-viz (only `number-ticker` and `animated-circular-progress-bar` exist here).
+**Do NOT use for**: app UI primitives (forms, tables, dialogs → hand-build on shadcn/ui plumbing, re-dressed in brief tokens — stock shadcn look never ships); non-React stacks (everything is `"use client"` TSX); restrained/enterprise dashboards (most components are deliberately high-motion — prefer `motion-primitives` for subtle motion); exotic shader/3D backgrounds (→ `reactbits`, `vanta`, `shadergradient`); CSS-only keyframe snippets for arbitrary elements (→ `animista`); charts/data-viz (only `number-ticker` and `animated-circular-progress-bar` exist here).
 
 ## How to consume (token discipline)
 

@@ -22,7 +22,7 @@
 - Scroll polish: scroll-progress, in-view, animated-group (staggered entrances), progressive-blur, image-comparison
 
 **NOT for:**
-- App primitives (buttons, forms, tables, selects) — use shadcn/ui; only motion-flavored accordion/dialog/carousel/disclosure here
+- App primitives (buttons, forms, tables, selects) — hand-build on shadcn/ui plumbing re-dressed in brief tokens (stock shadcn look never ships; SKILL.md law); only motion-flavored accordion/dialog/carousel/disclosure here
 - WebGL/canvas backgrounds — use `vanta`, `shadergradient`, or `reactbits` backgrounds
 - Larger flashy component variety (device mocks, bento grids, particles) — `magicui` or `reactbits`; sleeker card/input widgets — `kokonutui`
 - CSS-only / non-React projects — everything needs React + the `motion` runtime; use `animista` for pure CSS keyframes

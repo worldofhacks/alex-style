@@ -1,0 +1,67 @@
+{
+  "package": "roughjs",
+  "version": "4.6.6",
+  "tarball_sha1": "1059f49a5e0c80dee541a005b20cc322b222158b",
+  "synced_at": "2026-08-04T15:33:50Z",
+  "allowlist_files": 14,
+  "total_bytes": 103290,
+  "files": [
+    {
+      "name": "LICENSE",
+      "bytes": 1068
+    },
+    {
+      "name": "README.md",
+      "bytes": 6057
+    },
+    {
+      "name": "canvas.d.ts",
+      "bytes": 1208
+    },
+    {
+      "name": "core.d.ts",
+      "bytes": 2183
+    },
+    {
+      "name": "generator.d.ts",
+      "bytes": 1217
+    },
+    {
+      "name": "geometry.d.ts",
+      "bytes": 229
+    },
+    {
+      "name": "math.d.ts",
+      "bytes": 147
+    },
+    {
+      "name": "package.json",
+      "bytes": 1291
+    },
+    {
+      "name": "renderer.d.ts",
+      "bytes": 1994
+    },
+    {
+      "name": "rough.cjs.js",
+      "bytes": 30719
+    },
+    {
+      "name": "rough.d.ts",
+      "bytes": 403
+    },
+    {
+      "name": "rough.esm.js",
+      "bytes": 27748
+    },
+    {
+      "name": "rough.js",
+      "bytes": 27762
+    },
+    {
+      "name": "svg.d.ts",
+      "bytes": 1264
+    }
+  ],
+  "excluded": "everything not in files[] — the entire bin/ unbundled tree (imports the 4 npm deps hachure-fill/path-data-parser/points-on-curve/points-on-path; the bundled/ builds inline all four), bundled/fillers/*.d.ts internal filler types, CHANGELOG.md, tsconfig.json, .eslintrc.json, .github/FUNDING.yml, and any stray artifact — the allowlist makes the exclusion structural"
+}

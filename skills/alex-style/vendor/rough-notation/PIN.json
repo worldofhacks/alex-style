@@ -1,0 +1,51 @@
+{
+  "package": "rough-notation",
+  "version": "0.5.1",
+  "tarball_sha1": "32abbb16b973fb00fba83ab96b18704e98620e95",
+  "synced_at": "2026-08-04T15:33:50Z",
+  "allowlist_files": 10,
+  "total_bytes": 44709,
+  "files": [
+    {
+      "name": "LICENSE",
+      "bytes": 1068
+    },
+    {
+      "name": "README.md",
+      "bytes": 8677
+    },
+    {
+      "name": "keyframes.d.ts",
+      "bytes": 49
+    },
+    {
+      "name": "model.d.ts",
+      "bytes": 1179
+    },
+    {
+      "name": "package.json",
+      "bytes": 980
+    },
+    {
+      "name": "render.d.ts",
+      "bytes": 239
+    },
+    {
+      "name": "rough-notation.cjs.js",
+      "bytes": 10755
+    },
+    {
+      "name": "rough-notation.d.ts",
+      "bytes": 290
+    },
+    {
+      "name": "rough-notation.esm.js",
+      "bytes": 10691
+    },
+    {
+      "name": "rough-notation.iife.js",
+      "bytes": 10781
+    }
+  ],
+  "excluded": "everything not in files[] — the unbundled lib/{rough-notation,render,model,keyframes}.js (they import from roughjs/bin/* and are NOT self-contained; the three bundled builds inline that code), rollup.config.js, .github/FUNDING.yml, and any stray artifact — the allowlist makes the exclusion structural"
+}

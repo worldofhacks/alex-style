@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-dimensions",
+  "type": "registry:hook",
+  "title": "Use Dimensions",
+  "description": "A hook component.",
+  "dependencies": [],
+  "author": "daniel petho <https://www.danielpetho.com>",
+  "files": [
+    {
+      "path": "hooks/use-dimensions.ts",
+      "content": "import { RefObject, useEffect, useState } from \"react\"\n\ninterface Dimensions {\n  width: number\n  height: number\n}\n\nexport function useDimensions(\n  ref: RefObject<HTMLElement | SVGElement | null>\n): Dimensions {\n  const [dimensions, setDimensions] = useState<Dimensions>({\n    width: 0,\n    height: 0,\n  })\n\n  useEffect(() => {\n    const updateDimensions = () => {\n      if (ref.current) {\n        const { width, height } = ref.current.getBoundingClientRect()\n        setDimensions({ width, height })\n      }\n    }\n\n    updateDimensions()\n    window.addEventListener(\"resize\", updateDimensions)\n\n    return () => window.removeEventListener(\"resize\", updateDimensions)\n  }, [ref])\n\n  return dimensions\n}\n",
+      "type": "registry:hook",
+      "target": "hooks/use-dimensions.ts"
+    }
+  ]
+}

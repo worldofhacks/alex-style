@@ -3,3 +3,4 @@ node_modules/
 *.log
 *.tmp
 .playwright-mcp/
+skills/alex-style/ledger.tsv

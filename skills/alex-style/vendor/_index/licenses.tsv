@@ -9,6 +9,13 @@ lenis	MIT	yes	no	upstream LICENSE (darkroomengineering/lenis)
 phosphor	MIT	yes	no	vendor/phosphor/LICENSE
 animista	FreeBSD (2-clause BSD), (c) 2017 Ana Travas	yes	YES - ship the FULL license text (notice + conditions + disclaimer) with distributed CSS; a one-line comment alone does not satisfy it	vendor/animista/LICENSE.txt
 vanta	MIT	yes	no	vendor/vanta/LICENSE.md
+atropos	MIT	yes	no	vendor/atropos/LICENSE
+rough-notation	MIT	yes	no	vendor/rough-notation/LICENSE
+roughjs	MIT	yes	no	vendor/roughjs/LICENSE
+paper-shaders	Apache-2.0	yes - redistribution OK PROVIDED LICENSE and NOTICE travel with any redistributed copy (both vendored in core/ and react/; the zero-build path copies dist into projects, so copy them too). First non-MIT/BSD code source in the arsenal.	NOTICE-file retention only, no UI credit	vendor/paper-shaders/core/LICENSE
+fancy	MIT	yes	no	vendor/fancy/LICENSE
 shadergradient	MIT per package.json + README ONLY - no LICENSE file exists upstream; flag legal if formal text is required	yes (with the above caveat)	no	package.json declaration only
 recent	none - third-party copyrighted work; robots signals: ai-train=no, use=reference	NEVER - metadata for design direction only; never copy imagery	n/a	no terms page exists
 layers	none - uploaders retain all IP	NEVER - metadata/palette reference only; never copy imagery	n/a	https://layers.to/legal/terms-and-conditions
+fontsource-fonts	OFL-1.1 per package (each npm package carries its font's own license field; all 56 indexed packages verified OFL-1.1 @ v5.3.0)	yes - subset + self-host + vendor freely; ship the OFL license text with distributed font files	no	https://fontsource.org / per-package LICENSE on npm+jsdelivr
+fontshare-itf-ffl	ITF Free Font License (FFL) - free commercial use, per-project download ONLY	NEVER - FFL §02: no distribution/duplication/upload to public servers/passing to service providers, no copying between projects, NO subsetting or modification; each project downloads its own kit	no (optional credit, FFL §01)	https://www.fontshare.com/licenses/itf-ffl (verbatim text: License/FFL.txt inside every kit)

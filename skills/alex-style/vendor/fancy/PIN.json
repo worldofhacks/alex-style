@@ -1,0 +1,114 @@
+{
+  "source_url": "https://www.fancycomponents.dev/r/<name>.json",
+  "github_repo": "danielpetho/fancy",
+  "commit_sha": "f9f62c61207b2dd3210476dd98af3c9a5be24094",
+  "synced_at": "2026-08-04T15:44:11Z",
+  "license": {
+    "file": "LICENSE",
+    "bytes": 1069,
+    "sha256": "39b0d9c112b4e80383da88660cbaa64972f741e80205c14fa1b779ff1989cc09"
+  },
+  "items": [
+    {
+      "name": "underline-center",
+      "bytes": 3332,
+      "sha256": "db9d40b8667dc8b7fae267b9dcca479e5511218aeaf48e9ec101ae4e9c225d06"
+    },
+    {
+      "name": "underline-comes-in-goes-out",
+      "bytes": 4171,
+      "sha256": "2cb6e2582d4c80f7bc120c9d6633c3bb0d3484cb830778ebc4067c682d11a091"
+    },
+    {
+      "name": "underline-goes-out-comes-in",
+      "bytes": 4192,
+      "sha256": "7dcbb658bc0074837baa4f32876044019a143465422627bf5d3b80950bc8a6f5"
+    },
+    {
+      "name": "underline-to-background",
+      "bytes": 4063,
+      "sha256": "ef2061782ac59c58451db370f790877d0cecf2be962704410030eb70dd508e32"
+    },
+    {
+      "name": "media-between-text",
+      "bytes": 5690,
+      "sha256": "af74b501dedc933b62ce12f6f352c9c064c7b27789f5a5d9de928be57ae78381"
+    },
+    {
+      "name": "marquee-along-svg-path",
+      "bytes": 14597,
+      "sha256": "5a0fcefa2560a552be5a6981933a80695c970e2bbcec905383d2302c6f4778d8"
+    },
+    {
+      "name": "element-along-svg-path",
+      "bytes": 7625,
+      "sha256": "1fdba184fc93dc9fd3e9009ed5e69c67ff7b37d3ea7c0586a8ea608081edaa27"
+    },
+    {
+      "name": "letter-swap-forward-anim",
+      "bytes": 3124,
+      "sha256": "9c218aecaa99bb1291ad1fe010c38e7ba212c9cf561f097b2d8a25d33d8b11b4"
+    },
+    {
+      "name": "letter-swap-pingpong-anim",
+      "bytes": 3281,
+      "sha256": "8a6d358dc82b9e1ab71107bf43982fd88ec80010917a09ea0f9a9e8aaad8b638"
+    },
+    {
+      "name": "text-along-path",
+      "bytes": 5610,
+      "sha256": "4eb6ff31aedd3bc38b28a57344d6c2386afac6f059f9341a4f4e73cbd63dabb3"
+    },
+    {
+      "name": "breathing-text",
+      "bytes": 3693,
+      "sha256": "f4488df9362718299f8a0345d377b2571720944073850a93b092de3a07e4b6c7"
+    },
+    {
+      "name": "variable-font-hover-by-letter",
+      "bytes": 2827,
+      "sha256": "336156496006a0114015f00f4a627a0e8b9d9097be0acbd1e78775882064a112"
+    },
+    {
+      "name": "elastic-line",
+      "bytes": 3883,
+      "sha256": "16b7b8967cc55ad3f53bf9cde6f38f122aff6b493223b7e8af50082da4b9c8e9"
+    },
+    {
+      "name": "gooey-svg-filter",
+      "bytes": 1180,
+      "sha256": "80d3f68e3f20fdb2aeb25eddfe9e47b07befece88c7d54745a548aa391fc9491"
+    },
+    {
+      "name": "pixelate-svg-filter",
+      "bytes": 4210,
+      "sha256": "3ce14a7a116a69df08802e7e5e208b4d83066ceac745c171606b8adbc1a8ad06"
+    }
+  ],
+  "hook_items": [
+    {
+      "name": "use-dimensions",
+      "bytes": 1173,
+      "sha256": "79f79e4b5c3a3e194db739c07eb01c54532064a22e709a73929a1db1fca6c306"
+    },
+    {
+      "name": "use-elastic-line-events",
+      "bytes": 2574,
+      "sha256": "4b284bcc9cabf6ef58c07c71a4756b0448e9dc881134f93c6fb151cbeeda348e"
+    },
+    {
+      "name": "use-mouse-position",
+      "bytes": 1772,
+      "sha256": "2b6fcb30fa9f771de67b9c235df09e7482e4c593264c2542ff18f03cd25e6df9"
+    }
+  ],
+  "patched": [
+    "text-along-path.json — added \"use client\" (file uses React hooks; upstream omits the directive)",
+    "text-along-path.json — replaced Math.random() SVG path id with React useId() (SSR hydration fix)",
+    "element-along-svg-path.json — added \"use client\" (file uses React hooks; upstream omits the directive)",
+    "element-along-svg-path.json — replaced Math.random() SVG path id with React useId() (SSR hydration fix)",
+    "marquee-along-svg-path.json — added \"use client\" (file uses React hooks; upstream omits the directive)",
+    "marquee-along-svg-path.json — replaced Math.random() SVG path id with React useId() (SSR hydration fix)"
+  ],
+  "note": "Curated 15-item subset of the ~45 registry:ui items — the rest were deliberately excluded as duplicates of already-vendored components; NEVER blanket-import this registry. hook_items are NOT extra components: they are the registry:hook dependency closure of elastic-line (imports @/hooks/use-dimensions and @/hooks/use-elastic-line-events; the latter needs use-mouse-position) and are vendored verbatim/unpatched. Registry has no version numbers; commit_sha of danielpetho/fancy HEAD (2026-03-14) is the pin. sha256 values are of the vendored item JSON files AFTER the PATCHED(alex-style) edits."
+}

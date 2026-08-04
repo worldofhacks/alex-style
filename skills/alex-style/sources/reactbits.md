@@ -20,7 +20,7 @@
 - Turning one static hero/section memorable with a single copied component.
 
 **Use a sibling instead:**
-- App-shell primitives (buttons, forms, tables, dialogs, dashboards): shadcn/ui — React Bits has zero form/data primitives.
+- App-shell primitives (buttons, forms, tables, dialogs, dashboards): hand-build on shadcn/ui plumbing re-dressed in brief tokens (stock shadcn look never ships) — React Bits has zero form/data primitives.
 - Restrained product-UI motion: `motion-primitives` (subtle, composable) — React Bits' aesthetic is bold/portfolio-grade.
 - shadcn-flavored marketing sections and device mockups: `magicui`; polished interactive widgets: `kokonutui`.
 - Animated backgrounds without React copy-paste: `vanta` (runtime lib) or `shadergradient`.

@@ -17,7 +17,7 @@ Use for:
 - Small nav pieces: `morphic-navbar`, `toolbar`, `smooth-tab`, `smooth-drawer`, `action-search-bar`.
 
 NOT for:
-- Data-heavy app components (tables, forms, charts) — shadcn/ui core.
+- Data-heavy app components (tables, forms, charts) — hand-build on shadcn/ui plumbing, fully re-dressed in brief tokens (stock shadcn styling never ships; SKILL.md law).
 - Marketing-scale animated collections with more variety — `reactbits` (139 variants) or `magicui` (77).
 - Scroll choreography / physics primitives — `motion-primitives` or GSAP/Lenis sources.
 - Icons — bundles only a few AI-brand SVGs; use the phosphor source.

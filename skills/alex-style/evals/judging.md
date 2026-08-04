@@ -14,11 +14,23 @@ hero moment + icons + palette from their proper sources)?
 - 3: several sources but obvious/safe picks (a card's worked example, a TSV's
   first match) or roles left unfilled (no scroll behavior, no text moment).
 - 1: one or two sources; the arsenal might as well not exist.
+Variation is AUDITABLE, not vibes: the brief's Signature/Sources lines exist,
+shortlists came from `vary.sh` samples, and a ledger row was appended. Signature
+picks that repeat any of the last 5 ledger rows' hero_treatment, palette,
+display_face, or human_touch — or a build matching a recipe's named items
+row-for-row — cap this axis at 3.
 
 ## 2. Impressive, exciting, engaging
 Would a demanding client stop scrolling? Is there at least one memorable
 moment, motion that rewards scrolling, and a page that feels designed FOR this
-client rather than assembled?
+client rather than assembled? Judged against the ELEVATED brief (the
+`## Elevation` block in design-brief.md), never the literal prompt —
+delivering the literal minimum caps this axis at 3. Generated tells — raw
+#fff/#000 grounds, characterless default type, centered-column template
+stacking, stock shadcn/component-library styling on any visible element,
+zero human touches — cap this axis at 2 unless the user's prompt
+explicitly asked for exactly that look (house register spec:
+orchestration.md Phase 0 "Aesthetic").
 - 5: a distinctive concept carried through (recurring motif, choreographed
   scroll, a hero no other site has); you want to show someone.
 - 3: pleasant and competent but interchangeable — the hero could appear on any
