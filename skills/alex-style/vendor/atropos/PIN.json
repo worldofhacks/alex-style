@@ -1,0 +1,71 @@
+{
+  "package": "atropos",
+  "version": "2.0.2",
+  "tarball_sha1": "8024e845487a69662b70fdb83f5e81039c934def",
+  "synced_at": "2026-08-03T16:14:39Z",
+  "allowlist_files": 15,
+  "total_bytes": 90744,
+  "files": [
+    {
+      "name": "LICENSE",
+      "bytes": 1077
+    },
+    {
+      "name": "README.md",
+      "bytes": 304
+    },
+    {
+      "name": "atropos-element.d.ts",
+      "bytes": 1526
+    },
+    {
+      "name": "atropos-element.min.mjs",
+      "bytes": 9575
+    },
+    {
+      "name": "atropos-element.mjs",
+      "bytes": 19005
+    },
+    {
+      "name": "atropos-react.d.ts",
+      "bytes": 528
+    },
+    {
+      "name": "atropos-react.mjs",
+      "bytes": 4772
+    },
+    {
+      "name": "atropos.css",
+      "bytes": 1957
+    },
+    {
+      "name": "atropos.d.ts",
+      "bytes": 932
+    },
+    {
+      "name": "atropos.js",
+      "bytes": 17374
+    },
+    {
+      "name": "atropos.min.css",
+      "bytes": 1666
+    },
+    {
+      "name": "atropos.min.js",
+      "bytes": 6925
+    },
+    {
+      "name": "atropos.min.mjs",
+      "bytes": 7015
+    },
+    {
+      "name": "atropos.mjs",
+      "bytes": 16428
+    },
+    {
+      "name": "package.json",
+      "bytes": 1660
+    }
+  ],
+  "excluded": "everything not in files[] — *.map, *.scss, *.less, atropos-element(.min).js UMD builds, and any stray artifact (round-2 audit reported a 572KB axe.min.js; the registry tarball at this sha1 has none — the allowlist makes the exclusion structural either way)"
+}
