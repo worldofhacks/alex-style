@@ -53,6 +53,13 @@ choices match a recipe's named items row-for-row is a variation defect.
   exciting, engaging — or merely correct? would this exact hero appear on any
   other client's site? (if yes, re-pick the treatment — see Rule 0 variation
   law). Fix, re-look, then ship. Full rubric: `evals/judging.md`.
+- Reveal gating is JS-conditional by construction: elements hidden before an
+  entrance (`opacity: 0` pre-reveal) get that state ONLY under a root class
+  set by script (`<script>document.documentElement.classList.add('js')</script>`
+  in head → `html.js .reveal { opacity: 0 }`) — no-JS, failed-JS, and crawler
+  renders show the full page. Content trapped by its own reveal gating is an
+  instant axis-3 failure (evals/judging.md); this pattern makes it structurally
+  impossible.
 - Shipping gate: append the build's signature row to the skill's `ledger.tsv`
   (schema + axes in orchestration.md "Variation protocol"). A build with no
   ledger row isn't done — the ledger is how the NEXT build stays unique.
